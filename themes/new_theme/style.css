@@ -665,3 +665,99 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     right: 0;
     left: 0;
 }
+.hs_menu .hs_menu_wrap li.search .form_search:after {
+    border-bottom: 5px solid #660033;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    width: 0;
+}
+
+/* Search */
+.m_search_hotel {
+    margin-bottom: 20px;
+}
+.m_search_hotel .m_search_hotel_inner{
+    background: #fdfdfd;
+    background: -moz-linear-gradient(top, #fdfdfd 0%, #e8e8e8 71%);
+    background: -webkit-linear-gradient(top, #fdfdfd 0%, #e8e8e8 71%);
+    background: linear-gradient(to bottom, #fdfdfd 0%, #e8e8e8 71%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#e8e8e8', GradientType=0);
+    margin: 0 auto;
+    padding: 20px 30px 10px;
+    position: relative;
+    width: 975px;
+}
+.m_search_hotel .m_search_hotel_head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.m_search_hotel .m_search_hotel_head h3 {
+    color: #660033;
+    font-family: 'AndesRoundedBold';
+}
+.m_search_hotel .m_search_hotel_head .care {
+    display: flex;
+    align-items: center;
+}
+.m_search_hotel .m_search_hotel_head .care li {
+    list-style: none;
+    color: #666666;
+}
+.m_search_hotel .m_search_hotel_head .care .title {
+    color: #666666;
+    margin-right: 15px;
+}
+.m_search_hotel .m_search_hotel_head .care .option {
+    background: #CCC;
+    border-radius: 13px;
+    font-size: 11px;
+    padding: 9px 12px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 101px;
+}
+.m_search_hotel .m_search_hotel_head .care .option:last-child {
+    margin-right: 0;
+}
+.m_search_hotel .m_search_hotel_head .care .option:hover a {
+    color: #660033;
+}
+
+.frm_booking_items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.frm_booking_item {
+    border: 1px solid #999999;
+    padding: 9px 5px;
+    background: #FFF;
+}
+.frm_booking_item .frm_booking__title {
+    color: #999;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 5px;
+    cursor: default;
+}
+.frm_booking_item .frm_booking__input {
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    color: #660033;
+}
+.frm_booking_item .frm_booking__input:focus {
+    outline: none;
+}
+.frm_booking_item .frm_booking__input_date {
+    color: #999;
+}
