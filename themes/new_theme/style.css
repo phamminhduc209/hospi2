@@ -576,6 +576,14 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     color: #FFF;
     opacity: .7;
 }
+.btn_request:focus {
+    color: #FFF;
+    outline: none;
+    text-decoration: none;
+}
+.btn_request:focus span {
+    text-decoration: none;
+}
 .btn_request span {
     display: block;
     font-size: 12px;
@@ -899,6 +907,216 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     width: 100%;
     height: 54px;
 }
+
+.frm_booking_item_date {
+    position: relative;
+}
+.frm_booking_item_date .daterangepicker {
+    width: 455px;
+    border: 1px solid #660033;
+    border-radius: 0;
+}
+.daterangepicker .calendar-table {
+    border: none;
+}
+.daterangepicker:before, .daterangepicker:after {
+    display: none;
+}
+.daterangepicker .drp-calendar.left,
+.daterangepicker .drp-calendar.right {
+    padding: 0;
+}
+.daterangepicker .drp-calendar.left .calendar-table {
+    padding-right: 0;
+    border: none;
+    border-right: 1px solid #660033;
+}
+.daterangepicker .calendar-table table thead tr:first-child th {
+    border-bottom: 1px solid #660033;
+}
+.table-condensed > thead > tr > th.next,
+.table-condensed > thead > tr > th.prev {
+    padding: 0;
+    position: relative;
+    margin: 0;
+    float: none;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+.table-condensed > thead > tr > th.month {
+    font-size: 16px;
+    color: #660033;
+}
+.daterangepicker td.start-date {
+    border-radius: 0;
+}
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover,
+.daterangepicker td.in-range {
+    background: #cccccc;
+    color: #FFF;
+    border-radius: 0;
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: #660033;
+    border-radius: 0;
+}
+
+.modal_priceemail .btn_modal_priceemail {
+    float: none;
+    background: #003333;
+    width: 100%;
+    margin: 0;
+}
+.modal_priceemail .btn_modal_priceemail:hover {
+    background: #066363;
+}
+.modal_request .btn_modal_request {
+    float: none;
+    background: #cc6600;
+    width: 100%;
+    margin: 0;
+}
+.modal_request .btn_modal_request:hover {
+    background: #ff7f00;
+}
+
+/* ==========================================================
+!Margin
+========================================================== */
+.mt0 {
+  margin-top: 0px !important; }
+
+.mt10 {
+  margin-top: 10px !important; }
+
+.mt20 {
+  margin-top: 20px !important; }
+
+.mt30 {
+  margin-top: 30px !important; }
+
+.mt40 {
+  margin-top: 40px !important; }
+
+.mt50 {
+  margin-top: 50px !important; }
+
+.mt60 {
+  margin-top: 60px !important; }
+
+.mt70 {
+  margin-top: 70px !important; }
+
+.mt80 {
+  margin-top: 80px !important; }
+
+.mt90 {
+  margin-top: 90px !important; }
+
+.mt100 {
+  margin-top: 100px !important; }
+
+.mr0 {
+  margin-right: 0px !important; }
+
+.mr10 {
+  margin-right: 10px !important; }
+
+.mr20 {
+  margin-right: 20px !important; }
+
+.mr30 {
+  margin-right: 30px !important; }
+
+.mr40 {
+  margin-right: 40px !important; }
+
+.mr50 {
+  margin-right: 50px !important; }
+
+.mr60 {
+  margin-right: 60px !important; }
+
+.mr70 {
+  margin-right: 70px !important; }
+
+.mr80 {
+  margin-right: 80px !important; }
+
+.mr90 {
+  margin-right: 90px !important; }
+
+.mr100 {
+  margin-right: 100px !important; }
+
+.mb0 {
+  margin-bottom: 0px !important; }
+
+.mb10 {
+  margin-bottom: 10px !important; }
+
+.mb20 {
+  margin-bottom: 20px !important; }
+
+.mb30 {
+  margin-bottom: 30px !important; }
+
+.mb40 {
+  margin-bottom: 40px !important; }
+
+.mb50 {
+  margin-bottom: 50px !important; }
+
+.mb60 {
+  margin-bottom: 60px !important; }
+
+.mb70 {
+  margin-bottom: 70px !important; }
+
+.mb80 {
+  margin-bottom: 80px !important; }
+
+.mb90 {
+  margin-bottom: 90px !important; }
+
+.mb100 {
+  margin-bottom: 100px !important; }
+
+.ml0 {
+  margin-left: 0px !important; }
+
+.ml10 {
+  margin-left: 10px !important; }
+
+.ml20 {
+  margin-left: 20px !important; }
+
+.ml30 {
+  margin-left: 30px !important; }
+
+.ml40 {
+  margin-left: 40px !important; }
+
+.ml50 {
+  margin-left: 50px !important; }
+
+.ml60 {
+  margin-left: 60px !important; }
+
+.ml70 {
+  margin-left: 70px !important; }
+
+.ml80 {
+  margin-left: 80px !important; }
+
+.ml90 {
+  margin-left: 90px !important; }
+
+.ml100 {
+  margin-left: 100px !important; }
 
 @media (min-width: 769px) {
     .frm_booking .frm_booking_left {
