@@ -560,10 +560,6 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     transition: all .3s;
 }
 
-
-
-
-
 /* Common */
 .btn_request {
     background: #cc6600;
@@ -690,7 +686,8 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     margin: 0 auto;
     padding: 20px 30px 10px;
     position: relative;
-    width: 975px;
+    width: 892px;
+    border: 1px solid rgb( 153, 153, 153);
 }
 .m_search_hotel .m_search_hotel_head {
     display: flex;
@@ -732,15 +729,42 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     color: #660033;
 }
 
+/* frm_booking */
+.frm_booking {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
 .frm_booking_items {
+    margin-bottom: 15px;
+}
+.frm_booking_items:last-child {
+    margin-bottom: 0;
+}
+.frm_booking_items__3Cols {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
+.frm_booking_items__3Cols .frm_booking__num {
+    color: #999;
+    width: 15%;
+}
+.frm_booking_items__3Cols .frm_booking_item {   
+    width: 42.5%;
+    background: url(../../images/calendar.png) #FFF no-repeat;
+    background-position: right 5px center;
+}
 .frm_booking_item {
     border: 1px solid #999999;
-    padding: 9px 5px;
+    padding: 5px;
     background: #FFF;
+    position: relative;
 }
 .frm_booking_item .frm_booking__title {
     color: #999;
@@ -754,10 +778,173 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     padding: 0;
     font-size: 16px;
     color: #660033;
+    background: transparent;
+    width: 100%;
 }
 .frm_booking_item .frm_booking__input:focus {
     outline: none;
 }
-.frm_booking_item .frm_booking__input_date {
-    color: #999;
+.frm_booking_item .frm_booking__input.frm_booking__input__date,
+.frm_booking_item .frm_booking__input.frm_booking__input__member {
+    color: #666666;
+}
+.frm_booking_item .frm_booking_select {
+    border: 1px solid #660033;
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+.frm_booking_item .frm_booking_item_select__hotels ul {
+    overflow-y: auto;
+    max-height: 200px;
+}
+.frm_booking_item .frm_booking_item_select .ttl {
+    background: #660033;
+    color: #FFF;
+    padding: 15px 10px;
+}
+.frm_booking_item .frm_booking_item_select .cnt li {
+    list-style-type: none;
+    padding: 9px 100px 0 7px;
+    position: relative;
+}
+.frm_booking_item .frm_booking_item_select .cnt li:last-child {
+    padding-bottom: 9px;
+}
+.frm_booking_item.frm_booking_item_select .cnt li a:hover {
+    color: #660033;
+}
+.frm_booking_item .frm_booking_item_select .cnt li span {
+    position: absolute;
+    right: 7px;
+    top: 9px;
+}
+.frm_booking_item_member {   
+    background: url(../../images/collapsearrow-down_002.png) #FFF no-repeat;
+    background-position: right 10px center;
+}
+.frm_booking__member {
+    background: #fff;
+    border: 1px solid #660033;
+    padding: 8px 11px;
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+.frm_booking__member .frm_booking__member_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.frm_booking__member .frm_booking__member_item:last-child {
+    margin-bottom: 0;
+}
+.frm_booking__member .frm_booking__member__title span {
+    color: #666;
+    display: block;
+}
+.frm_booking__member .frm_booking__member__title .note {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: 'Arial';
+}
+.frm_booking__member .frm_booking__member__updown .frm_booking__member__btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: #cccccc;
+    color: #FFF;
+    margin: 0 5px;
+    font-size: 20px;
+}
+.frm_booking__member .frm_booking__member__updown .frm_booking__member__btn:hover {
+    background: #660033;
+}
+.frm_booking__member .frm_booking__member__updown .frm_booking__member__btn:focus {
+    outline: none;
+}
+.frm_booking_items .frm_booking_button {
+    background: #660033;
+    background: -webkit-linear-gradient(top, #660033 0%, #751947 100%);
+    background: linear-gradient(to bottom, #660033 0%, #751947 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 54px;
+}
+
+@media (min-width: 769px) {
+    .frm_booking .frm_booking_left {
+        width: 567px;
+        -ms-flex: 0 0 567px;
+        flex: 0 0 567px;
+        max-width: 567px;
+    }
+    .frm_booking .frm_booking_right {
+        width: 249px;
+        -ms-flex: 0 0 249px;
+        flex: 0 0 249px;
+        max-width: 249px;
+    }
+}
+
+@media (max-width: 768px) {
+    .m_search_hotel .m_search_hotel_inner {
+        width: auto;
+    }
+}
+@media (max-width: 695px) {
+    .frm_booking_left,
+    .frm_booking_right {
+        width: 100%;
+    }
+}
+@media (max-width: 565px) {
+    .frm_booking_items__3Cols {
+        flex-direction: column;
+        align-items: end;
+        position: relative;
+    }
+    .frm_booking_items__3Cols .frm_booking_item {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .frm_booking_items__3Cols .frm_booking__num {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+    }
+    .frm_booking_right .frm_booking_items {
+        width: 80%;
+    }
+    .frm_booking_right .frm_booking_items:last-child {
+        margin: 0 auto;
+    }
 }

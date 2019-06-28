@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Đặt phòng khách sạn giá rẻ, Combo khách sạn, Khuyến mãi, gói ưu đãi 79%, Xác nhận nhanh, Rẻ hơn bất  cứ nơi đâu, Gọi (028) 3826 8797">
         <meta name="keywords" content="Đặt phòng khách sạn giá rẻ, đặt resort giá rẻ, tìm phòng khách sạn giá rẻ, Đặt khách sạn online, Đặt khách sạn trực tuyến, combo khách sạn">
         <meta name="author" content="HOSPI">
@@ -22,7 +22,7 @@
         <link href="themes/new_theme/assets/css/responsive-honeymoon.css" rel="stylesheet" media="screen">
         <link href="themes/new_theme/assets/css/book.css" rel="stylesheet">
         <link href="themes/new_theme/assets/css/responsive-cookbook.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="libs/daterangepicker/daterangepicker.css" />
         <link href="themes/new_theme/assets/css/responsive.css" rel="stylesheet">
         <link href="themes/new_theme/assets/css/responsive-combo.css" rel="stylesheet">
         <!-- facebook --------> 
@@ -270,366 +270,6 @@
         </div>
     </div>
 
-    <div class="block-search-hotel clearfix">
-        <div class="container">
-            <div class="block-content">
-                <div class="block-search-hotel-hd">
-                    <h3>Tìm khách sạn/resort</h3>
-                </div>
-                <!-- block-search-hotel-hd -->
-                <div class="go-right RTL_Bar">
-                    <div class="tab-content ng-scope" ng-controller="autoSuggest">
-                        <!-- Hotels  -->
-                        <div role="tabpanel" class="tab-pane fade active in " id="HOTELS" aria-labelledby="home-tab">
-                            <form action="https://www.hospi.vn/hotels/search" method="GET" role="search" id="searchForm" class="ng-pristine ng-valid">
-                                <div class="row">
-                                    <div class="col-sm-4 col-xs-12 go-right">
-                                        <div class="form-group margin-left-right-mobile-5">
-                                            <input onkeydown="convertCharacter();" id="search" name="txtSearch" class="form-control form-control-small ui-autocomplete-input" placeholder="Nhập tên khách sạn, thành phố!" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-                                            <div id="autocomlete-container">
-                                                <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1000; top: 0px; left: 0px; display: none;"></ul>
-                                            </div>
-                                        </div>
-                                        <input type="hidden" id="slug-search" value="">
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6 go-right">
-                                        <div class="form-group margin-left-right-mobile-5">
-                                            <div class="clearfix"></div>
-                                            <input type="text" placeholder=" Ngày nhận phòng " name="checkin" class="form-control mySelectCalendar dpd1 go-text-left" value="27/06/2019" required="" id="checkin" autocomplete="off">
-                                            <div class="datepicker dropdown-menu" style="display: none;">
-                                                <div class="datepicker-days" style="display: block;">
-                                                    <table class=" table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="prev"></th>
-                                                                <th colspan="5" class="switch">Tháng Sáu 2019</th>
-                                                                <th class="next"></th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th class="dow">CN</th>
-                                                                <th class="dow">T2</th>
-                                                                <th class="dow">T3</th>
-                                                                <th class="dow">T4</th>
-                                                                <th class="dow">T5</th>
-                                                                <th class="dow">T6</th>
-                                                                <th class="dow">T7</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="day disabled old">26</td>
-                                                                <td class="day disabled old">27</td>
-                                                                <td class="day disabled old">28</td>
-                                                                <td class="day disabled old">29</td>
-                                                                <td class="day disabled old">30</td>
-                                                                <td class="day disabled old">31</td>
-                                                                <td class="day disabled">1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">2</td>
-                                                                <td class="day disabled">3</td>
-                                                                <td class="day disabled">4</td>
-                                                                <td class="day disabled">5</td>
-                                                                <td class="day disabled">6</td>
-                                                                <td class="day disabled">7</td>
-                                                                <td class="day disabled">8</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">9</td>
-                                                                <td class="day disabled">10</td>
-                                                                <td class="day disabled">11</td>
-                                                                <td class="day disabled">12</td>
-                                                                <td class="day disabled">13</td>
-                                                                <td class="day disabled">14</td>
-                                                                <td class="day disabled">15</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">16</td>
-                                                                <td class="day disabled">17</td>
-                                                                <td class="day disabled">18</td>
-                                                                <td class="day disabled">19</td>
-                                                                <td class="day disabled">20</td>
-                                                                <td class="day disabled">21</td>
-                                                                <td class="day disabled">22</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">23</td>
-                                                                <td class="day disabled">24</td>
-                                                                <td class="day disabled">25</td>
-                                                                <td class="day disabled">26</td>
-                                                                <td class="day  active">27</td>
-                                                                <td class="day ">28</td>
-                                                                <td class="day ">29</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day ">30</td>
-                                                                <td class="day  new">1</td>
-                                                                <td class="day  new">2</td>
-                                                                <td class="day  new">3</td>
-                                                                <td class="day  new">4</td>
-                                                                <td class="day  new">5</td>
-                                                                <td class="day  new">6</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="datepicker-months" style="display: none;">
-                                                    <table class="table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="prev"></th>
-                                                                <th colspan="5" class="switch">2019</th>
-                                                                <th class="next"></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="7"><span class="month">Tháng 1</span><span class="month">Tháng 2</span><span class="month">Tháng 3</span><span class="month">Tháng 4</span><span class="month">Tháng 5</span><span class="month active">Tháng 6</span><span class="month">Tháng 7</span><span class="month">Tháng 8</span><span class="month">Tháng 9</span><span class="month">Tháng 10</span><span class="month">Tháng 11</span><span class="month">Tháng 12</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="datepicker-years" style="display: none;">
-                                                    <table class="table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="prev"></th>
-                                                                <th colspan="5" class="switch">2010-2019</th>
-                                                                <th class="next"></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-6 go-right">
-                                        <div class="form-group margin-left-right-mobile-5">
-                                            <div class="clearfix"></div>
-                                            <input type="text" placeholder=" Ngày trả phòng " name="checkout" class="form-control mySelectCalendar dpd2 go-text-left" value="28/06/2019" required="" id="checkout" autocomplete="off">
-                                            <div class="datepicker dropdown-menu" style="display: none;">
-                                                <div class="datepicker-days" style="display: block;">
-                                                    <table class=" table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="prev"></th>
-                                                                <th colspan="5" class="switch">Tháng Sáu 2019</th>
-                                                                <th class="next"></th>
-                                                            </tr>
-                                                            <tr>
-                                                                <th class="dow">CN</th>
-                                                                <th class="dow">T2</th>
-                                                                <th class="dow">T3</th>
-                                                                <th class="dow">T4</th>
-                                                                <th class="dow">T5</th>
-                                                                <th class="dow">T6</th>
-                                                                <th class="dow">T7</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="day disabled old">26</td>
-                                                                <td class="day disabled old">27</td>
-                                                                <td class="day disabled old">28</td>
-                                                                <td class="day disabled old">29</td>
-                                                                <td class="day disabled old">30</td>
-                                                                <td class="day disabled old">31</td>
-                                                                <td class="day disabled">1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">2</td>
-                                                                <td class="day disabled">3</td>
-                                                                <td class="day disabled">4</td>
-                                                                <td class="day disabled">5</td>
-                                                                <td class="day disabled">6</td>
-                                                                <td class="day disabled">7</td>
-                                                                <td class="day disabled">8</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">9</td>
-                                                                <td class="day disabled">10</td>
-                                                                <td class="day disabled">11</td>
-                                                                <td class="day disabled">12</td>
-                                                                <td class="day disabled">13</td>
-                                                                <td class="day disabled">14</td>
-                                                                <td class="day disabled">15</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">16</td>
-                                                                <td class="day disabled">17</td>
-                                                                <td class="day disabled">18</td>
-                                                                <td class="day disabled">19</td>
-                                                                <td class="day disabled">20</td>
-                                                                <td class="day disabled">21</td>
-                                                                <td class="day disabled">22</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day disabled">23</td>
-                                                                <td class="day disabled">24</td>
-                                                                <td class="day disabled">25</td>
-                                                                <td class="day disabled">26</td>
-                                                                <td class="day disabled">27</td>
-                                                                <td class="day  active">28</td>
-                                                                <td class="day ">29</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="day ">30</td>
-                                                                <td class="day  new">1</td>
-                                                                <td class="day  new">2</td>
-                                                                <td class="day  new">3</td>
-                                                                <td class="day  new">4</td>
-                                                                <td class="day  new">5</td>
-                                                                <td class="day  new">6</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="datepicker-months" style="display: none;">
-                                                    <table class="table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="prev"></th>
-                                                                <th colspan="5" class="switch">2019</th>
-                                                                <th class="next"></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="7"><span class="month">Tháng 1</span><span class="month">Tháng 2</span><span class="month">Tháng 3</span><span class="month">Tháng 4</span><span class="month">Tháng 5</span><span class="month active">Tháng 6</span><span class="month">Tháng 7</span><span class="month">Tháng 8</span><span class="month">Tháng 9</span><span class="month">Tháng 10</span><span class="month">Tháng 11</span><span class="month">Tháng 12</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="datepicker-years" style="display: none;">
-                                                    <table class="table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="prev"></th>
-                                                                <th colspan="5" class="switch">2010-2019</th>
-                                                                <th class="next"></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-6 go-right num-night">
-                                        <div class="form-group margin-left-right-mobile-5">
-                                            <div class="clearfix"></div>
-                                            <div class="content">
-                                                <strong><i class="fa fa-clock-o"></i></strong>
-                                                <strong><span id="number_night">01</span> đêm</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="home col-sm-2 col-xs-6 go-right">
-                                        <div class="form-group margin-left-mobile-5">
-                                            <select class="form-control-cus selectx" name="adults" id="adults">
-                                                <option value="0" selected="">Người lớn</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                                <option value="18">18</option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="home col-sm-2 col-xs-6 go-right">
-                                        <div class="form-group margin-right-mobile-5">
-                                            <select class="form-control-cus selectx" name="child" id="child">
-                                                <option value="0" selected="">Trẻ em</option>
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-12 go-right">
-                                        <div class="form-group margin-left-right-mobile-5">
-                                            <div class="coupon">
-                                                <input type="text" id="inputcoupon" class="form-control inputcoupon" name="inputcoupon" placeholder="Nhập mã giảm giá" style="padding-right: 20px;">
-                                                <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="" data-original-title="Bạn có mã giảm giá ưu đãi từ HOSPI vui lòng nhập mã ưu đãi vào đây, số tiền tương ứng sẽ được trừ vào đơn phòng"></i> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-12 go-right">
-                                        <div class="form-group margin-left-right-mobile-5">
-                                            <input id="searching" type="hidden" name="searching" value=""> <input id="modType" type="hidden" name="modType" value="">
-                                            <button type="button" id="btnSearch" class="btn-action btn btn-lg btn-block">Tìm kiếm</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block-check-sale">
-                                    <label>
-                                    <input type="checkbox" name="issale" id="issale" value="yes"><span></span>
-                                    Đang khuyến mãi                </label>
-                                </div>
-                            </form>
-                            <div class="clearfix"></div>
-                        </div>
-                        <!-- Hotels  -->
-                    </div>
-                </div>
-                <!-- go-right RTL_Bar -->
-                <ul class="list-inline list-enj">
-                    <li>Có thể bạn quan tâm ? <span><i class="fa fa-angle-right"></i></span></li>
-                    <li><a href="https://www.hospi.vn/offers" title="Deals - Giảm giá" class="another-color">Deals - Giảm giá</a></li>
-                    <li><a href="https://www.hospi.vn/bestchoice" title="Khuyến mãi" class="another-color">Bestchoice</a></li>
-                    <li><a href="https://www.hospi.vn/combo" title="Combo" class="another-color">Combo</a></li>
-                </ul>
-                <!-- list-inline list-enj -->
-            </div>
-            <div class="destination">
-                <!-- <div class="form-group col-md-4">
-                    <h2 class="main-title go-right andes-bold">&nbsp;</h2>
-                    <div class="clearfix"></div>
-                    </div> -->
-                <span class="rounded-icon"><i class="fa fa-gift" aria-hidden="true"></i></span>&nbsp;
-                <span style="color:#660033;">Deals - Ưu đãi: </span>
-                <a class="sub-menu-link" href="https://www.hospi.vn/offers/uu-dai-thang-8-10-11-12-2n1d-3n2d-tai-khach-san-mia-resort-mui-ne" target="_blank">ƯU ĐÃI THÁNG 8 , 10, 11 &amp; 12 - &nbsp;2N1D &amp; 3N2D TẠI KHÁCH SẠN MIA RESORT MŨI NÉ</a>
-                <!-- <span class="pull-right hospi-color"><a href="https://www.hospi.vn/offers/"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Xem thêm</a></span> -->
-                <div class="clearfix"></div>
-            </div>
-            <!-- destination -->
-        </div>
-    </div>
-
     <div class="m_search_hotel">
         <div class="container">
             <div class="m_search_hotel_inner">
@@ -643,90 +283,132 @@
                 </div>
                 <div class="m_search_hotel_content">
                     <form action="" method="" class="frm_booking">
-                        <div class="row">
-                            <div class="col-sm-9 col-xs-12">
+                        <div class="frm_booking_left">
+                            <div class="frm_booking_items">
                                 <div class="frm_booking_item">
                                     <label class="frm_booking__title">NHẬP TÊN KHÁCH SẠN ,THÀNH PHỐ</label>
-                                    <input type="text" class="frm_booking__input" value="Vũng Tàu">
-                                </div>
-                                <div class="frm_booking_items">
-                                    <div class="frm_booking_item">
-                                        <label class="frm_booking__title">NGÀY NHẬN PHÒNG</label>
-                                        <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_start_date" data-datepicker="separateRange"/>
-                                    </div>
-                                     <div class="frm_booking__num text-center">
-                                        <img src="images/icn_moon.png" alt="">
-                                        <br>
-                                        <strong>02 ĐÊM</strong>
-                                    </div>
-                                    <div class="frm_booking_item">
-                                        <label class="frm_booking__title">NGÀY TRẢ PHÒNG</label>
-                                        <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_end_date" data-datepicker="separateRange"/>
+                                    <input type="text" class="frm_booking__input" value="">
+                                    <div class="frm_booking_select">
+                                        <div class="frm_booking_item_select">
+                                            <p class="ttl">BẠN MUỐN TÌM KHÁCH SẠN Ở ĐÂU</p>
+                                            <ul class="cnt">
+                                                <li>
+                                                    <a href="#" title="Vũng Tàu">Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="frm_booking_item_select frm_booking_item_select__hotels">
+                                            <p class="ttl">KHÁCH SẠN</p>
+                                            <ul class="cnt">
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li><li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                    <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 col-xs-12"></div>
+                            <div class="frm_booking_items frm_booking_items__3Cols">
+                                <div class="frm_booking_item">
+                                    <label class="frm_booking__title">NGÀY NHẬN PHÒNG</label>
+                                    <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_start_date" data-datepicker="separateRange"/>
+                                </div>
+                                 <div class="frm_booking__num text-center">
+                                    <img src="images/icn_moon.png" alt="">
+                                    <br>
+                                    <strong>02 ĐÊM</strong>
+                                </div>
+                                <div class="frm_booking_item">
+                                    <label class="frm_booking__title">NGÀY TRẢ PHÒNG</label>
+                                    <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_end_date" data-datepicker="separateRange"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm_booking_right">
+                            <div class="frm_booking_items">
+                                <div class="frm_booking_item frm_booking_item_member">
+                                    <label class="frm_booking__title">SỐ KHÁCH</label>
+                                    <input type="text" class="frm_booking__input frm_booking__input__member" name="" value="2 người lớn, 0 trẻ em">
+                                    <div class="frm_booking__member">
+                                        <div class="frm_booking__member_item">
+                                            <div class="frm_booking__member__title">
+                                                <span class="adult">Người lớn</span>
+                                                <span class="note">(Từ 12 tuổi)</span>
+                                            </div>
+                                            <div class="frm_booking__member__updown">
+                                                <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
+                                                    <span>-</span>
+                                                </button>
+                                                <span class="frm_booking__member__display">2</span>
+                                                <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="frm_booking__member_item">
+                                            <div class="frm_booking__member__title">
+                                                <span class="children">Trẻ em</span>
+                                                <span class="note">(Dưới 12 tuổi)</span>
+                                            </div>
+                                            <div class="frm_booking__member__updown">
+                                                <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
+                                                    <span>-</span>
+                                                </button>
+                                                <span class="frm_booking__member__display">2</span>
+                                                <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
+                                                    <span>+</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frm_booking_items">
+                                <button type="button" class="btn frm_booking_button">TÌM KIẾM</button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-            var separator = ' - ', dateFormat = 'YYYY/MM/DD';
-            var options = {
-                autoUpdateInput: false,
-                autoApply: true,
-                locale: {
-                    format: dateFormat,
-                    separator: separator,
-                    applyLabel: '確認',
-                    cancelLabel: '取消'
-                },
-                minDate: moment().add(1, 'days'),
-                maxDate: moment().add(359, 'days'),
-                opens: "right"
-            };
-
-
-                $('[data-datepicker=separateRange]')
-                    .daterangepicker(options)
-                    .on('apply.daterangepicker' ,function(ev, picker) {
-                        var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
-                        var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
-
-                        var mainName = this.name.replace('value_from_start_', '');
-                        if(boolEnd) {
-                            mainName = this.name.replace('value_from_end_', '');
-                            $(this).closest('form').find('[name=value_from_end_'+ mainName +']').blur();
-                        }
-
-                        $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val(picker.startDate.format(dateFormat));
-                        $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val(picker.endDate.format(dateFormat));
-
-                        $(this).trigger('change').trigger('keyup');
-                    })
-                    .on('show.daterangepicker', function(ev, picker) {
-                        var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
-                        var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
-                        var mainName = this.name.replace('value_from_start_', '');
-                        if(boolEnd) {
-                            mainName = this.name.replace('value_from_end_', '');
-                        }
-
-                        var startDate = $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val();
-                        var endDate = $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val();
-
-                        $('[name=daterangepicker_start]').val(startDate).trigger('change').trigger('keyup');
-                        $('[name=daterangepicker_end]').val(endDate).trigger('change').trigger('keyup');
-                        
-                        if(boolEnd) {
-                            $('[name=daterangepicker_end]').focus();
-                        }
-                    });
-    </script>
-
 
     <div class="block-newsletter_footer">
         <div class="container">
@@ -743,7 +425,7 @@
         </div>
     </div>
 
-    <div id="footer" class="clearfix  footerbg">
+    <div id="footer" class="clearfix footerbg">
         <div class="back-ft-po hidden-xs"></div>
         <div class="footer-link not-blog"></div>
         <div class="container">
@@ -1139,62 +821,6 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script>
-        var separator = ' - ',
-            dateFormat = 'YYYY/MM/DD';
-        var options = {
-            autoUpdateInput: false,
-            autoApply: true,
-            locale: {
-                format: dateFormat,
-                separator: separator,
-                applyLabel: '確認',
-                cancelLabel: '取消'
-            },
-            minDate: moment().add(1, 'days'),
-            maxDate: moment().add(359, 'days'),
-            opens: "right"
-        };
-
-
-        $('[data-datepicker=separateRange]')
-            .daterangepicker(options)
-            .on('apply.daterangepicker', function (ev, picker) {
-                var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
-                var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
-
-                var mainName = this.name.replace('value_from_start_', '');
-                if (boolEnd) {
-                    mainName = this.name.replace('value_from_end_', '');
-                    $(this).closest('form').find('[name=value_from_end_' + mainName + ']').blur();
-                }
-
-                $(this).closest('form').find('[name=value_from_start_' + mainName + ']').val(picker.startDate.format(dateFormat));
-                $(this).closest('form').find('[name=value_from_end_' + mainName + ']').val(picker.endDate.format(dateFormat));
-
-                $(this).trigger('change').trigger('keyup');
-            })
-            .on('show.daterangepicker', function (ev, picker) {
-                var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
-                var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
-                var mainName = this.name.replace('value_from_start_', '');
-                if (boolEnd) {
-                    mainName = this.name.replace('value_from_end_', '');
-                }
-
-                var startDate = $(this).closest('form').find('[name=value_from_start_' + mainName + ']').val();
-                var endDate = $(this).closest('form').find('[name=value_from_end_' + mainName + ']').val();
-
-                $('[name=daterangepicker_start]').val(startDate).trigger('change').trigger('keyup');
-                $('[name=daterangepicker_end]').val(endDate).trigger('change').trigger('keyup');
-
-                if (boolEnd) {
-                    $('[name=daterangepicker_end]').focus();
-                }
-            });
-    </script>
     <link href="themes/new_theme/assets/include/select2/select2.css" rel="stylesheet" />
     <script src="themes/new_theme/assets/include/select2/select2.min.js"></script>
     <!-- This page JS -->
@@ -1220,16 +846,59 @@
     <script src="themes/new_theme/assets/include/datepicker/datepicker.js"></script>
     <link rel="stylesheet" href="themes/new_theme/assets/include/datepicker/datepicker.css" />
     <link rel="stylesheet" href="themes/new_theme/assets/include/datepicker/dp2.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+    <script type="text/javascript" src="libs/daterangepicker/daterangepicker.js"></script>
     <script>
-          $('#popoverData').popover();
-          $('#popoverOption').popover({ trigger: "hover" });
-        </script>
+        var separator = ' - ',
+            dateFormat = 'DD/MM/YYYY';
+        var options = {
+            autoUpdateInput: false,
+            autoApply: true,
+            locale: {
+                format: dateFormat,
+                separator: separator,
+            },
+            minDate: moment().add(1, 'days'),
+            maxDate: moment().add(359, 'days'),
+            opens: "left"
+        };
+        $('[data-datepicker=separateRange]')
+            .daterangepicker(options)
+            .on('apply.daterangepicker', function (ev, picker) {
+                var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
+                var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
 
-        <!-- WOWJs -->
-        <script>
-          //new WOW().init();
-        </script>
-        <!-- WOWJs -->
+                var mainName = this.name.replace('value_from_start_', '');
+                if (boolEnd) {
+                    mainName = this.name.replace('value_from_end_', '');
+                    $(this).closest('form').find('[name=value_from_end_' + mainName + ']').blur();
+                }
+                $(this).closest('form').find('[name=value_from_start_' + mainName + ']').val(picker.startDate.format(dateFormat));
+                $(this).closest('form').find('[name=value_from_end_' + mainName + ']').val(picker.endDate.format(dateFormat));
+
+                $(this).trigger('change').trigger('keyup');
+            })
+            .on('show.daterangepicker', function (ev, picker) {
+                var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
+                var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
+                var mainName = this.name.replace('value_from_start_', '');
+                if (boolEnd) {
+                    mainName = this.name.replace('value_from_end_', '');
+                }
+                var startDate = $(this).closest('form').find('[name=value_from_start_' + mainName + ']').val();
+                var endDate = $(this).closest('form').find('[name=value_from_end_' + mainName + ']').val();
+                $('[name=daterangepicker_start]').val(startDate).trigger('change').trigger('keyup');
+                $('[name=daterangepicker_end]').val(endDate).trigger('change').trigger('keyup');
+
+                if (boolEnd) {
+                    $('[name=daterangepicker_end]').focus();
+                }
+            });
+    </script>
+    <script>
+        $('#popoverData').popover();
+        $('#popoverOption').popover({ trigger: "hover" });
+    </script>
 
         <script>
           var fmt = "dd/mm/yyyy";
