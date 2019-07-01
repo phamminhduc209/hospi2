@@ -13455,7 +13455,10 @@ textarea {
 
 .best-choise .featured {
     background: #660033;
+}
 
+.best-choise .featured .positon-icon-map {
+    display: none;
 }
 
 .best-choise .featured a {
@@ -13469,7 +13472,6 @@ textarea {
 
 .icon-best-choise {
     position: absolute;
-
     z-index: 999;
     bottom: -30px;
     left: 37%;
@@ -13491,6 +13493,47 @@ textarea {
 
 .best-choise .class-chitiet a {
     color: white;
+}
+
+.hs_sidebar .best-choise_item {
+    margin-bottom: 15px;
+}
+.hs_sidebar .best-choise_item:last-child {
+    margin-bottom: 0;
+}
+.hs_sidebar .best-choise_item .featured {
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+    padding: 40px 25px 10px;
+}
+.hs_sidebar .best-choise_item .featured a {
+    display: block;
+}
+.hs_sidebar .best-choise_item .featured .positon-icon-map {
+    display: none;
+}
+.hs_sidebar .best-choise_item .featured .icon-best-choise {
+    top: -30px;
+    bottom: auto;
+    left: 40%;
+}
+.hs_sidebar .best-choise_item .desc h4 a {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.hs_sidebar .best-choise_item .desc {
+    margin-top: 0;
+}
+.hs_sidebar .best-choise_item .class-best-chois-txt {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    line-height: 22px;
+}
+.hs_sidebar .best-choise_item .class-chitiet {
+    margin: 0;
 }
 
 .positon-icon-map {
