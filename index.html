@@ -275,19 +275,14 @@
                     <div class="m_search_hotel_inner">
                         <div class="m_search_hotel_head">
                             <h3>Tìm khách sạn/resort</h3>
-                            <ul class="care">
-                                <li class="title">Có thể bạn quan tâm ?</li>
-                                <li class="option"><a href="https://www.hospi.vn/offers" title="Deals - Giảm giá" class="another-color">Deals - Giảm giá</a></li>
-                                <li class="option"><a href="https://www.hospi.vn/combo" title="Combo" class="another-color">Combo</a></li>
-                            </ul>
                         </div>
                         <div class="m_search_hotel_content">
                             <form action="" method="" class="frm_booking">
                                 <div class="frm_booking_left">
                                     <div class="frm_booking_items">
-                                        <div class="frm_booking_item">
+                                        <div class="frm_booking_item frm_booking_item_location">
                                             <label class="frm_booking__title">NHẬP TÊN KHÁCH SẠN ,THÀNH PHỐ</label>
-                                            <input type="text" class="frm_booking__input" value="">
+                                            <input type="text" class="frm_booking__input js_input_show" value="" name="">
                                             <div class="frm_booking_select">
                                                 <div class="frm_booking_item_select">
                                                     <p class="ttl">BẠN MUỐN TÌM KHÁCH SẠN Ở ĐÂU</p>
@@ -366,7 +361,7 @@
                                     <div class="frm_booking_items">
                                         <div class="frm_booking_item frm_booking_item_member">
                                             <label class="frm_booking__title">SỐ KHÁCH</label>
-                                            <input type="text" class="frm_booking__input frm_booking__input__member" name="" value="2 người lớn, 0 trẻ em">
+                                            <input type="text" class="frm_booking__input frm_booking__input__member js_input_show" name="" value="2 người lớn, 0 trẻ em">
                                             <div class="frm_booking__member">
                                                 <div class="frm_booking__member_item">
                                                     <div class="frm_booking__member__title">
@@ -392,7 +387,7 @@
                                                         <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
                                                             <span>-</span>
                                                         </button>
-                                                        <span class="frm_booking__member__display">2</span>
+                                                        <span class="frm_booking__member__display">0</span>
                                                         <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
                                                             <span>+</span>
                                                         </button>
@@ -406,6 +401,11 @@
                                     </div>
                                 </div>
                             </form>
+                            <ul class="care">
+                                <li class="title">Có thể bạn quan tâm ?</li>
+                                <li class="option"><a href="https://www.hospi.vn/offers" title="Deals - Giảm giá" class="another-color">Deals - Giảm giá</a></li>
+                                <li class="option"><a href="https://www.hospi.vn/combo" title="Combo" class="another-color">Combo</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -603,71 +603,121 @@
                             <p><strong>Vui lòng viết nội dung yêu cầu, Hospi sẽ liên hệ với bạn trong thời gian 30 phút</strong></p>    
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12 go-right">
-                                    <div class="m_bookrom">
-                                        <div class="m_bookrom_item">
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Ngày Nhận Phòng</label>
-                                                <input type="text" placeholder="Ngày nhận phòng" name="checkin" class="form-control mySelectCalendar dpd1 go-text-left" value="23/06/2019" required id="checkin" autocomplete="off"> 
+                                    <form action="" method="" class="frm_booking">
+                                        <div class="frm_booking_items frm_booking_items__3Cols">
+                                            <div class="frm_booking_item">
+                                                <label class="frm_booking__title">NGÀY NHẬN PHÒNG</label>
+                                                <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_start_date" data-datepicker="separateRange"/>
+                                                <div class="frm_booking_item_date"></div>
                                             </div>
-                                            <div class="m_bookrom_item_num text-center">
+                                             <div class="frm_booking__num text-center">
                                                 <img src="images/icn_moon.png" alt="">
                                                 <br>
-                                                <strong>0 Đêm</strong>
+                                                <strong>02 ĐÊM</strong>
                                             </div>
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Ngày Trả Phòng</label>
-                                                <input type="text" placeholder="Ngày trả phòng" name="checkout" class="form-control mySelectCalendar dpd2 go-text-left" value="24/06/2019" required id="checkout"  autocomplete="off">
+                                            <div class="frm_booking_item">
+                                                <label class="frm_booking__title">NGÀY TRẢ PHÒNG</label>
+                                                <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_end_date" data-datepicker="separateRange"/>
                                             </div>
                                         </div>
-                                        <div class="m_bookrom_item">
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Số Khách</label>
-                                                <div class="form-group-2cols">
-                                                    <div class="m_bookrom_item-sl">
-                                                        <select class="form-control-cus" name="" id="">
-                                                            <option value="0">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                        </select>
-                                                        <strong>Người Lớn</strong>
+                                        <div class="frm_booking_items frm_booking_items__2Cols">
+                                            <div class="frm_booking_item frm_booking_item_member">
+                                                <label class="frm_booking__title">SỐ KHÁCH</label>
+                                                <input type="text" class="frm_booking__input frm_booking__input__member" name="" value="2 người lớn, 0 trẻ em">
+                                                <div class="frm_booking__member">
+                                                    <div class="frm_booking__member_item">
+                                                        <div class="frm_booking__member__title">
+                                                            <span class="adult">Người lớn</span>
+                                                            <span class="note">(Từ 12 tuổi)</span>
+                                                        </div>
+                                                        <div class="frm_booking__member__updown">
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
+                                                                <span>-</span>
+                                                            </button>
+                                                            <span class="frm_booking__member__display">2</span>
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
+                                                                <span>+</span>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="m_bookrom_item-sl">
-                                                        <select class="form-control-cus" name="" id="">
-                                                            <option value="0">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                        </select>
-                                                        <strong>Trẻ em</strong>
+                                                    <div class="frm_booking__member_item">
+                                                        <div class="frm_booking__member__title">
+                                                            <span class="children">Trẻ em</span>
+                                                            <span class="note">(Dưới 12 tuổi)</span>
+                                                        </div>
+                                                        <div class="frm_booking__member__updown">
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
+                                                                <span>-</span>
+                                                            </button>
+                                                            <span class="frm_booking__member__display">2</span>
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
+                                                                <span>+</span>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Thành Phố</label>
-                                                <select class="form-control-cus" name="" id="">
-                                                    <option value="0">Nha Trang</option>
-                                                    <option value="1">Hồ Chí Minh</option>
-                                                    <option value="2">Phan Thiết</option>
-                                                    <option value="3">Phú Quốc</option>
-                                                </select>
+                                            <div class="frm_booking_item frm_booking_item_location">
+                                                <label class="frm_booking__title">NHẬP TÊN KHÁCH SẠN ,THÀNH PHỐ</label>
+                                                <input type="text" class="frm_booking__input" value="">
+                                                <div class="frm_booking_select">
+                                                    <div class="frm_booking_item_select">
+                                                        <p class="ttl">BẠN MUỐN TÌM KHÁCH SẠN Ở ĐÂU</p>
+                                                        <ul class="cnt">
+                                                            <li>
+                                                                <a href="#" title="Vũng Tàu">Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="frm_booking_item_select frm_booking_item_select__hotels">
+                                                        <p class="ttl">KHÁCH SẠN</p>
+                                                        <ul class="cnt">
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li><li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Biệt Thự Phố Villa Vũng Tàu">Biệt Thự Phố Villa Vũng Tàu</a>
+                                                                <span>Tỉnh thành <i class="fa fa-map-marker"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 go-right">
                                     <div class="form-group">
@@ -708,7 +758,7 @@
             </div>
         </div>
 
-        <div id="datphongdoan" class="modal fade datphongnhanh" tabindex="-1" data-focus-on="input:first">
+        <div id="datphongdoan" class="modal fade datphongdoan" tabindex="-1" data-focus-on="input:first">
             <div class="modal-dialog modal-dat-phong-nhanh">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -729,60 +779,65 @@
                             <p><strong>Vui lòng viết nội dung yêu cầu, Hospi sẽ liên hệ với bạn trong thời gian 30 phút</strong></p>
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12 go-right">
-                                    <div class="m_bookrom">
-                                        <div class="m_bookrom_item">
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Ngày Đi</label>
-                                                <input type="text" placeholder="Ngày Đi" name="dayin" class="form-control mySelectCalendar dpd1 go-text-left" value="23/06/2019" required id="" autocomplete="off"> 
+                                    <form action="" method="" class="frm_booking">
+                                        <div class="frm_booking_items frm_booking_items__3Cols">
+                                            <div class="frm_booking_item">
+                                                <label class="frm_booking__title">NGÀY NHẬN PHÒNG</label>
+                                                <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_start_date" data-datepicker="separateRange"/>
+                                                <div class="frm_booking_item_date"></div>
                                             </div>
-                                            <div class="m_bookrom_item_num text-center">
-                                                <input type="checkbox" name="" value=""><br> KHỨ HỒI
+                                             <div class="frm_booking__num frm_booking__roundtrip text-center">
+                                                <label for="roundtrip">
+                                                    <input type="checkbox" value="" name="" id="roundtrip">
+                                                    <span></span>
+                                                    <br>
+                                                    <strong>02 ĐÊM</strong>
+                                                </label>
                                             </div>
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Ngày Về</label>
-                                                <input type="text" placeholder="Ngày Về" name="dayout" class="form-control mySelectCalendar dpd2 go-text-left" value="" required id="" autocomplete="off">
+                                            <div class="frm_booking_item">
+                                                <label class="frm_booking__title">NGÀY TRẢ PHÒNG</label>
+                                                <input type="text" class="frm_booking__input frm_booking__input__date" name="value_from_end_date" data-datepicker="separateRange"/>
                                             </div>
                                         </div>
-                                        <div class="m_bookrom_item">
-                                            <div class="m_bookrom_item_inner">
-                                                <label>Số Khách</label>
-                                                <div class="form-group-2cols">
-                                                    <div class="m_bookrom_item-sl">
-                                                        <select class="form-control-cus" name="" id="">
-                                                            <option value="0">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                        </select>
-                                                        <strong>Người Lớn</strong>
+                                        <div class="frm_booking_items frm_booking_items__2Cols">
+                                            <div class="frm_booking_item frm_booking_item_member">
+                                                <label class="frm_booking__title">SỐ KHÁCH</label>
+                                                <input type="text" class="frm_booking__input frm_booking__input__member" name="" value="2 người lớn, 0 trẻ em">
+                                                <div class="frm_booking__member">
+                                                    <div class="frm_booking__member_item">
+                                                        <div class="frm_booking__member__title">
+                                                            <span class="adult">Người lớn</span>
+                                                            <span class="note">(Từ 12 tuổi)</span>
+                                                        </div>
+                                                        <div class="frm_booking__member__updown">
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
+                                                                <span>-</span>
+                                                            </button>
+                                                            <span class="frm_booking__member__display">2</span>
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
+                                                                <span>+</span>
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="m_bookrom_item-sl">
-                                                        <select class="form-control-cus" name="" id="">
-                                                            <option value="0">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                        </select>
-                                                        <strong>Trẻ em</strong>
+                                                    <div class="frm_booking__member_item">
+                                                        <div class="frm_booking__member__title">
+                                                            <span class="children">Trẻ em</span>
+                                                            <span class="note">(Dưới 12 tuổi)</span>
+                                                        </div>
+                                                        <div class="frm_booking__member__updown">
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_down" type="button">
+                                                                <span>-</span>
+                                                            </button>
+                                                            <span class="frm_booking__member__display">2</span>
+                                                            <button class="frm_booking__member__btn frm_booking__member__btn_up" type="button">
+                                                                <span>+</span>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 go-right">
                                     <div class="form-group">
@@ -851,6 +906,9 @@
         <script type="text/javascript" src="themes/new_theme/assets/js/moment.min.js"></script>
         <script type="text/javascript" src="libs/daterangepicker/daterangepicker.js"></script>
         <script>
+            $('.js_input_show').on('focusin focusout', function() {
+                $(this).next().toggle();
+            });
             var separator = ' - ',
                 dateFormat = 'DD/MM/YYYY (dddd)';
             var options = {
@@ -890,7 +948,7 @@
                 },
                 minDate: moment().add(1, 'days'),
                 maxDate: moment().add(359, 'days'),
-                opens: "right",
+                opens: "center",
             };
             $('[data-datepicker=separateRange]')
                 .daterangepicker(options)
