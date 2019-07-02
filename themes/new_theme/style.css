@@ -1109,7 +1109,6 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 }
 .hsp_menu {
     background: #f0f0f0;
-    margin-bottom: 15px;
 }
 .hsp_menu .hsp_menu_wrap {
     display: -ms-flexbox;
@@ -1180,8 +1179,12 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     top: -5px;
     width: 0;
 }
+.page_child {
+    margin-top: 40px;
+}
 .hsp_mainvisual {
     margin-bottom: 25px;
+    margin-top: 15px;
 }
 .hsp_mainvisual .hsp_mainvisual_items {
     display: -ms-flexbox;
