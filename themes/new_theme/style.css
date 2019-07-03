@@ -1452,6 +1452,31 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     border-bottom: none;
     margin-bottom: 0;
 }
+.hs_blog .hs_cate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.hs_blog .hs_cate li {
+    list-style-type: none;
+    position: relative;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-family: Arial, sans-serif;
+}
+.hs_blog .hs_cate li:before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: #cc9900;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 4px;
+}
+
 
 /* Responsive Blog */
 @media (min-width: 768px) {
