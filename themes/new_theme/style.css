@@ -1308,9 +1308,9 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     color: #000;
     font-family: "AndesRoundedBold";
     font-size: 18px;
-    height: 66px;
+    height: 65px;
     line-height: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     overflow: hidden;
     text-transform: none;
     transition: all 0.25s;
@@ -1452,6 +1452,12 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     border-bottom: none;
     margin-bottom: 0;
 }
+.hs_sidebar .hs_blog .hs_blog_item .hs_blog_info .title {
+    font-size: 18px;
+    color: #333;
+}
+
+
 .hs_blog .hs_cate {
     display: flex;
     align-items: center;
@@ -1475,6 +1481,65 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     position: absolute;
     left: -10px;
     top: 4px;
+}
+.hs_blog_large {
+    position: relative;
+    margin-bottom: 30px;
+}
+.hs_blog_large img {
+    transition: all .3s;
+}
+.hs_blog_large:hover img {
+    opacity: .8;
+    transition: all .3s;
+}
+.hs_blog_large .hs_blog_large_wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0 , 0, .7);
+    color: #FFF;
+    text-align: center;
+    padding: 10px 15px 15px;
+}
+.hs_blog_large .title {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "AndesRoundedBold";
+    text-transform: none;
+}
+.hs_blog_large .info {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+}
+.hs_blog .hs_blog_items_cate .hs_blog_item_wrap {
+    background-color: rgb( 255, 255, 255 );
+    border: none;
+    box-shadow: 0px 0px 3px 0px rgb( 0, 0, 0 );  
+}
+.hs_blog .hs_blog_items_cate .hs_blog_info .hs_cate {
+    margin-bottom: 0;
+    height: 20px;
+}
+.hs_blog .hs_blog_items_cate .hs_blog_info .date {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.hs_blog .hs_blog_items_cate .hs_blog_info .date:after {
+    background: #CCC;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 86px;
 }
 
 
