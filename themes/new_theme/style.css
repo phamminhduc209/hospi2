@@ -1361,6 +1361,10 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     border-color: #003333;
     color: #003333;
 }
+.hs_sidebar .hs_sidebar_title_04 {
+    border-color: #000000;
+    color: #000000;
+}
 .hs_sidebar_care li {
     list-style-type: none;
     border-left: 2px solid #ff9933;
@@ -1431,6 +1435,37 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     font-size: 18px;
     line-height: 22px;
 }
+
+.hs_sidebar_relative .hs_sidebar_relative_item {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 15px;
+}
+.hs_sidebar_relative .hs_sidebar_relative_item:last-child {
+    margin-bottom: 0;
+}
+.hs_sidebar_relative li img {
+    width: 100%;
+    height: auto;
+}
+.hs_sidebar_relative .hs_sidebar_relative_item .hs_sidebar_relative_info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 23px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.hs_sidebar_relative .hs_sidebar_relative_item .hs_sidebar_relative_info a h3 {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .hs_need_hotels ul {
     padding: 15px;
     background: #FFF;
@@ -1692,6 +1727,39 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hs_ad_info .price strong {
     font-size: 16px;
 }
+.hs_hotels_price_good {
+    border: 1px solid #660033;
+}
+.hs_hotels_price_good .hs_hotels_price_good_head {
+    background: #660033;
+    color: #FFF;
+    padding: 10px;
+}
+.hs_hotels_price_good .hs_hotels_price_good_inner {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.hs_hotels_price_good .hs_hotels_price_good_info h2 {
+    color: #666;
+    font-size: 16px;
+    font-family: "AndesRoundedBold";
+}
+.hs_hotels_price_good .hs_hotels_price_good_info .location {
+    margin-bottom: 5px;
+}
+.hs_hotels_price_good .hs_hotels_price_good_info .price {
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.hs_hotels_price_good .hs_hotels_price_good_info .price span {
+    font-size: 16px;
+}
+.hs_hotels_price_good .hs_hotels_price_good_info .contact span {
+    font-size: 15px;
+    color: #333333;
+}
 
 /* Responsive Blog */
 @media (min-width: 768px) {
@@ -1732,5 +1800,17 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
         -ms-flex: 0 0 153px;
         flex: 0 0 153px;
         max-width: 153px;
+    }
+    .hs_hotels_price_good .hs_hotels_price_good_img {
+        -ms-flex: 0 0 119px;
+        flex: 0 0 119px;
+        max-width: 119px;
+        margin-right: 15px;
+    }
+    .hs_hotels_price_good .hs_hotels_price_good_info {
+        margin-right: 15px;
+    }
+    .hs_hotels_price_good .hs_hotels_price_good_btn {
+        margin-left: auto;
     }
 }
