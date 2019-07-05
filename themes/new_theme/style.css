@@ -1105,7 +1105,7 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 /* Blog */
 .hsp_logo .hsp_logo_inner {
     text-align: center;
-    padding: 48px 0 42px;
+    padding: 20px 0;
 }
 .hsp_menu {
     background: #f0f0f0;
@@ -1126,7 +1126,7 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hsp_menu .hsp_menu_wrap li {
     list-style: none;
     text-align: center;
-    padding: 20px;
+    padding: 8px 12px;
 }
 .hsp_menu .hsp_menu_wrap li a {
     font-size: 16px;
@@ -1281,12 +1281,31 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hs_blog .hs_blog_item_02 {
     margin-bottom: 15px;
 }
+.hs_blog .hs_blog_item_03 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+.hs_blog .hs_blog_item_03:last-child {
+    margin-bottom: 0;
+}
 .hs_blog .hs_blog_item .hs_blog_item_wrap {
     border: 1px solid #cccccc;
 }
 .hs_blog .hs_blog_item .hs_blog_item_wrap_02 {
     display: -ms-flexbox;
     display: flex;
+}
+.hs_blog .hs_blog_item_03 .hs_blog_item_wrap {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.hs_blog .hs_blog_item_03 .hs_blog_img {
+    -ms-flex: 0 0 98px;
+    flex: 0 0 98px;
+    max-width: 98px;
+    margin-right: 10px;
 }
 .hs_blog .hs_blog_item .hs_blog_img img {
     width: 100%;
@@ -1314,6 +1333,19 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     overflow: hidden;
     text-transform: none;
     transition: all 0.25s;
+}
+.hs_blog .hs_blog_item_03 .hs_blog_info .title {
+    color: #000;
+    font-size: 18px;
+    font-family: "AndesRounded";
+    line-height: 18px;
+    margin-bottom: 5px;
+    text-transform: none;
+    transition: all 0.25s;
+}
+.hs_blog .hs_blog_item_03 .hs_blog_info .cate {
+    color: #cc9900;
+    font-family: "Arial", sans-serif;
 }
 .hs_blog .hs_blog_item_02 .hs_blog_info .title {
     font-size: 15px;
@@ -1344,9 +1376,12 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hs_sidebar_bg {
     background: #F0F0F0;
 }
+.hs_sidebar_border {
+    border: 1px solid #CCC;
+}
 .hs_sidebar .hs_sidebar_title {
     background: #F0F0F0;
-    border-top: 3px solid #F0F0F0;
+    border-top: 3px solid #666666;
     color: #666666;
     font-size: 14px;
     padding: 18px;
@@ -1364,6 +1399,10 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hs_sidebar .hs_sidebar_title_04 {
     border-color: #000000;
     color: #000000;
+}
+.hs_sidebar .hs_sidebar_title_05 {
+    border-color: #ff0000;
+    color: #ff0000;
 }
 .hs_sidebar_care li {
     list-style-type: none;
@@ -1439,7 +1478,6 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hs_sidebar_relative .hs_sidebar_relative_item {
     list-style-type: none;
     position: relative;
-    margin-bottom: 15px;
 }
 .hs_sidebar_relative .hs_sidebar_relative_item:last-child {
     margin-bottom: 0;
@@ -1462,8 +1500,18 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 }
 .hs_sidebar_relative .hs_sidebar_relative_item .hs_sidebar_relative_info a h3 {
     color: #FFF;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 22px;
+}
+.hs_sidebar.hs_sidebar_form_search {
+    margin-bottom: 15px;
+}
+.hs_sidebar.hs_sidebar_form_search .form-control {
+    margin-bottom: 0;
+    height: 36px;
+}
+.hs_sidebar.hs_sidebar_form_search .btn-action {
+    margin-bottom: 0;
 }
 
 .hs_need_hotels ul {
@@ -1759,6 +1807,12 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .hs_hotels_price_good .hs_hotels_price_good_info .contact span {
     font-size: 15px;
     color: #333333;
+}
+.hs_hotels_price_good .hs_hotels_price_good_btn a {
+    background: #660033;
+    color: #FFF;
+    display: inline-block;
+    padding: 6px 12px;
 }
 
 /* Responsive Blog */
