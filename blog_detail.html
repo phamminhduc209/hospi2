@@ -51,15 +51,7 @@
     <body id="top" cz-shortcut-listen="true">
 
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=159189514584032";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <script src="//apis.google.com/js/platform.js" async defer></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
 
         <header>
             <div class="hsp_logo">
@@ -299,61 +291,38 @@
 
         <div id="footer" class="clearfix footerbg2" >
             <div class="container">
-                <ul class="list-social">
-                    <li>Kết nối với chúng tôi</li>
-                    <li class="item-social youtube"><a href="https://www.youtube.com/channel/UCxfzWdfkaDPWGIVrI2vKchg" target="_blank"><i class="fa fa-play"></i> Youtube</a></li>
-                    <li class="item-social facebook"><a href="https://www.facebook.com/hospi.vn/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
-                    <li class="item-social google"><a href="https://plus.google.com/104246180420952281462" target="_blank"><i class="fa fa-google-plus"></i> Google +</a></li>
-                </ul>
-                <div class="row">
-                    <!-- Blog -->
-                    <div class="footerblog">
-                        <div class="row col-md-7">
-                            <div class="col-md-5">
-                                <a href="https://www.hospi.vn/blog"><img src="https://www.hospi.vn/uploads/global/footer-logo.png" class="img-responsive logo"/></a>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="fttle">"Blog tôi yêu du lịch tổng hợp những thông tin du lịch, chia sẻ kinh nghiệm, điểm đến, khuyến mãi... nhằm mang đến những thông tin bổ ích cho bạn đọc"</div>
-                            </div>
+                <div class="clearfix">
+                    <a href="https://www.hospi.vn/blog"><img src="images/blog_logo.png" class="img-responsive logo"/></a>
+                </div>
+                <div class="row footerblog">
+                    <div class="col-md-5">
+                        <div class="fttle mb10">"Blog tôi yêu du lịch tổng hợp những thông tin du lịch, chia sẻ kinh nghiệm, điểm đến, khuyến mãi... nhằm mang đến những thông tin bổ ích cho bạn đọc"</div>
+                        <div class="list-social mb10">
+                            <p class="purple mb10">Kết nối với chúng tôi</p>
+                            <ul>
+                                <li class="item-social youtube"><a href="https://www.youtube.com/channel/UCxfzWdfkaDPWGIVrI2vKchg" target="_blank"><i class="fa fa-play"></i> Youtube</a></li>
+                                <li class="item-social facebook"><a href="https://www.facebook.com/hospi.vn/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li class="item-social google"><a href="https://plus.google.com/104246180420952281462" target="_blank"><i class="fa fa-google-plus"></i> Google +</a></li>
+                            </ul>
                         </div>
-                        <div class="row col-md-5">
-                            <div class="col-md-7 facebook-like footer-blog-center">
-                                <div class="facebook-text">Like để cập nhật cẩm nang du lịch</div>
-                                <div class="fb-like" data-href="https://www.facebook.com/hospi.vn" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                        <p class="ftitle"><span class="purple">HOSPI.VN &copy; 2019</span> - Đặt khách sạn, resort cho người Việt</p>
+                        <p><img src="themes/new_theme/assets/img/location-icon2.png" alt=""> Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="facebook-like">
+                            <div class="facebook-text">Like để cập nhật cẩm nang du lịch</div>
+                            <div class="facebook_plugin">
+                                <div class="fb-page" data-href="https://www.facebook.com/hospi.vn/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/hospi.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hospi.vn/">HOSPI.vn</a></blockquote></div>
                             </div>
-                            <div class="col-md-5 footer-blog-center nowrap">
-                                <div>Hỗ trợ bạn đọc, khách hàng</div>
-                                <div class="phone_footer">028 3826 8797</div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-md-12">
-                            <div class="hottest-news"></div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="ftitle">&copy; Bản quyền của Hospi Travel Co., Ltd</div>
-                        </div>
-                        <div class="col-md-2 footer-blog-center">
-                            <div class="ftitle">
-                                <div class="chung-toi-la-ai" >
-                                    <!--<h2 class="ftitle go-text-center"><strong>Blog - Chúng tôi là ai ?</strong></h2>-->
-                                    <ul class="go-right go-text-center">
-                                        <li><a href="https://www.hospi.vn/chung-toi-la-ai" target="" title="">Chúng tôi là ai ?</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="blog-map ftitle go-text-right">
-                                Lầu 1, Số 124 Khánh Hội, P.6, Quận 4, Tp. Hồ Chí Minh                        
-                            </div>
-                        </div>
-                        <div class="row col-md-3">
-                            <div class="blog-map go-text-right"><a class="purple" target="_blank" href="https://www.google.com/maps/place/124+Kh%C3%A1nh+H%E1%BB%99i,+ph%C6%B0%E1%BB%9Dng+6,+Qu%E1%BA%ADn+4,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7572978,106.6982959,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f6d4faf461f:0xcf0c2485be1d0fdc!8m2!3d10.7572925!4d106.7004846"><i style="margin-left: -3px;" class="icon-location-6 go-right"></i>Bản đồ đến văn phòng Hospi</a></div>
                         </div>
                     </div>
-                    <!-- End Blog -->
-                </div>
+                    <div class="col-md-3">
+                        <p class="purple mb10">Chúng tôi là ai?</p>
+                        <p>Hỗ trợ bạn đọc, khách hàng</p>
+                        <p><img src="images/phone.png" alt=""> 09 6868 0106</p>
+                        <p><img src="images/letter.png" alt=""> booking@hospi.vnv</p>
+                    </div>
+            </div>
             </div>
         </div>
         <!-- footer -->

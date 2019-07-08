@@ -8148,9 +8148,9 @@ a.xem-ngay {
     min-height: 2px;*/
 }
 
-.list-social {
+/* .list-social {
     text-align: center;
-}
+} */
 
 .list-social li {
     list-style-type: none;
@@ -8162,7 +8162,7 @@ a.xem-ngay {
     padding: 10px;
     background: #cccccc;
     border: 1px solid #fff;
-    margin: 0 20px;
+    margin-right: 40px;
     width: 110px;
 }
 
@@ -10628,8 +10628,14 @@ ul.nav .honeymoon .img_list img {
     background-color: #660033;
 }
 
-.facebook-like {
-    color: #3399ff;
+.facebook-like .facebook-text {
+    color: #660033;
+    margin-bottom: 15px;
+}
+
+.facebook-like .facebook_plugin {
+    padding: 5px;
+    background: #FFF;
 }
 
 .footer-blog-center {
@@ -10650,7 +10656,7 @@ ul.nav .honeymoon .img_list img {
 }
 
 .footerblog {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .navbar-toggle {
