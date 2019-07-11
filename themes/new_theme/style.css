@@ -178,7 +178,14 @@ p { margin: 0; }
 .wishlist .fav { color: #356bc8 !important; }
 .wishlist.fav:before { color: #B62039 !important; }
 .textupper { text-transform: uppercase; }
-.main-title { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 22px; line-height: 16px; margin-top: 25px; margin-bottom: 0px; }
+.main-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #660033;
+}
 
 /* btn action */
 .btn-action {
