@@ -934,8 +934,14 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .mt10 {
   margin-top: 10px !important; }
 
+.mt15 {
+  margin-top: 15px !important; }
+
 .mt20 {
   margin-top: 20px !important; }
+
+.mt25 {
+  margin-top: 25px !important; }
 
 .mt30 {
   margin-top: 30px !important; }
@@ -946,29 +952,20 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .mt50 {
   margin-top: 50px !important; }
 
-.mt60 {
-  margin-top: 60px !important; }
-
-.mt70 {
-  margin-top: 70px !important; }
-
-.mt80 {
-  margin-top: 80px !important; }
-
-.mt90 {
-  margin-top: 90px !important; }
-
-.mt100 {
-  margin-top: 100px !important; }
-
 .mr0 {
   margin-right: 0px !important; }
 
 .mr10 {
   margin-right: 10px !important; }
 
+.mr15 {
+  margin-right: 15px !important; }
+
 .mr20 {
   margin-right: 20px !important; }
+
+.mr25 {
+  margin-right: 25px !important; }
 
 .mr30 {
   margin-right: 30px !important; }
@@ -979,29 +976,20 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .mr50 {
   margin-right: 50px !important; }
 
-.mr60 {
-  margin-right: 60px !important; }
-
-.mr70 {
-  margin-right: 70px !important; }
-
-.mr80 {
-  margin-right: 80px !important; }
-
-.mr90 {
-  margin-right: 90px !important; }
-
-.mr100 {
-  margin-right: 100px !important; }
-
 .mb0 {
   margin-bottom: 0px !important; }
 
 .mb10 {
   margin-bottom: 10px !important; }
 
+.mb15 {
+  margin-bottom: 15px !important; }
+
 .mb20 {
   margin-bottom: 20px !important; }
+
+.mb25 {
+  margin-bottom: 25px !important; }
 
 .mb30 {
   margin-bottom: 30px !important; }
@@ -1012,29 +1000,20 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 .mb50 {
   margin-bottom: 50px !important; }
 
-.mb60 {
-  margin-bottom: 60px !important; }
-
-.mb70 {
-  margin-bottom: 70px !important; }
-
-.mb80 {
-  margin-bottom: 80px !important; }
-
-.mb90 {
-  margin-bottom: 90px !important; }
-
-.mb100 {
-  margin-bottom: 100px !important; }
-
 .ml0 {
   margin-left: 0px !important; }
 
 .ml10 {
   margin-left: 10px !important; }
 
+.ml15 {
+  margin-left: 15px !important; }
+
 .ml20 {
   margin-left: 20px !important; }
+
+.ml25 {
+  margin-left: 25px !important; }
 
 .ml30 {
   margin-left: 30px !important; }
@@ -1044,21 +1023,6 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
 
 .ml50 {
   margin-left: 50px !important; }
-
-.ml60 {
-  margin-left: 60px !important; }
-
-.ml70 {
-  margin-left: 70px !important; }
-
-.ml80 {
-  margin-left: 80px !important; }
-
-.ml90 {
-  margin-left: 90px !important; }
-
-.ml100 {
-  margin-left: 100px !important; }
 
 @media (min-width: 769px) {
     .frm_booking .frm_booking_left {
@@ -1983,4 +1947,17 @@ ul.list_ok { list-style: none; margin: 0 0 20px 0; padding: 0; line-height: 22px
     .hs_hotels_price_good .hs_hotels_price_good_btn {
         margin-left: auto;
     }
+}
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;  
 }

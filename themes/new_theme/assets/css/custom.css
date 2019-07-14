@@ -2282,9 +2282,8 @@ button:hover.next2 img {
 
 ul.footerlist li:before {
     font-family: "FontAwesome";
-    content: "\f054";
-    font-size: 9px;
-    vertical-align: 2px;
+    content: "\f101";
+    vertical-align: 1px;
     margin-right: 5px;
     color: #660033;
 }
@@ -8160,7 +8159,7 @@ a.xem-ngay {
 
 .list-social li.item-social {
     padding: 10px;
-    background: #cccccc;
+    background: transparent;
     border: 1px solid #fff;
     margin-right: 40px;
     width: 110px;
@@ -10926,20 +10925,7 @@ ul.nav .honeymoon .img_list img {
 }
 
 .block-user .user-img {
-    margin-right: 11px;
-    margin-bottom: 0px;
-    display: inline-flex;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    overflow: hidden;
-    cursor: pointer;
+    margin-right: 5px;
 }
 
 .block-user .user-menu {
@@ -10951,11 +10937,12 @@ ul.nav .honeymoon .img_list img {
     margin-bottom: 5px;
     line-height: 1;
     transition: all .2s ease-in-out;
+    font-family: "Arial", sans-serif;
 }
 
-.block-user .user-menu p:hover {
+/* .block-user .user-menu p:hover {
     transform: scale(1.1);
-}
+} */
 
 .block-user .user-menu p:hover a {
     color: #660033;
@@ -10967,8 +10954,15 @@ ul.nav .honeymoon .img_list img {
 
 .block-user .user-menu p a {
     color: #999999;
-    font-size: 13px;
     text-transform: none;
+    position: relative;
+}
+
+.block-user .user-menu p a:after {
+    content: url(../../../..//images/double_down.png);
+    position: absolute;
+    top: 0;
+    right: -21px;
 }
 
 .navbar-default .navbar-nav > li.menu-mb {
@@ -10984,26 +10978,28 @@ ul.nav .honeymoon .img_list img {
 }
 
 .footerbg {
-    background: #521231;
     background-repeat: no-repeat;
-    padding: 0 0 65px;
-    margin-top: 130px;
-    line-height: 1.6;
     background-size: 100%;
-    position: relative;
+    background: #521231;
+    color: #FFF;
+    line-height: 1.6;
+    margin-top: 85px;
     overflow: visible;
     padding-bottom: 0px;
+    padding: 0 0 65px;
+    position: relative;
 }
 
 .footerbg .back-ft-po {
     background: url(../../assets/img/bg-footer.png) no-repeat;
-/ / background-size: 100 %;
+    /* background-size: 100 %; */
     width: 100%;
     height: 107px;
     position: absolute;
     top: -105px;
     right: 0;
     left: 0;
+    display: none;
 }
 
 .footerbg3 {
@@ -11069,6 +11065,7 @@ ul.footerlist li:before {
 
 .block-newsletter_footer {
     margin-top: 40px;
+    display: none;
 }
 
 .block-newsletter_footer .btncustom {
@@ -14844,4 +14841,82 @@ p.hs_cl_show_info{
         width: -moz-calc(100% - 145px);
         width: -webkit-calc(100% - 145px);
     }
+}
+
+.m_modul_ft {
+    padding: 35px 0 20px;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 30px;
+}
+.m_modul_ft_b {
+    padding: 30px 0 0;
+    border-bottom: none;
+    border-top: 1px solid #FFF;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.m_modul_ft_inner,
+.m_regmenber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m_search {
+    -ms-flex: 0 0 345px;
+    flex: 0 0 345px;
+    max-width: 345px;
+    color: #FFF;
+}
+.m_search p {
+    color: #FFF;
+    margin-bottom: 7px;
+    font-family: "Arial", sans-serif;
+}
+.m_search p storng {
+    font-size: 16px;
+    font-family: "AndesRounded", sans-serif;
+}
+.m_modul_ft_b .m_search {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    color: #FFF;
+}
+.m_modul_ft_b .btn {
+    background: #521231;
+    border-color: #FFF;
+    font-family: "Arial", sans-serif;
+}
+.m_modul_ft_b .m_search span {
+    margin-right: 15px;
+}
+.m_search .relative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m_search .form-control {
+    border-radius: 0;
+}
+.m_search .sub_newsletter {
+    background: #660033;
+    font-family: "Arial", sans-serif;
+    color: #FFF;
+    border-radius: 0;
+}
+.m_regmenber p {
+    color: #FFF;
+    font-family: "Arial", sans-serif;
+    margin-right: 30px;
+}
+.m_regmenber p storng {
+    font-size: 16px;
+    font-family: "AndesRounded", sans-serif;
+}
+.m_regmenber .btn {
+    background: #521231;
+    border-color: #FFF;
 }
