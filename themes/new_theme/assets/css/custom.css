@@ -4215,10 +4215,15 @@ ul.jslidetext2 {
 
 .login-wrap {
     width: 300px;
-    height: 410px;
-    background: transparent;
-    margin: auto auto;
-    position: absolute;
+    margin: 0 auto;
+    background: rgba(204, 204, 204, 0.5);
+    border: 1px solid #666666;
+}
+
+.login-wrap_head {
+    font-size: 12px;
+    color: #660033;
+    padding: 10px;
 }
 
 .cpadding50 {
@@ -4231,8 +4236,7 @@ ul.jslidetext2 {
 
 @media (min-width: 400px) {
     .login-wrap {
-        width: 372px;
-        height: 380px;
+        width: 370px;
     }
 
     .cpadding50 {
