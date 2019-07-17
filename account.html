@@ -290,82 +290,96 @@
                 </div>
             </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="container mt25 offset-0">
+        <div class="container mt25 m_account">
             <!-- CONTENT -->
-            <div class="col-md-12 pagecontainer2 offset-0">
+            <div class="row pagecontainer2">
                 <!-- LEFT MENU -->
-                <div class="col-md-3 col-xs-12 offset-0">
+                <div class="col-md-3 col-xs-12">
                     <!-- Nav tabs -->
                     <ul class="nav profile-tabs">
                         <li class="active">
                             <a href="#profile" data-toggle="tab" onclick="mySelectUpdate()">
-                                <span><img src="images/user.png" alt=""></span>
+                                <span>
+                                    <img class="img1" src="images/user_02.png" alt="">
+                                    <img class="img2" src="images/user_02_hover.png" alt="">
+                                </span>
                                 THÔNG TIN THÀNH VIÊN
                             </a>
                         </li>
                         <li>
                             <a href="#bookings" data-toggle="tab">
-                                <span><img src="images/euser.png" alt=""></span>
+                                <span>
+                                    <img class="img1" src="images/euser.png" alt="">
+                                    <img class="img2" src="images/euser_hover.png" alt="">
+                                </span>
+                                E- BOOKING CỦA BẠN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#voucher" data-toggle="tab">
+                                <span>
+                                    <img class="img1" src="images/euser.png" alt="">
+                                    <img class="img2" src="images/euser_hover.png" alt="">
+                                </span>
                                 E- BOOKING CỦA BẠN
                             </a>
                         </li>
                         <li>
                             <a href="#wishlist" data-toggle="tab" onclick="mySelectUpdate()">
-                                <span><img src="images/percent.png" alt=""></span>
-                                Wishlist
+                                <span>
+                                    <img class="img1" src="images/percent.png" alt="">
+                                    <img class="img2" src="images/percent_hover.png" alt="">
+                                </span>
+                                MÃ ƯU ĐÃI
                             </a>
                         </li>
                         <li>
-                            <a href="#newsletter" data-toggle="tab" onclick="mySelectUpdate()">Newsletter </a>
+                            <a href="#newsletter" data-toggle="tab" onclick="mySelectUpdate()">
+                                <span>
+                                    <img class="img1" src="images/letter_03.png" alt="">
+                                    <img class="img2" src="images/letter_03_hover.png" alt="">
+                                </span>
+                                NEWSLETTER
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#regulation" data-toggle="tab" onclick="mySelectUpdate()">
+                                <span>
+                                    <img class="img1" src="images/regulation.png" alt="">
+                                    <img class="img2" src="images/regulation_hover.png" alt="">
+                                </span>
+                                QUY CHẾ THANH VIÊN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#hpoint" data-toggle="tab" onclick="mySelectUpdate()">
+                                <span>
+                                    <img class="img1" src="images/hpoint.png" alt="">
+                                    <img class="img2" src="images/hpoint_hover.png" alt="">
+                                </span>
+                                HPOINT
+                            </a>
                         </li>
                     </ul>
-                    <div class="clearfix"></div>
                 </div>
                 <!-- LEFT MENU -->
                 <!-- RIGHT CPNTENT -->
-                <div class="col-md-8 offset-0">
+                <div class="col-md-9 col-xs-12">
                     <!-- Tab panes from left menu -->
                     <div class="tab-content">
-                        <!-- TAB 1 -->
-                        <div class="tab-pane padding40 fade in" id="bookings">
-                            <div class="clearfix"></div>
-                            <table class="table table-hover table-border table-responsive table-striped">
-                                <tbody>
-                                    <h4><strong> Nothing Booked Yet </strong></h4>
-                                </tbody>
-                            </table>
-                            <script type="text/javascript">
-                            $(function() {
-                                $(".cancelEanBooking").on("click", function() {
-                                    var bookid = $(this).prop("id");
-                                    $.post("https://www.hospi.vn/ean/cancel", { id: bookid }, function(resp) {
-                                        if (resp == "success") {
-                                            location.reload();
-                                            return true;
-                                        } else {
-                                            alert(resp);
-                                            return false;
-                                        }
-
-                                    })
-                                })
-                            })
-                            </script>
-                        </div>
-                        <!-- END OF TAB 1 -->
-                        <!-- TAB 2 -->
                         <div class="tab-pane active fade in" id="profile">
-                            <br>
                             <div class="toppage"></div>
-                            <div class="col-md-12">
+                            <div class="clearfix">
                                 <div class="clearfix"></div>
                                 <div class="accountresult"></div>
                                 <form action="" id="profilefrm" method="POST" onsubmit="return false;">
                                     <div class="form-horizontal">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title go-text-right">Thông tin liên hệ</h3>
+                                                <h3 class="panel-title go-text-right">
+                                                    THÔNG TIN THÀNH VIÊN
+                                                    <span class="pull-right">Ngày đăng kí: 15/06/2019 9:34 AM</span>
+                                                </h3>
                                             </div>
                                             <div class="panel-body">
                                                 <div class="form-group">
@@ -688,15 +702,42 @@
                                 </form>
                             </div>
                         </div>
-                        <!-- END OF TAB 2 -->
-                        <!-- TAB 3 -->
+                        <!-- tab#profile -->
+                        <div class="tab-pane fade in" id="bookings">
+                            <div class="clearfix"></div>
+                            <table class="table table-hover table-border table-responsive table-striped">
+                                <tbody>
+                                    <h4><strong> Nothing Booked Yet </strong></h4>
+                                </tbody>
+                            </table>
+                            <script type="text/javascript">
+                            $(function() {
+                                $(".cancelEanBooking").on("click", function() {
+                                    var bookid = $(this).prop("id");
+                                    $.post("https://www.hospi.vn/ean/cancel", { id: bookid }, function(resp) {
+                                        if (resp == "success") {
+                                            location.reload();
+                                            return true;
+                                        } else {
+                                            alert(resp);
+                                            return false;
+                                        }
+                                    })
+                                })
+                            })
+                            </script>
+                        </div>
+                        <!-- tab#bookings -->
+                        <div class="tab-pane fade in" id="voucher">
+                            Voucher
+                        </div>
+                        <!-- tab#voucher -->
                         <div class="tab-pane fade in" id="wishlist">
                             <div class="panel-body">
                                 <h4>No Wishlist Items Found</h4>
                             </div>
                         </div>
-                        <!-- END OF TAB 3 -->
-                        <!-- TAB 7 -->
+                        <!-- tab#wishlist -->
                         <div class="tab-pane fade in" id="newsletter">
                             <div class="panel-body">
                                 <div class="pull-left">
@@ -712,7 +753,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END OF TAB 7 -->
+                        <!-- tab#newsletter -->
+                        <div class="tab-pane fade in" id="regulation">
+                            Quy chế nhân viên
+                        </div>
+                        <!-- tab#voucher -->
+                        <div class="tab-pane fade in" id="hpoint">
+                            H-Point
+                        </div>
+                        <!-- tab#voucher -->
                     </div>
                     <!-- End of Tab panes from left menu -->
                 </div>
