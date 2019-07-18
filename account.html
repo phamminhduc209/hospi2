@@ -297,7 +297,7 @@
                 <div class="col-md-3 col-xs-12">
                     <!-- Nav tabs -->
                     <ul class="nav profile-tabs">
-                        <li class="active">
+                        <li>
                             <a href="#profile" data-toggle="tab" onclick="mySelectUpdate()">
                                 <span>
                                     <img class="img1" src="images/user_02.png" alt="">
@@ -306,7 +306,7 @@
                                 THÔNG TIN THÀNH VIÊN
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#bookings" data-toggle="tab">
                                 <span>
                                     <img class="img1" src="images/euser.png" alt="">
@@ -367,7 +367,7 @@
                 <div class="col-md-9 col-xs-12">
                     <!-- Tab panes from left menu -->
                     <div class="tab-content">
-                        <div class="tab-pane active fade in" id="profile">
+                        <div class="tab-pane fade in" id="profile">
                             <div class="toppage"></div>
                             <div class="clearfix">
                                 <div class="clearfix"></div>
@@ -450,17 +450,34 @@
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title go-text-right">Your Location</h3>
+                                                <h3 class="panel-title go-text-right">TÊN CÔNG TY</h3>
                                             </div>
                                             <div class="panel-body">
-                                                
                                                 <div class="form-group">
-                                                    <div class="col-md-3 go-right">Address 2</div>
+                                                    <div class="col-md-3 go-right">Tên công ty</div>
                                                     <div class="col-md-6 go-right">
-                                                        <input class="form-control form" type="text" placeholder="Address 2" name="address2" value="">
+                                                        <input class="form-control form" type="text" placeholder="" name="company" value="">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
+                                                    <div class="col-md-3 go-right">Mã số thuế</div>
+                                                    <div class="col-md-6 go-right">
+                                                        <input class="form-control form" type="text" placeholder="" name="tax" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-3 go-right">Địa chỉ</div>
+                                                    <div class="col-md-6 go-right">
+                                                        <input class="form-control form" type="text" placeholder="" name="address2" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-3 go-right">Điện thoại</div>
+                                                    <div class="col-md-6 go-right">
+                                                        <input class="form-control form" type="text" placeholder="Điện thoại" name="phone2" value="">
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="form-group">
                                                     <div class="col-md-3 go-right">City</div>
                                                     <div class="col-md-6 go-right">
                                                         <input class="form-control form" type="text" placeholder="City" name="city" value="">
@@ -707,7 +724,7 @@
                                                             <option value="ZW">Zimbabwe</option>
                                                         </select>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="panel-footer">
                                                 <input type="hidden" name="oldemail" value="minhducpham.it@gmail.com" />
@@ -719,13 +736,61 @@
                             </div>
                         </div>
                         <!-- tab#profile -->
-                        <div class="tab-pane fade in" id="bookings">
+                        <div class="tab-pane active fade in" id="bookings">
                             <div class="clearfix"></div>
                             <table class="table table-hover table-border table-responsive table-striped">
                                 <tbody>
                                     <h4><strong> Nothing Booked Yet </strong></h4>
                                 </tbody>
                             </table>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title go-text-right">
+                                        E-BOOKING CỦA BẠN
+                                    </h3>
+                                </div>
+                                <div class="panel-body m_booking">
+                                    <div class="m_booking_inner">
+                                        <div class="m_status_info">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="m_status_info">
+                                                    <div class="m_status_info__img">
+                                                        <img alt="" class="img-responsive" src="images/booking01.jpg">
+                                                    </div>
+                                                    <div class="m_status_info__info">
+                                                        <a class="purple" href="#"><strong>KHÁCH SẠN PULLMAN VŨNG TÀU</strong></a><br>
+                                                        <span class="dark size12">
+                                                            <i class="star text-warning fa fa-star voted"></i>
+                                                            <i class="star text-warning fa fa-star voted"></i>
+                                                            <i class="star text-warning fa fa-star voted"></i>
+                                                            <i class="star text-warning fa fa-star voted"></i>
+                                                            <i class="star text-warning fa fa-star voted"></i>
+                                                        </span><br>
+                                                        <span><i style="margin-left:-5px" class="icon-location-6"></i> <small class="adddress">180 đường 3 tháng 2, Phường 4, Đà Lạt</small></span>
+                                                        <div class="m_status_info__info_booking">
+                                                            <ul class="mh-menu grey">
+                                                                <li><span>Ngày nhận phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                                <li><span>Ngày trả phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                                <li><span>Ngày đêm:</span> <strong class="purple">2</strong></li>
+                                                            </ul>
+                                                            <ul class="mh-menu grey">
+                                                                <li><span>Booking ID:</span> <strong class="purple">534/2019</strong></li>
+                                                                <li><span>Ngày đặt:</span> <strong class="purple">12/06/2019</strong></li>
+                                                                <li><span>Tổng:</span> <strong class="purple">9,222,000 VND</strong></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m_hpoint"></div>
+                                        </div>
+                                        <div class="m_booking_status">
+                                            <p class="m_booking_status_item m_booking_status_invoice">HOTEL INVOICE</p>
+                                            <p class="m_booking_status_item m_booking_status_paymented">Đã thanh toán</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <script type="text/javascript">
                             $(function() {
                                 $(".cancelEanBooking").on("click", function() {
