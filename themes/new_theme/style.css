@@ -11198,3 +11198,13 @@ fieldset[disabled] .btn-arrival.active {
     -ms-flex-align: center !important;
     align-items: center !important;
 }
+
+#barr {
+    color: #FFF;
+}
+.bar1 {
+    color: red;
+}
+.bar1.bar2 {
+    color: #666;
+}
