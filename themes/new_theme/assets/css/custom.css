@@ -15281,17 +15281,19 @@ p.hs_cl_show_info {
     border-bottom: none;
     margin-bottom: 0;
 }
-.m_account .m_booking .m_hpoint {
+.m_account .m_hpoint .m_hpoint_item {
     display: flex;
     align-items: center;
     margin-top: 15px;
 }
-.m_account .m_booking .m_hpoint span:first-child {
+.m_account .m_hpoint .ttl {
     margin-right: 15px;
 }
-.m_account .m_booking .m_hpoint .point,
-.m_account .m_booking .m_hpoint .status,
-.m_account .m_booking .m_hpoint .notstatus {   
+.m_account .m_hpoint .point,
+.m_account .m_hpoint .status,
+.m_account .m_hpoint .notstatus,
+.m_account .m_hpoint .notstatus02,
+.m_account .m_hpoint .requestactive {
     background: #CCC;
     color: #FFF;
     padding: 10px;
@@ -15299,14 +15301,20 @@ p.hs_cl_show_info {
     min-width: 160px;
     font-weight: bold;
 }
-.m_account .m_booking .m_hpoint .point {
+.m_account .m_hpoint .point {
     background: #660033;
 }
-.m_account .m_booking .m_hpoint .status {
+.m_account .m_hpoint .status {
     background: #0099cc;
 }
-.m_account .m_booking .m_hpoint .notstatus {
+.m_account .m_hpoint .notstatus {
     background: #333333;
+}
+.m_account .m_hpoint .notstatus02 {
+    background: #cc0000;
+}
+.m_account .m_hpoint .requestactive {
+    background: #cc6600;
 }
 .m_status_info__img {
     max-width: 146px;
