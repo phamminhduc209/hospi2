@@ -15262,12 +15262,51 @@ p.hs_cl_show_info {
     font-size: 13px;
     line-height: 22px;
     font-family: "Arial", sans-serif;
+    padding-left: 0;
+    padding-right: 0;
 }
-.m_account .m_booking .m_status_info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
+.m_account .m_booking .m_booking_item {
     align-items: center;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.m_account .m_booking .m_booking_item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.m_account .m_booking .m_hpoint {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.m_account .m_booking .m_hpoint span:first-child {
+    margin-right: 15px;
+}
+.m_account .m_booking .m_hpoint .point,
+.m_account .m_booking .m_hpoint .status,
+.m_account .m_booking .m_hpoint .notstatus {   
+    background: #CCC;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    min-width: 160px;
+    font-weight: bold;
+}
+.m_account .m_booking .m_hpoint .point {
+    background: #660033;
+}
+.m_account .m_booking .m_hpoint .status {
+    background: #0099cc;
+}
+.m_account .m_booking .m_hpoint .notstatus {
+    background: #333333;
 }
 .m_status_info__img {
     max-width: 146px;
@@ -15286,6 +15325,9 @@ p.hs_cl_show_info {
     -ms-flex-align: center;
     align-items: center;
 }
+.m_status_info__info_booking ul + ul {
+    margin-left: 25px;
+}
 .m_status_info__info_booking ul li span {
     display: inline-block;
     width: 110px;
@@ -15295,6 +15337,7 @@ p.hs_cl_show_info {
 .m_booking_status .m_booking_status_item {
     background: #666;
     color: #FFF;
+    font-weight: bold;
     margin-bottom: 10px;
     padding: 15px;
     text-align: center;
@@ -15308,4 +15351,7 @@ p.hs_cl_show_info {
 }
 .m_booking_status  .m_booking_status_paymented {
     background: #003333;
+}
+.m_booking_status  .m_booking_status_voucher {
+    background: #660033;
 }

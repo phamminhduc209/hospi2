@@ -306,7 +306,7 @@
                                 THÔNG TIN THÀNH VIÊN
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#bookings" data-toggle="tab">
                                 <span>
                                     <img class="img1" src="images/euser.png" alt="">
@@ -321,7 +321,7 @@
                                     <img class="img1" src="images/euser.png" alt="">
                                     <img class="img2" src="images/euser_hover.png" alt="">
                                 </span>
-                                E- BOOKING CỦA BẠN
+                                E- VOUCHER CỦA BẠN
                             </a>
                         </li>
                         <li>
@@ -351,7 +351,7 @@
                                 QUY CHẾ THANH VIÊN
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#hpoint" data-toggle="tab" onclick="mySelectUpdate()">
                                 <span>
                                     <img class="img1" src="images/hpoint.png" alt="">
@@ -736,8 +736,7 @@
                             </div>
                         </div>
                         <!-- tab#profile -->
-                        <div class="tab-pane active fade in" id="bookings">
-                            <div class="clearfix"></div>
+                        <div class="tab-pane fade in" id="bookings">
                             <table class="table table-hover table-border table-responsive table-striped">
                                 <tbody>
                                     <h4><strong> Nothing Booked Yet </strong></h4>
@@ -750,43 +749,86 @@
                                     </h3>
                                 </div>
                                 <div class="panel-body m_booking">
-                                    <div class="m_booking_inner">
+                                    <div class="m_booking_item">
                                         <div class="m_status_info">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <div class="m_status_info">
-                                                    <div class="m_status_info__img">
-                                                        <img alt="" class="img-responsive" src="images/booking01.jpg">
-                                                    </div>
-                                                    <div class="m_status_info__info">
-                                                        <a class="purple" href="#"><strong>KHÁCH SẠN PULLMAN VŨNG TÀU</strong></a><br>
-                                                        <span class="dark size12">
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                        </span><br>
-                                                        <span><i style="margin-left:-5px" class="icon-location-6"></i> <small class="adddress">180 đường 3 tháng 2, Phường 4, Đà Lạt</small></span>
-                                                        <div class="m_status_info__info_booking">
-                                                            <ul class="mh-menu grey">
-                                                                <li><span>Ngày nhận phòng:</span> <strong class="purple">30/05/2019</strong></li>
-                                                                <li><span>Ngày trả phòng:</span> <strong class="purple">30/05/2019</strong></li>
-                                                                <li><span>Ngày đêm:</span> <strong class="purple">2</strong></li>
-                                                            </ul>
-                                                            <ul class="mh-menu grey">
-                                                                <li><span>Booking ID:</span> <strong class="purple">534/2019</strong></li>
-                                                                <li><span>Ngày đặt:</span> <strong class="purple">12/06/2019</strong></li>
-                                                                <li><span>Tổng:</span> <strong class="purple">9,222,000 VND</strong></li>
-                                                            </ul>
-                                                        </div>
+                                                <div class="m_status_info__img">
+                                                    <img alt="" class="img-responsive" src="images/booking01.jpg">
+                                                </div>
+                                                <div class="m_status_info__info">
+                                                    <a class="purple" href="#"><strong>KHÁCH SẠN PULLMAN VŨNG TÀU</strong></a><br>
+                                                    <span class="dark size12">
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                    </span><br>
+                                                    <span><i style="margin-left:-5px" class="icon-location-6"></i> <small class="adddress">180 đường 3 tháng 2, Phường 4, Đà Lạt</small></span>
+                                                    <div class="m_status_info__info_booking">
+                                                        <ul class="mh-menu grey">
+                                                            <li><span>Ngày nhận phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                            <li><span>Ngày trả phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                            <li><span>Ngày đêm:</span> <strong class="purple">2</strong></li>
+                                                        </ul>
+                                                        <ul class="mh-menu grey">
+                                                            <li><span>Booking ID:</span> <strong class="purple">534/2019</strong></li>
+                                                            <li><span>Ngày đặt:</span> <strong class="purple">12/06/2019</strong></li>
+                                                            <li><span>Tổng:</span> <strong class="purple">9,222,000 VND</strong></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="m_hpoint"></div>
+                                            <div class="m_hpoint">
+                                                <span>Điểm tích lũy Hpoint</span>
+                                                <span class="point">90 Point</span>
+                                                <span class="status">Khả dụng</span>
+                                            </div>
                                         </div>
                                         <div class="m_booking_status">
                                             <p class="m_booking_status_item m_booking_status_invoice">HOTEL INVOICE</p>
                                             <p class="m_booking_status_item m_booking_status_paymented">Đã thanh toán</p>
+                                        </div>
+                                    </div>
+                                    <div class="m_booking_item">
+                                        <div class="m_status_info">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="m_status_info__img">
+                                                    <img alt="" class="img-responsive" src="images/booking01.jpg">
+                                                </div>
+                                                <div class="m_status_info__info">
+                                                    <a class="purple" href="#"><strong>KHÁCH SẠN PULLMAN VŨNG TÀU</strong></a><br>
+                                                    <span class="dark size12">
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                    </span><br>
+                                                    <span><i style="margin-left:-5px" class="icon-location-6"></i> <small class="adddress">180 đường 3 tháng 2, Phường 4, Đà Lạt</small></span>
+                                                    <div class="m_status_info__info_booking">
+                                                        <ul class="mh-menu grey">
+                                                            <li><span>Ngày nhận phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                            <li><span>Ngày trả phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                            <li><span>Ngày đêm:</span> <strong class="purple">2</strong></li>
+                                                        </ul>
+                                                        <ul class="mh-menu grey">
+                                                            <li><span>Booking ID:</span> <strong class="purple">534/2019</strong></li>
+                                                            <li><span>Ngày đặt:</span> <strong class="purple">12/06/2019</strong></li>
+                                                            <li><span>Tổng:</span> <strong class="purple">9,222,000 VND</strong></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="m_hpoint">
+                                                <span>Điểm tích lũy Hpoint</span>
+                                                <span class="point">90 Point</span>
+                                                <span class="status notstatus">Chưa khả dụng</span>
+                                            </div>
+                                        </div>
+                                        <div class="m_booking_status">
+                                            <p class="m_booking_status_item m_booking_status_invoice">HOTEL INVOICE</p>
+                                            <p class="m_booking_status_item m_booking_status_paymented">Chưa thanh toán</p>
                                         </div>
                                     </div>
                                 </div>
@@ -810,18 +852,72 @@
                         </div>
                         <!-- tab#bookings -->
                         <div class="tab-pane fade in" id="voucher">
-                            Voucher
+                            <table class="table table-hover table-border table-responsive table-striped">
+                                <tbody>
+                                    <h4><strong> Nothing Booked Yet </strong></h4>
+                                </tbody>
+                            </table>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title go-text-right">E-VOUCHER CỦA BẠN</h3>
+                                </div>
+                                <div class="panel-body m_booking">
+                                    <div class="m_booking_item">
+                                        <div class="m_status_info">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="m_status_info__img">
+                                                    <img alt="" class="img-responsive" src="images/booking01.jpg">
+                                                </div>
+                                                <div class="m_status_info__info">
+                                                    <a class="purple" href="#"><strong>KHÁCH SẠN PULLMAN VŨNG TÀU</strong></a><br>
+                                                    <span class="dark size12">
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                        <i class="star text-warning fa fa-star voted"></i>
+                                                    </span><br>
+                                                    <span><i style="margin-left:-5px" class="icon-location-6"></i> <small class="adddress">180 đường 3 tháng 2, Phường 4, Đà Lạt</small></span>
+                                                    <div class="m_status_info__info_booking">
+                                                        <ul class="mh-menu grey">
+                                                            <li><span>Ngày nhận phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                            <li><span>Ngày trả phòng:</span> <strong class="purple">30/05/2019</strong></li>
+                                                            <li><span>Ngày đêm:</span> <strong class="purple">2</strong></li>
+                                                        </ul>
+                                                        <ul class="mh-menu grey">
+                                                            <li><span>Booking ID:</span> <strong class="purple">534/2019</strong></li>
+                                                            <li><span>Ngày đặt:</span> <strong class="purple">12/06/2019</strong></li>
+                                                            <li><span>Tổng:</span> <strong class="purple">9,222,000 VND</strong></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m_booking_status">
+                                            <p class="m_booking_status_item m_booking_status_voucher">HOTEL INVOICE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- tab#voucher -->
                         <div class="tab-pane fade in" id="wishlist">
-                            <div class="panel-body">
-                                <h4>No Wishlist Items Found</h4>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title go-text-right">MÃ ƯU ĐÃI</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>No Wishlist Items Found</h4>
+                                </div>
                             </div>
                         </div>
                         <!-- tab#wishlist -->
                         <div class="tab-pane fade in" id="newsletter">
-                            <div class="panel-body">
-                                <div class="pull-left">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title go-text-right">NEWSLETTER</h3>
+                                </div>
+                                <div class="panel-body">
                                     <h4>Join our newsletter to keep updated.</h4>
                                     <label class="switch-light switch-ios">
                                         <input type="checkbox" class="newsletter" value="minhducpham.it@gmail.com">
@@ -836,11 +932,51 @@
                         </div>
                         <!-- tab#newsletter -->
                         <div class="tab-pane fade in" id="regulation">
-                            Quy chế nhân viên
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title go-text-right">Quy chế nhân viên</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Quy chế nhân viên</p>
+                                </div>
+                            </div>
                         </div>
                         <!-- tab#voucher -->
-                        <div class="tab-pane fade in" id="hpoint">
-                            H-Point
+                        <div class="tab-pane active fade in" id="hpoint">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title go-text-right">
+                                        HPOINT CỦA BẠN
+                                        <span class="pull-right">Ngày đăng kí: 15/06/2019 9:34 AM</span>
+                                    </h3>
+                                </div>
+                                <div class="panel-body m_booking">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <p class="panel-title">ĐIỂM HIỆN TẠI CỦA BẠN</p>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="m_hpoint">
+                                                <span>Điểm tích lũy Hpoint</span>
+                                                <span class="point">90 Point</span>
+                                                <span class="status">Khả dụng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <p class="panel-title">ĐIỂM HIỆN TẠI CỦA BẠN</p>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="m_hpoint">
+                                                <span>Điểm tích lũy Hpoint</span>
+                                                <span class="point">90 Point</span>
+                                                <span class="status">Khả dụng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- tab#voucher -->
                     </div>
