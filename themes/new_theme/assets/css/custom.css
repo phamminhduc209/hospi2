@@ -9532,9 +9532,9 @@ table.invoice.table.table-bordered {
     margin-bottom: 10px;
 }
 
-.tab-content>.active {
+/*.tab-content>.active {
     padding: 10px 0 0 0;
-}
+}*/
 
 .tab-content>#bookings.padding40 {
     padding: 40px;
@@ -15404,4 +15404,56 @@ p.hs_cl_show_info {
 }
 .m_booking_status  .m_booking_status_voucher {
     background: #660033;
+}
+
+.m_whoareyou .page-menu {
+    background: #e5e5e5;
+    border: 1px solid #cccccc;
+    margin-bottom: 25px;
+}
+.m_whoareyou .page-menu:last-child {
+    margin-bottom: 0;
+}
+.m_whoareyou .page-menu .ttl {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+}
+.m_whoareyou .page-menu .ttl .icn {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.m_whoareyou .page-menu ul {
+    font-family: 'Arial', sans-serif;
+}
+.m_whoareyou .page-menu ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 18px;
+}
+.m_whoareyou .page-menu ul li:last-child {
+    border-bottom: none;
+}
+.m_whoareyou .page-menu ul li:before {
+    content: url(../img/arrow_grey_10x11.png);
+    vertical-align: 1px;
+    margin-right: 5px;
+}
+.m_whoareyou .page-menu ul li.active,
+.m_whoareyou .page-menu ul li:hover {
+    background: #660033;
+}
+.m_whoareyou .page-menu ul li.active a,
+.m_whoareyou .page-menu ul li:hover a {
+    color: #FFF;
+}
+.m_whoareyou .page-menu ul li.active:before,
+.m_whoareyou .page-menu ul li:hover:before {
+    content: url(../img/arrow_white_10x11.png);
+}
+
+.m_page_booking {
+    background: #E8E8E8;
+    padding-top: 32px;
 }
