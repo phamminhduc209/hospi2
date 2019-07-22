@@ -345,14 +345,6 @@
     margin-bottom: 15px;
 }
 
-.block-discount {}
-
-.block-payment {}
-
-.block-payment-item:nth-child(1) {
-    margin-bottom: 20px;
-}
-
 .block-payment .block-title {
     position: relative;
     font-size: 13px;
@@ -394,19 +386,92 @@
     font-weight: normal;
 }
 
-.block-xuathoadon .collapsebtn {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    width: auto;
-    height: auto;
-    border: none;
-    text-align: left;
-    padding: 0;
-    color: #660033;
-    font-size: 15px;
-    font-weight: normal;
-    background: transparent;
+.block_methodpay {
+    background: #e5e5e5;
+    border: 1px solid #CCC;
 }
 
-.block-xuathoadon .collapsebtn span.collapsearrow {
-    margin-left: 15px;
+.block_methodpay .block_title {
+    color: #660033;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.block_methodpay .block_content {
+    background: #FFF;
+    padding: 15px;
+}
+
+.block_methodpay .note {
+    margin-bottom: 10px;
+    background: #FFF;
+}
+
+.block_methodpay_items {
+    padding: 0;
+}
+
+.block_methodpay_item {
+    margin-bottom: 10px;
+}
+
+.block_methodpay_item:last-child {
+    margin-bottom: 0;
+}
+
+.block_methodpay_item .checkbox {
+    background: #f0f0f0;
+    color: #666;
+    border: 1px solid #666;
+    padding: 10px;
+    margin: 0;
+}
+
+.m_checkbox_sh {
+    margin-bottom: 20px;
+}
+
+.m_checkbox_sh:last-child {
+    margin-bottom: 0;
+}
+
+.m_checkbox_sh .m_checkbox_ttl {
+    background: #f0f0f0;
+    color: #666;
+    border: 1px solid #666;
+    padding: 10px;
+}
+
+.m_checkbox_sh .m_checkbox_ttl label {
+    margin-bottom: 0;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.m_checkbox_sh .m_checkbox_content {
+    display: none;
+    margin-top: 20px;
+}
+
+.m_checkbox_sh .m_checkbox_ttl input[type='checkbox'] {
+    display: none;
+    margin: 0;
+}
+
+.m_checkbox_sh .m_checkbox_ttl input[type='checkbox']+span {
+    background: url(../img/check-gray.png) no-repeat center left;
+    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.m_checkbox_sh .m_checkbox_ttl input[type='checkbox']+span:hover {
+    background: url(../img/check-gray-hover.png) no-repeat;
+}
+
+.m_checkbox_sh .m_checkbox_ttl input[type='checkbox']:checked+span {
+    background: url(../img/checked-gray.png) no-repeat;
 }
