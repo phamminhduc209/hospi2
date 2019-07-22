@@ -2281,11 +2281,11 @@ button:hover.next2 img {
 }*/
 
 ul.footerlist li:before {
-    font-family: "FontAwesome";
+    /* font-family: "FontAwesome"; */
     content: "\f101";
     vertical-align: 1px;
     margin-right: 5px;
-    color: #660033;
+    /* color: #660033; */
 }
 
 ul.footerlist li {
@@ -2293,8 +2293,7 @@ ul.footerlist li {
     list-style-type: none;
 }
 
-ul.footerlist li a,
-.gray-txt {
+ul.footerlist li a, .gray-txt {
     color: #fff;
     font-size: 15px;
 }
@@ -11151,7 +11150,7 @@ ul.nav .honeymoon .img_list img {
 }
 
 ul.footerlist li:before {
-    color: #fff;
+    content: url('../img/arrow_grey.png')
 }
 
 .scont {
@@ -15316,6 +15315,49 @@ p.hs_cl_show_info {
 .m_account .m_hpoint .requestactive {
     background: #cc6600;
 }
+.m_account .m_hpoint .changepoint {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin: 10px 0;
+}
+.m_account .m_hpoint .lblue {
+    text-decoration: underline;
+}
+.m_account .m_hpoint .m_hpoint_history {
+    background: #f0d1b2;
+    padding: 0 15px;
+    border-radius: 11px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #666666;
+}
+.m_account .m_hpoint .m_hpoint_history:last-child {
+    margin-bottom: 0;
+}
+.m_account .m_hpoint .m_hpoint_history .date {
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+    max-width: 250px;
+    margin-right: 15px;
+}
+.m_account .m_hpoint .m_hpoint_history .status {
+    background: #cc1f00;
+}
+
+.m_account .m_hpoint .m_hpoint_history .info {
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    padding: 15px 0 15px 15px;
+    margin-left: 15px;
+    border-left: 1px solid #FFF;
+}
+
 .m_status_info__img {
     max-width: 146px;
     flex: 1 1 146px;
