@@ -371,8 +371,10 @@ $(".ngayvechang").change(function () {
 
 $('.m_checkbox_sh .m_checkbox_ttl .checkbox').click(function(){
     if($(this).is(':checked')){
+        $(this).parents('.m_checkbox_sh').addClass('active');
         $(this).parents('.m_checkbox_sh').find('.m_checkbox_content').show();
     } else {
+        $(this).parents('.m_checkbox_sh').removeClass('active');
         $(this).parents('.m_checkbox_sh').find('.m_checkbox_content').hide();
     }
 });

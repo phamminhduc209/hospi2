@@ -11198,6 +11198,11 @@ fieldset[disabled] .btn-arrival.active {
     justify-content: space-between !important;
 }
 
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
 .align-items-center {
     -ms-flex-align: center !important;
     align-items: center !important;

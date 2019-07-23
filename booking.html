@@ -320,16 +320,7 @@
                                                                 </label>
                                                             </div>
                                                             <div class="m_checkbox_content">
-                                                                <div class="form-horizontal">
-                                                                    <div class="row">
-                                                                        <div class="col-md-3 col-xs-12">
-                                                                            <label class="fontf_arial control-label form_title">Yêu cầu khác</label>
-                                                                        </div>
-                                                                        <div class="col-sm-9 col-xs-12">
-                                                                            <textarea class="form-control" cols="4" rows="6" placeholder="" name="additionalnotes"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                <textarea class="form-control" cols="4" rows="6" placeholder="Bạn có yêu câu khác ?" name="additionalnotes"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="m_checkbox_sh">
@@ -341,30 +332,46 @@
                                                                 </label>
                                                             </div>
                                                             <div class="m_checkbox_content">
-                                                                <div id="xuathoadon">
-                                                                    <div class="form-group">
-                                                                        <label for="" class="fontf_arial form_title">Tên công ty</label>
-                                                                        <input type="text" placeholder="" class="form-control" name="company">
+                                                                <div id="xuathoadon" class="form-horizontal">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-md-4 col-xs-12">
+                                                                            <label class="fontf_arial control-label form_title">Tên công ty <span class="requirement">*</span></label>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-xs-12">
+                                                                            <input type="text" placeholder="" class="form-control" name="company">
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="form-group">
-                                                                        <label for="" class="fontf_arial form_title">Mã số thuế</label>
-                                                                        <input type="text" placeholder="" class="form-control" name="mst">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-md-4 col-xs-12">
+                                                                            <label class="fontf_arial control-label form_title">MST <span class="requirement">*</span></label>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-xs-12">
+                                                                            <input type="text" placeholder="" class="form-control" name="mst">
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="form-group">
-                                                                        <label for="" class="fontf_arial form_title">Địa chỉ công ty</label>
-                                                                        <input type="text" class="form-control" placeholder="" name="address">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-md-4 col-xs-12">
+                                                                            <label class="fontf_arial control-label form_title">Địa chỉ công ty <span class="requirement">*</span></label>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-xs-12">
+                                                                            <input type="text" class="form-control" placeholder="" name="address">
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="form-group checkbox">
+                                                                    <!-- <div class="form-group checkbox">
                                                                         <label class="no-padding-left">
                                                                             <input type="checkbox" value="" class="ngayvechang">
                                                                             <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
                                                                             Gửi hóa đơn về địa chỉ khác
                                                                         </label>
+                                                                    </div> -->
+                                                                    <div class="form-group mb0 row">
+                                                                        <div class="col-md-4 col-xs-12">
+                                                                            <label class="fontf_arial control-label form_title">Địa chỉ nhận hóa đơn <span class="requirement">*</span></label>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-xs-12">
+                                                                            <input type="text" class="form-control" placeholder="" name="companyadd">
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="form-group mb0">
-                                                                    <label for="" class="fontf_arial form_title">Địa chỉ nhận hóa đơn</label>
-                                                                    <input type="text" class="form-control" placeholder="" name="companyadd">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -375,416 +382,225 @@
                                                             <p class="note">Để thuận tiện cho việc thanh toán nhanh chóng. Quý khách vui lòng chọn 1 trong những hình thức thanh toán dưới đây</p>
                                                             <div class="block_methodpay_items">
                                                                 <div class="block_methodpay_item">
-                                                                    <div class="form-group checkbox">
-                                                                        <label class="no-padding-left">
-                                                                            <input type="checkbox" class="chuyenkhoan payment_method" data-id="1" value="banktransfer" name="checkout-type">
-                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok "></i></span>
-                                                                            Chuyển khoản
+                                                                    <div class="form-group block_methodpay_ttl">
+                                                                        <label class="mb0">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <input type="checkbox" class="chuyenkhoan payment_method" data-id="1" value="banktransfer" name="checkout-type">
+                                                                                <span></span>
+                                                                                Chuyển khoản/ATM
+                                                                            </div>
                                                                         </label>
                                                                     </div>
                                                                     <div id="showphuongthuc_1" style="display: none">
-                                                                        <div class="form-group">
-                                                                            Quý khách vui lòng chọn ngân hàng<br>
-                                                                            <i>Lưu ý: Quý khách chỉ tích vào để lấy thông tin tài khoản từ HOSPI.vn. Việc tiến hành thanh toán chỉ sau khi được xác nhận bởi nhân viên qua email hoặc điện thoại.</i>
-                                                                        </div>
-                                                                        <input type="hidden" name="bank_id" id="bank_id">
-                                                                        <div class="col-md-3 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile">
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input class="choose_bank" type="checkbox" value="1" onchange="changeatm('viettinbank',1)">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    ViettinBank
-                                                                                </label>
+                                                                        <div class="block_methodpay_ctn">
+                                                                            <div class="form-group">
+                                                                                <span class="cl-gray">Quý khách vui lòng chọn ngân hàng</span><br>
+                                                                                <span class="cl-gray">Lưu ý:<i> Quý khách chỉ tích vào để lấy thông tin tài khoản từ HOSPI.vn. Việc tiến hành thanh toán chỉ sau khi được xác nhận bởi nhân viên qua email hoặc điện thoại.</i></span>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="col-md-2 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile">
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input class="choose_bank" type="checkbox" value="2" onchange="changeatm('acb',2)">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    ACB
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-3 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile ">
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input class="choose_bank" type="checkbox" value="3" onchange="changeatm('vietcombank',3)">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    Vietcombank
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-2 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile ">
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input class="choose_bank" type="checkbox" value="4" onchange="changeatm('mbbank',4)">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    MBBank
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-2 col-sm-12 col-xs-12 go-right no-padding no-margin-top-mobile">
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input class="choose_bank" type="checkbox" value="5" onchange="changeatm('sacombank',5)">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    Sacombank
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-sm-12 col-xs-12 no-padding conten-visa-card" id="show-atm-select" style="display: none">
-                                                                            <div class="content-visa-item bank_1" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span>TMCP Công Thương Việt Nam - Vietinbank</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Quận 10, Tp.HCM</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: CÔNG TY TNHH HOSPI</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 111002667553 </span></div>
+                                                                            <input type="hidden" name="bank_id" id="bank_id">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobil">
+                                                                                    <div class="form-group checkbox">
+                                                                                        <label class="no-padding-left">
+                                                                                            <input class="choose_bank" type="checkbox" value="1" onchange="changeatm('viettinbank',1)">
+                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                            ViettinBank
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobile">
+                                                                                    <div class="form-group checkbox">
+                                                                                        <label class="no-padding-left">
+                                                                                            <input class="choose_bank" type="checkbox" value="3" onchange="changeatm('vietcombank',3)">
+                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                            Vietcombank
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobil">
+                                                                                    <div class="form-group checkbox">
+                                                                                        <label class="no-padding-left">
+                                                                                            <input class="choose_bank" type="checkbox" value="2" onchange="changeatm('acb',2)">
+                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                            ACB
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- <div class="col-md-2 col-xs-12 no-margin-top-mobile">
+                                                                                    <div class="form-group checkbox">
+                                                                                        <label class="no-padding-left">
+                                                                                            <input class="choose_bank" type="checkbox" value="4" onchange="changeatm('mbbank',4)">
+                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                            MBBank
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div> -->
+                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobile">
+                                                                                    <div class="form-group checkbox">
+                                                                                        <label class="no-padding-left">
+                                                                                            <input class="choose_bank" type="checkbox" value="5" onchange="changeatm('sacombank',5)">
+                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                            Sacombank
+                                                                                        </label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="content-visa-item bank_1_bk" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span>Ngân hàng VCB (Vietcombank)</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Bến Thành,Tp Hồ Chí Minh</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: CÔNG TY TNHH HOSPI</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 0331000465230 </span></div>
+                                                                            <div class="conten-visa-card" id="show-atm-select" style="display: none">
+                                                                                <div class="content-visa-item bank_1" style="display: none">
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Ngân hàng:</span>
+                                                                                        <strong class="cl-tim">TMCP Công Thương Việt Nam - Vietinbank</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
+                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Số tài khoản:</span>
+                                                                                        <strong class="cl-tim"></strong>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="content-visa-item bank_3" style="display: none">
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Ngân hàng:</span>
+                                                                                        <strong class="cl-tim">Ngân hàng VCB (Vietcombank)</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
+                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Số tài khoản:</span>
+                                                                                        <strong class="cl-tim"></strong>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="content-visa-item bank_2" style="display: none">
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Ngân hàng:</span>
+                                                                                        <strong class="cl-tim">Á Châu (ACB)</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
+                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Số tài khoản:</span>
+                                                                                        <strong class="cl-tim"></strong>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="content-visa-item bank_5" style="display: none">
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Ngân hàng:</span>
+                                                                                        <strong class="cl-tim">Sacombank</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
+                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Số tài khoản:</span>
+                                                                                        <strong class="cl-tim"></strong>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <div class="info-hoa-don" id="nganhangxuathoadon">
+                                                                                    <div class="clss-xuat"><span class="cl-tim">Quý khách xuất hóa đơn, chuyển vào tài khoản này</span></div>
+                                                                                    <div class="form-group checkbox">
+                                                                                        <label class="no-padding-left">
+                                                                                            <input class="choose_bank" type="checkbox" value="6">
+                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                                                                            Vietcombank
+                                                                                        </label>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="content-visa-item bank_2" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span>Ngân hàng Á Châu (ACB)</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Bến Thành, Tp. Hồ Chí Minh</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 227041599</span></div>
-                                                                                    </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <div class="content-visa-item-xuat-hoa-don" id="ngan-hanh-xuat-hoadon">
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Ngân hàng:</span>
+                                                                                        <strong class="cl-tim">Ngân hàng VCB (Vietcombank)</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
+                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
+                                                                                    </p>
+                                                                                    <p>
+                                                                                        <span class="cl-gray">Số tài khoản:</span>
+                                                                                        <strong class="cl-tim"></strong>
+                                                                                    </p>
                                                                                 </div>
+                                                                                <div class="clearfix"></div>
                                                                             </div>
-                                                                            <div class="content-visa-item bank_3" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span>TMCP Ngoại Thương Việt Nam - Vietcombank</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Sài Gòn, Tp. HCM</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: VÕ ĐÌNH CHI</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 0331000443348</span></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="content-visa-item bank_3_bk" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span>Ngân hàng Đông Á</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Sài Gòn, Tp. Hồ Chí Minh</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 0103812000</span></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="content-visa-item bank_4" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span> Ngân hàng Quân Đội (MBBank)</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Bến Thành, Tp. Hồ Chí Minh</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 1460103608001 </span></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="content-visa-item bank_5" style="display: none">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4 col-xs-12"></div>
-                                                                                    <div class="col-sm-8 col-xs-12">
-                                                                                        <div class=""><span>Ngân hàng Sacombank (ACB)</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Bến Thành,Tp Hồ Chí Minh</span></div>
-                                                                                        <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                        <div class=""><span>Số tài khoản: </span></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="clearfix"></div>
-                                                                            <div class="info-hoa-don" id="nganhangxuathoadon">
-                                                                                <div class="clss-xuat"><span class="cl-tim">Quý khách xuất hóa đơn, chuyển vào tài khoản này</span></div>
-                                                                                <div class="form-group checkbox">
-                                                                                    <label class="no-padding-left">
-                                                                                        <input class="choose_bank" type="checkbox" value="6">
-                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                        Vietcombank
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="clearfix"></div>
-                                                                            <div class="content-visa-item-xuat-hoa-don" id="ngan-hanh-xuat-hoadon">
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-4">
-                                                                                    </div>
-                                                                                    <div class="col-sm-8">
-                                                                                        <div class=""><span>Ngân hàng TMCP Ngoại Thương Việt Nam - Vietcombank</span></div>
-                                                                                        <div class=""><span>Chủ tài khoản: CÔNG TY TNHH DU LỊCH HOSPI</span></div>
-                                                                                        <div class=""><span>Số tài khoản: 0331000465230</span></div>
-                                                                                        <div class=""><span>Chi nhánh: Sài Gòn, Tp.HCM</span></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="clearfix"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="block_methodpay_item">
-                                                                    <div class="form-group checkbox">
-                                                                        <label class="no-padding-left">
-                                                                            <input type="checkbox" class="chuyenkhoan payment_method" data-id="2" value="payatoffice" name="checkout-type">
-                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                            Văn phòng HOSPI
-                                                                        </label>
-                                                                    </div>
-                                                                    <div id="showphuongthuc_2" style="display: none">
-                                                                        <div class="conten-vanphong">
-                                                                            <div class=""><span>Quý khách đã lựa chọn phương thức thanh toán tại văn phòng công ty HOSPI</span></div>
-                                                                            <div class=""><span><strong>Địa chỉ văn phòng:</strong> Lầu 1 ,Số 124 Khánh Hội ,P.6,Quận 4,Tp.Hồ Chí Minh</span></div>
-                                                                            <div class=""><span><strong>Thời gian làm việc:</strong> 8:00 sáng - 20:00 tối (thứ 2 - thứ 6)</span></div>
-                                                                            <div class=""><span>8:00 sáng - 17:00 chiều (thứ 7 và Chủ Nhật)</span></div>
-                                                                            <div class=""><span>Trước khi đến thanh toán. Quý khách vui lòng nhớ Mã Đặt Phòng hoặc số điện thoại</span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="block_methodpay_item">
-                                                                    <div class="form-group checkbox">
-                                                                        <label class="no-padding-left">
-                                                                            <input type="checkbox" class="chuyenkhoan payment_method" data-id="3" value="cod" name="checkout-type">
-                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                            Tại nhà
+                                                                    <div class="form-group block_methodpay_ttl">
+                                                                        <label class="mb0">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <input type="checkbox" class="chuyenkhoan payment_method" data-id="3" value="cod" name="checkout-type">
+                                                                                <span></span>
+                                                                                Thanh toán tại nhà
+                                                                            </div>
                                                                         </label>
                                                                     </div>
                                                                     <div id="showphuongthuc_3" style="display: none">
-                                                                        <p>Quý khách đã lựa chọn phương thức thanh toán tại công ty du lịch HOSPI</p>
-                                                                        <div class="conten-vanphong ">
-                                                                            <div class=""><span>Quý khách đã lựa chọn phương thức thanh toán tại nhà.Hospi chỉ hỗ trợ thu tiền tại Tp.Hồ Chí Minh và mức thu phí được áp dụng</span></div>
-                                                                            <div class=""><span>* Quận 1,Quận 3,Quận 4 ,Quận 5 thu phí 10.000 VND (miễn phí cho đơn phòng trên 5.000.000 VND)</span></div>
-                                                                            <div class=""><span>* Quận 10,Quận 7,Quận 11 ,Quận Bình Thạnh,Quận Tân Bình,Phú Nhuận thu phí 20.000 VND (miễn phí cho đơn phòng trên 10.000.000 VND)</span></div>
-                                                                            <div class=""><span>* Quận Tân Phú,Bình Tân,Quận 2 ,Quận Thủ Đức thu phí 50.000 VND (miễn phí cho đơn phòng trên 20.000.000 VND)</span></div>
-                                                                            <div class=""><span>8:00 sáng - 20:00 tối (thứ 2 - thứ 6)</span></div>
-                                                                            <div class=""><span>* Đối với các quận còn lại sẽ báo mức thu phí qua điện thoại mức giá tùy thuộc vào đơn phòng được gửi vào email của quý khách để tiện cho việc thanh toán dễ dàng</span></div>
-                                                                            <div class="">
-                                                                                <div class="form-group checkbox">
-                                                                                    <label class="no-padding-left">
-                                                                                        <input type="checkbox" value="">
-                                                                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                        <span class="cl-tim cl-bold">Nhập địa chỉ thu tiền</span>
-                                                                                    </label>
+                                                                        <div class="block_methodpay_ctn">
+                                                                            <div class="cl-gray">
+                                                                                <span>Quý khách đã lựa chọn phương thức thanh toán tại nhà.Hospi chỉ hỗ trợ thu tiền tại Tp.Hồ Chí Minh và mức thu phí được áp dụng.</span><br>
+                                                                                <span><strong>* Quận 1,Quận 3,Quận 4 ,Quận 5</strong> <i>thu phí 10.000 VND (miễn phí cho đơn phòng trên 5.000.000 VND)</i></span><br>
+                                                                                <span><strong>* Quận 10,Quận 7,Quận 11 ,Quận Bình Thạnh,Quận Tân Bình,Phú Nhuận</strong> <i>thu phí 20.000 VND (miễn phí cho đơn phòng trên 10.000.000 VND)</i></span><br>
+                                                                                <span><strong>* Quận Tân Phú,Bình Tân,Quận 2 ,Quận Thủ Đức</strong> <i>thu phí 50.000 VND (miễn phí cho đơn phòng trên 20.000.000 VND)</i></span><br>
+                                                                                <span><i>* Thời  gian thu tiền tại nhà:</i> <strong>8:00 sáng - 20:00 tối (Thứ 2 - CN)</strong></span>
+                                                                                <i>* Đối với các quận còn lại sẽ báo mức thu phí qua điện thoại, mức giá tùy thuộc vào booking được gửi vào email của quý khách để tiện cho việc thanh toán dễ dàng</i>
+                                                                            </div>
+                                                                            <div class="form-group mt10">
+                                                                                <span class="cl-tim">Nhập địa chỉ thu tiền *</span>
+                                                                                <input type="text" class="form-control" name="txtAddress">
+                                                                            </div>
+                                                                            <div class="form-horizontal">
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-md-5 col-xs-12">
+                                                                                        <label class="fontf_arial control-label form_title">Thời gian có thể thu tiền *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xs-12">
+                                                                                        <!-- <input type="text" class="form-control" name="txtAddress"> -->
+                                                                                        <select name="txtAddress" id="" class="form-control">
+                                                                                            <option>Bất cứ lúc nào</option>
+                                                                                            <option>Buổi sáng (08:00 - 12:00)</option>
+                                                                                            <option>Buổi sáng (12:00 - 18:00)</option>
+                                                                                            <option>Buổi sáng (18:00 - 20:00)</option>
+                                                                                        </select>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="">
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" name="txtAddress">
-                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="block_methodpay_item">
+                                                                    <div class="form-group block_methodpay_ttl">
+                                                                        <label class="mb0">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <input type="checkbox" class="chuyenkhoan payment_method" data-id="2" value="payatoffice" name="checkout-type">
+                                                                                <span></span>
+                                                                                Thanh toán tại công ty
+                                                                            </div>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div id="showphuongthuc_2" style="display: none">
+                                                                        <div class="block_methodpay_ctn">
+                                                                            <p class="cl-gray mb10">Quý khách đã lựa chọn phương thức thanh toán tại văn phòng công ty HOSPI</p>
+                                                                            <div class="conten-vanphong">
+                                                                                <span class="cl-gray">Địa chỉ văn phòng:</span><br>
+                                                                                <strong class="cl-tim">Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</strong><br>
+                                                                                <span class="cl-gray">Thời gian làm việc: </span><br>
+                                                                                <strong class="cl-tim">8:00 sáng - 20:00 tối (Thứ 2 - Thứ 6)</strong><br>
+                                                                                <strong class="cl-tim">8:00 sáng - 17:00 chiều (Thứ 7 và Chủ Nhật)</strong><br>
+                                                                                <span class="cl-gray"><i>Trước khi đến thanh toán. Quý khách vui lòng nghi nhớ mã booking hoặc số điện thoại để tiện cho việc thanh toán</i></span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <!-- <div class="row">
-                                                                <div class="col-lg-12 col-xs-12" id="showphuongthuc_1" style="display: none">
-                                                                    <div class="form-group">
-                                                                        Quý khách vui lòng chọn ngân hàng<br>
-                                                                        <i>Lưu ý: Quý khách chỉ tích vào để lấy thông tin tài khoản từ HOSPI.vn. Việc tiến hành thanh toán chỉ sau khi được xác nhận bởi nhân viên qua email hoặc điện thoại.</i>
-                                                                    </div>
-                                                                    <input type="hidden" name="bank_id" id="bank_id">
-                                                                    <div class="col-md-3 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile">
-                                                                        <div class="form-group checkbox">
-                                                                            <label class="no-padding-left">
-                                                                                <input class="choose_bank" type="checkbox" value="1" onchange="changeatm('viettinbank',1)">
-                                                                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                ViettinBank
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile">
-                                                                        <div class="form-group checkbox">
-                                                                            <label class="no-padding-left">
-                                                                                <input class="choose_bank" type="checkbox" value="2" onchange="changeatm('acb',2)">
-                                                                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                ACB
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile ">
-                                                                        <div class="form-group checkbox">
-                                                                            <label class="no-padding-left">
-                                                                                <input class="choose_bank" type="checkbox" value="3" onchange="changeatm('vietcombank',3)">
-                                                                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                Vietcombank
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2 col-sm-12 col-xs-12 go-right no-padding-left no-margin-top-mobile ">
-                                                                        <div class="form-group checkbox">
-                                                                            <label class="no-padding-left">
-                                                                                <input class="choose_bank" type="checkbox" value="4" onchange="changeatm('mbbank',4)">
-                                                                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                MBBank
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2 col-sm-12 col-xs-12 go-right no-padding no-margin-top-mobile">
-                                                                        <div class="form-group checkbox">
-                                                                            <label class="no-padding-left">
-                                                                                <input class="choose_bank" type="checkbox" value="5" onchange="changeatm('sacombank',5)">
-                                                                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                Sacombank
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="clearfix"></div>
-                                                                    <div class="col-sm-12 col-xs-12 no-padding conten-visa-card" id="show-atm-select" style="display: none">
-                                                                        <div class="content-visa-item bank_1" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span>TMCP Công Thương Việt Nam - Vietinbank</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Quận 10, Tp.HCM</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: CÔNG TY TNHH HOSPI</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 111002667553 </span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="content-visa-item bank_1_bk" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span>Ngân hàng VCB (Vietcombank)</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Bến Thành,Tp Hồ Chí Minh</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: CÔNG TY TNHH HOSPI</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 0331000465230 </span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="content-visa-item bank_2" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span>Ngân hàng Á Châu (ACB)</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Bến Thành, Tp. Hồ Chí Minh</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 227041599</span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="content-visa-item bank_3" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span>TMCP Ngoại Thương Việt Nam - Vietcombank</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Sài Gòn, Tp. HCM</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: VÕ ĐÌNH CHI</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 0331000443348</span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="content-visa-item bank_3_bk" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span>Ngân hàng Đông Á</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Sài Gòn, Tp. Hồ Chí Minh</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 0103812000</span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="content-visa-item bank_4" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span> Ngân hàng Quân Đội (MBBank)</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Bến Thành, Tp. Hồ Chí Minh</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 1460103608001 </span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="content-visa-item bank_5" style="display: none">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4 col-xs-12"></div>
-                                                                                <div class="col-sm-8 col-xs-12">
-                                                                                    <div class=""><span>Ngân hàng Sacombank (ACB)</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Bến Thành,Tp Hồ Chí Minh</span></div>
-                                                                                    <div class=""><span>Tên tài khoản: Võ Đình Chi</span></div>
-                                                                                    <div class=""><span>Số tài khoản: </span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="info-hoa-don" id="nganhangxuathoadon">
-                                                                            <div class="clss-xuat"><span class="cl-tim">Quý khách xuất hóa đơn, chuyển vào tài khoản này</span></div>
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input class="choose_bank" type="checkbox" value="6">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    Vietcombank
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="content-visa-item-xuat-hoa-don" id="ngan-hanh-xuat-hoadon">
-                                                                            <div class="row">
-                                                                                <div class="col-sm-4">
-                                                                                </div>
-                                                                                <div class="col-sm-8">
-                                                                                    <div class=""><span>Ngân hàng TMCP Ngoại Thương Việt Nam - Vietcombank</span></div>
-                                                                                    <div class=""><span>Chủ tài khoản: CÔNG TY TNHH DU LỊCH HOSPI</span></div>
-                                                                                    <div class=""><span>Số tài khoản: 0331000465230</span></div>
-                                                                                    <div class=""><span>Chi nhánh: Sài Gòn, Tp.HCM</span></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-12 col-xs-12" id="showphuongthuc_2" style="display: none">
-                                                                    <div class="conten-vanphong">
-                                                                        <div class=""><span>Quý khách đã lựa chọn phương thức thanh toán tại văn phòng công ty HOSPI</span></div>
-                                                                        <div class=""><span><strong>Địa chỉ văn phòng:</strong> Lầu 1 ,Số 124 Khánh Hội ,P.6,Quận 4,Tp.Hồ Chí Minh</span></div>
-                                                                        <div class=""><span><strong>Thời gian làm việc:</strong> 8:00 sáng - 20:00 tối (thứ 2 - thứ 6)</span></div>
-                                                                        <div class=""><span>8:00 sáng - 17:00 chiều (thứ 7 và Chủ Nhật)</span></div>
-                                                                        <div class=""><span>Trước khi đến thanh toán. Quý khách vui lòng nhớ Mã Đặt Phòng hoặc số điện thoại</span></div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-12 col-xs-12" id="showphuongthuc_3" style="display: none">
-                                                                    <div class="conten-vanphong ">
-                                                                        <div class=""><span>Quý khách đã lựa chọn phương thức thanh toán tại nhà.Hospi chỉ hỗ trợ thu tiền tại Tp.Hồ Chí Minh và mức thu phí được áp dụng</span></div>
-                                                                        <div class=""><span>* Quận 1,Quận 3,Quận 4 ,Quận 5 thu phí 10.000 VND (miễn phí cho đơn phòng trên 5.000.000 VND)</span></div>
-                                                                        <div class=""><span>* Quận 10,Quận 7,Quận 11 ,Quận Bình Thạnh,Quận Tân Bình,Phú Nhuận thu phí 20.000 VND (miễn phí cho đơn phòng trên 10.000.000 VND)</span></div>
-                                                                        <div class=""><span>* Quận Tân Phú,Bình Tân,Quận 2 ,Quận Thủ Đức thu phí 50.000 VND (miễn phí cho đơn phòng trên 20.000.000 VND)</span></div>
-                                                                        <div class=""><span>8:00 sáng - 20:00 tối (thứ 2 - thứ 6)</span></div>
-                                                                        <div class=""><span>* Đối với các quận còn lại sẽ báo mức thu phí qua điện thoại mức giá tùy thuộc vào đơn phòng được gửi vào email của quý khách để tiện cho việc thanh toán dễ dàng</span></div>
-                                                                        <div class="">
-                                                                            <div class="form-group checkbox">
-                                                                                <label class="no-padding-left">
-                                                                                    <input type="checkbox" value="">
-                                                                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                    <span class="cl-tim cl-bold">Nhập địa chỉ thu tiền</span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="">
-                                                                            <div class="form-group">
-                                                                                <input type="text" class="form-control" name="txtAddress">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -912,8 +728,8 @@
                                                 <p class="ttl cl-red"><img src="themes/new_theme/assets/img/percent02.png" alt="" class="mr15">Bạn có mã giảm giá ?</p>
                                                 <div class="block-btn-inline">
                                                     <div class="form-group clearfix">
-                                                        <input type="text" class="form-control coupon" placeholder="Mã giảm giá" name="coupon_code">
-                                                        <button type="button" class="form-control button-tim applycoupon andes">Áp dụng</button>
+                                                        <input type="text" class="form-control coupon" placeholder="Mã giảm giá" name="coupon_code" value="HP97512">
+                                                        <button type="button" class="form-control applycoupon andes">Áp dụng</button>
                                                     </div>
                                                     <div class="row cl-red cl-bold clss-tongthanhtoan">
                                                         <div class="col-lg-6 col-xs-6 text-left "><span>Giảm giá</span></div>
