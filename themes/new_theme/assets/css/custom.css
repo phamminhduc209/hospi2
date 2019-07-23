@@ -11145,6 +11145,10 @@ ul.nav .honeymoon .img_list img {
     display: none;
 }
 
+.page_booking .footerbg {
+    margin-top: 0;
+}
+
 #email_footer {
     color: #fff;
 }
@@ -15453,7 +15457,7 @@ p.hs_cl_show_info {
     content: url(../img/arrow_white_10x11.png);
 }
 
-.m_page_booking {
+.page_booking .m_page_booking {
     background: #E8E8E8;
-    padding-top: 32px;
+    padding: 32px 0;
 }

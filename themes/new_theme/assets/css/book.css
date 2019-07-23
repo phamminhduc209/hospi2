@@ -111,86 +111,23 @@
     margin-bottom: 10px;
 }
 
-.info-hotel h1 {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.block-info-time-book {
-    padding: 0 15px;
+.info-hotel {
     display: flex;
+    align-items: center;
 }
 
-.block-info-time-book>* {
-    border: 1px solid #ccc;
-    padding: 10px 15px;
+
+.info-hotel {
+    margin-bottom: 15px;
+}
+.info-hotel img {
+    max-width: 90px;
 }
 
-.block-info-time-book .info-time-book {
-    width: 60%;
-    margin-right: 10px;
-}
-
-.block-info-time-book>.info-time-book div span:first-child {
-    width: 115px;
-}
-
-.block-info-time-book>.info-people div span:first-child {
-    width: 90px;
-}
-
-.block-info-time-book>.info-people-single div span:first-child {
-    width: 130px;
-}
-
-.block-info-time-book>* div span:nth-child(2) {
-    width: 10px;
-}
-
-.block-info-time-book>* div span {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.block-info-time-book .info-people {
-    margin-left: auto;
-    width: 40%;
-    margin-left: 10px;
-}
-
-.block-info-time-book .info-people-single {
-    margin-left: auto;
-    width: 100%;
-    margin-left: 0;
-}
-
-.block-info-time-book.block-info-time-book-no-padding {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-@media (max-width: 767px) {
-    .block-info-time-book {
-        display: block;
-    }
-
-    .block-info-time-book .info-time-book {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .block-info-time-book .info-people {
-        margin-top: 10px;
-        margin-left: auto;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .block-info-time-book>.info-people div span:first-child {
-        width: 115px;
-    }
+.info-hotel strong {
+    color: #603;
+    font-size: 14px;
+    margin-left: 15px;
 }
 
 .cl-grey {
@@ -199,6 +136,22 @@
 
 .cl-black {
     color: #323232;
+}
+
+.cl-gray {
+    color: #666;
+}
+
+.cl-tim {
+    color: #660033;
+}
+
+.cl-red {
+    color: #cc0000;
+}
+
+.cl-blue {
+    color: #006666;
 }
 
 .cl-bold {
@@ -220,34 +173,39 @@
 }
 
 .content-item-text {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
+    background: #FFF;
+    padding: 15px;
+    border-bottom: 2px solid #CCC;
 }
 
-.content-giam-gia {
-    border: 1px solid #ccc;
-    padding: 20px 15px 5px;
-    margin-bottom: 20px;
+.block-code-sale {}
+.block-code-sale .ttl {
+    padding: 15px;
 }
-
-.cl-tim {
-    color: #660033;
+.block-code-sale .block-btn-inline {
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #CCC;
 }
 
 .button-tim {
     background: #660033;
+    border: 1px solid #CCC;
     color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
     width: 100%;
-    padding: 5px;
-    border: none;
 }
 
 .clss-tongthanhtoan {
     border-top: 1px solid #ccc;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.clss-tongthanhtoan:last-child {
+    padding-bottom: 0;
 }
 
 .clss-dathanhtoan {
@@ -264,18 +222,18 @@
 }
 
 .clss-finish {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    text-align: center;
+    color: #666;
+    padding: 15px;
 }
 
 .padding-top-10 {
     padding-top: 10px;
 }
 
-.cotent-huyphong {
-    padding: 0 10px 10px;
-    /* border: 1px solid #ccc; */
-    /* color: #a9a9a9; */
+.content-huyphong {
+    background: #FFF;
+    padding: 15px;
 }
 
 .line-book {
@@ -445,8 +403,6 @@
 .m_checkbox_sh .m_checkbox_ttl label {
     margin-bottom: 0;
     font-weight: normal;
-    display: flex;
-    align-items: center;
 }
 
 .m_checkbox_sh .m_checkbox_content {
@@ -474,4 +430,21 @@
 
 .m_checkbox_sh .m_checkbox_ttl input[type='checkbox']:checked+span {
     background: url(../img/checked-gray.png) no-repeat;
+}
+
+.block-info-time-book,
+.block-details-book {
+    background: #FFF;
+    padding: 15px;
+    border-bottom: 2px solid #ff9900;
+}
+.block-details-book {
+    border-bottom: 1px solid #CCC;
+}
+.block-details-book h2 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #603;
+    margin-bottom: 5px;
 }

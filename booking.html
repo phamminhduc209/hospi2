@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="themes/new_theme/assets/css/jquery-ui.css" />
 </head>
 
-<body id="top" cz-shortcut-listen="true">
+<body id="top" class="page_booking" cz-shortcut-listen="true">
     <header class="block-header">
         <div class="header-top">
             <div class="container">
@@ -799,6 +799,9 @@
                             <!-- class="col-sm-7 col-xs-12" -->
                             <!-- class="col-sm-5 col-xs-12" -->
                             <div class="col-sm-5 col-xs-12">
+                                <div class="block-payment">
+                                    <div class="block-title">THÔNG TIN BOOKING</div>
+                                </div>
                                 <div class="block-tab-order">
                                     <ul class="nav nav-tabs nav-tabs-book">
                                         <li class="active">
@@ -822,76 +825,73 @@
                                     </ul>
                                     <div class="tab-content">
                                         <div id="donphongcuaban" class="tab-pane fade in active">
-                                            <div class="col-lg-12 col-xs-12 no-padding">
-                                                <div class="col-lg-3 col-xs-4">
+                                            <div class="block-info-time-book">
+                                                <div class="info-hotel">
                                                     <img class="img-responsive" src="https://www.hospi.vn/uploads/images/hotels/slider/thumbs/528771_Novotel-Phu-Quoc-Resort-(50).jpg" alt="Novotel Phú Quốc Resort" width="108">
+                                                    <strong>Combo 3N2Đ + Vé tàu khứ hồi + Ăn trưa tại Romana Resort & Spa Mũi Né dành cho 2 khách. </strong>
                                                 </div>
-                                                <div class="col-lg-9 col-xs-8 info-hotel">
-                                                    <h1 style="font-size: 16px;">Novotel Phú Quốc Resort</h1>
-                                                    <div class="no-padding">
-                                                        <i style="margin-left:-5px" class="icon-location-6"></i>
-                                                        <small class="adddress font-size-14">Novotel Phu Quoc Resort, Phu Quoc, Vietnam</small>
-                                                    </div>
-                                                    <div class="no-padding">
-                                                        <i class="star text-warning fa fa-star voted"></i> <i class="star text-warning fa fa-star voted"></i> <i class="star text-warning fa fa-star voted"></i> <i class="star text-warning fa fa-star voted"></i> <i class="star text-warning fa fa-star voted"></i>
-                                                        <!-- <i class="star text-warning fa fa-star voted"></i>
-                                                                <i class="star text-warning fa fa-star voted"></i>
-                                                                <i class="star text-warning fa fa-star voted"></i>
-                                                                <i class="star text-warning fa fa-star voted"></i>
-                                                                <i class="star text-warning fa fa-star voted"></i> -->
-                                                    </div>
-                                                </div>
-                                                <div style="margin-bottom: 10px; clear: both"></div>
-                                                <div class="clearfix block-info-time-book">
-                                                    <div class="info-time-book">
-                                                        <div class="">
-                                                            <span class="cl-black text-bold">Ngày nhận phòng</span>
-                                                            <span>:</span>
-                                                            <span class="cl-tim cl-bold">22-07-2019</span>
-                                                        </div>
-                                                        <div class="">
-                                                            <span class="cl-black">Ngày trả phòng</span>
-                                                            <span>:</span>
-                                                            <span class=" cl-tim cl-bold">23-07-2019</span>
-                                                        </div>
-                                                        <div class="">
-                                                            <span class="cl-black">Số đêm</span>
-                                                            <span>:</span>
-                                                            <span class="cl-tim cl-bold">1</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="info-people">
-                                                        <div class="">
-                                                            <span class="cl-black">Người lớn</span>
-                                                            <span>:</span>
-                                                            <span class="cl-tim cl-bold">2</span>
-                                                        </div>
-                                                        <div class="">
-                                                            <span class="cl-black">Trẻ em</span>
-                                                            <span>:</span>
-                                                            <span class="cl-tim cl-bold">0</span>
-                                                        </div>
-                                                        <div class="">
-                                                            <span class="cl-black">Số lượng</span>
-                                                            <span>:</span>
-                                                            <span class="cl-tim cl-bold">0</span>
-                                                        </div>
-                                                        <div class="">
-                                                            <span class="cl-black">Giường phụ</span>
-                                                            <span>:</span>
-                                                            <span class="cl-tim cl-bold">0</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="info-time-book">
+                                                    <p>
+                                                        <span class="cl-gray text-bold">Ngày nhận phòng: </span>
+                                                        <span class="cl-tim cl-bold">22/07/2019</span>
+                                                    </p>
+                                                    <p>
+                                                        <span class="cl-gray">Ngày trả phòng: </span>
+                                                        <span class=" cl-tim cl-bold">23/07/2019</span>
+                                                    </p>
+                                                    <p>
+                                                        <span class="cl-gray">Số đêm:</span>
+                                                        <span class="cl-tim cl-bold">1</span>
+                                                    </p>
+                                                    <p>
+                                                        <span class="cl-gray">Người lớn:</span>
+                                                        <span class="cl-tim cl-bold">2</span>
+                                                    </p>
+                                                    <p>
+                                                        <span class="cl-gray">Trẻ em:</span>
+                                                        <span class="cl-tim cl-bold">0</span>
+                                                    </p>
+                                                    <p>
+                                                        <span class="cl-gray">Số Combo:</span>
+                                                        <span class="cl-tim cl-bold">0</span>
+                                                    </p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 col-xs-12 margin-top-10">
-                                                <div class="block-requirement">
-                                                    <span>Yêu cầu giường:</span>
-                                                    <span class="cl-tim cl-bold">1 giường</span>
+                                            <div class="block-details-book">
+                                                <h2>Combo 2N1Đ + Vé tàu khứ hồi + Ăn trưa tại Romana Resort & Spa Mũi Né dành cho 2 khách.</h2>
+                                                <p class="cl-gray mb05">2,260,000 x 2 (combo) = 5,420,000 VND</p>
+                                                <p class="cl-tim mb05"><strong>* Cuối tuần (T6,T7)</strong></p>
+                                                <p class="cl-gray mb05">893,000 x 2  = 1,786,000 VND</p>
+                                                <p class="cl-tim mb05"><strong>* Phụ thu người thứ 3.</strong></p>
+                                                <p class="cl-gray">1,993,000 x 1  = 1,993,000 VND</p>
+                                            </div>
+                                            <div class="content-item-text clearfix">
+                                                <div class="row mb05">
+                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Tiền phòng</span></div>
+                                                    <div class="col-lg-6 col-xs-6 text-right"><span class="cl-tim cl-bold">8,299,000 VND</span></div>
+                                                </div>
+                                                <div class="row mb05">
+                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Phí dịch vụ(5%)</span></div>
+                                                    <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
+                                                    <input type="hidden" name="phi_dich_vu" value="0">
+                                                </div>
+                                                <div class="row mb05">
+                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Phí VAT(10%)</span></div>
+                                                    <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
+                                                    <input type="hidden" name="phi_vat" value="0">
+                                                </div>
+                                                <div class="row mb05">
+                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Chi phí khác</span></div>
+                                                    <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Tổng tiền</span></div>
+                                                    <div class="col-lg-6 col-xs-6 text-right"><span class="cl-tim cl-bold">8,299,000 VND</span></div>
+                                                    <input type="hidden" name="tong_chua_giam" id="tong_chua_giam" value="0">
                                                 </div>
                                             </div>
-                                            <input type="hidden" name="booking_extra_beds_request" value="1">
-                                            <div class="col-lg-12 col-xs-12">
+                                            <!-- <input type="hidden" name="booking_extra_beds_request" value="1"> -->
+                                            <!-- <div class="clearfix">
                                                 <input type="hidden" name="room_price" value="">
                                                 <input type="hidden" name="bed_price" value="">
                                                 <div class="clss-content-book">
@@ -905,91 +905,52 @@
                                                             = 0 VND</span>
                                                     </p>
                                                 </div>
-                                            </div>
-                                            <input type="hidden" name="so_giuong_phu" value="">
-                                            <input type="hidden" name="phi_giuong_phu" value="0">
-                                            <div class="col-lg-12 col-xs-12">
-                                                <div class="content-item-text clearfix">
-                                                    <div class="col-lg-12 col-xs-12 no-padding">
-                                                        <div class="col-lg-6 col-xs-6 text-left"><span>Tiền phòng</span></div>
+                                            </div> -->
+                                            <!-- <input type="hidden" name="so_giuong_phu" value="">
+                                            <input type="hidden" name="phi_giuong_phu" value="0"> -->
+                                            <div class="block-code-sale">
+                                                <p class="ttl cl-red"><img src="themes/new_theme/assets/img/percent02.png" alt="" class="mr15">Bạn có mã giảm giá ?</p>
+                                                <div class="block-btn-inline">
+                                                    <div class="form-group clearfix">
+                                                        <input type="text" class="form-control coupon" placeholder="Mã giảm giá" name="coupon_code">
+                                                        <button type="button" class="form-control button-tim applycoupon andes">Áp dụng</button>
+                                                    </div>
+                                                    <div class="row cl-red cl-bold clss-tongthanhtoan">
+                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Giảm giá</span></div>
                                                         <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
                                                     </div>
-                                                    <div class="col-lg-12 col-xs-12 no-padding">
-                                                        <div class="col-lg-6 col-xs-6 text-left"><span>Phí VAT</span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                        <input type="hidden" name="phi_vat" value="0">
+                                                    <div class="row cl-gray clss-tongthanhtoan">
+                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Tổng thanh toán </span></div>
+                                                        <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>8,299,000 VND</b></span></div>
+                                                        <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
                                                     </div>
-                                                    <div class="col-lg-12 col-xs-12 no-padding">
-                                                        <div class="col-lg-6 col-xs-6 text-left"><span>Phí dịch vụ</span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                        <input type="hidden" name="phi_dich_vu" value="0">
+                                                    <div class="row cl-blue clss-tongthanhtoan">
+                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Đã thanh toán </span></div>
+                                                        <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>0 VND</b></span></div>
+                                                        <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
                                                     </div>
-                                                    <div class="col-lg-12 col-xs-12 no-padding">
-                                                        <div class="col-lg-6 col-xs-6 text-left"><span>Chi phí khác</span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xs-12 no-padding">
-                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Tổng tiền</span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span><b>0 VND</b></span></div>
-                                                        <input type="hidden" name="tong_chua_giam" id="tong_chua_giam" value="0">
+                                                    <div class="row cl-tim clss-tongthanhtoan">
+                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Còn lại </span></div>
+                                                        <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>8,299,000 VND</b></span></div>
+                                                        <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 col-xs-12 padding-top-10">
-                                                <div class="content-giam-gia">
-                                                    <div class="clearfix">
-                                                        <p class="cl-tim">Bạn có mã giảm giá ?</p>
-                                                        <div class="block-btn-inline">
-                                                            <div class="form-group clearfix">
-                                                                <input type="text" class="form-control coupon" placeholder="Mã giảm giá" name="coupon_code">
-                                                                <button type="button" class="form-control button-tim applycoupon andes">Áp dụng</button>
-                                                            </div>
-                                                        </div>
-                                                        <!-- <p class="cl-grey block-couponmsg">
-                                                                Mã giảm giá <strong>01728</strong> đã được áp dụng<br>Bạn đã được giảm được 300,000 VND /tổng booking
-                                                                </p> -->
-                                                        <!-- <div class="block-discount row">
-                                                                <div class="col-sm-6 col-xs-6 text-left cl-tim cl-bold"><span>Giảm giá </span></div>
-                                                                <div class="col-lg-6 col-xs-6 text-right"><span  id="giam_gia_span" ><b>0 VND</b></span></div>
-                                                                <input type="hidden" name="giam_gia" value="0" id="giam_gia">
-                                                                </div> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-xs-12 no-padding cl-tim clss-tongthanhtoan">
-                                                <div class="col-lg-6 col-xs-6 text-left "><span style="font-weight: bold;">Tổng thanh toán </span></div>
-                                                <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>0 VND</b></span></div>
-                                                <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
-                                            </div>
-                                            <!-- <div class="col-lg-12 col-xs-12 no-padding cl-grey clss-dathanhtoan">
-                                                    <div class="col-lg-6 col-xs-6 text-left "><span>Đã thanh toán</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>0 VND</b></span></div>
-                                                    <input type="hidden" name="da_thanh_oan" id="da_thanh_oan" value="0">
-                                                    </div>
-                                                    <div class="col-lg-12 col-xs-12 no-padding cl-tim clss-conlai">
-                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-bold">Còn lại</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>5,483,000 VND</b></span></div>
-                                                    <input type="hidden" name="con_lai" id="con_lai" value="0">
-                                                    </div> -->
-                                            <div class="col-lg-12 col-xs-12 no-padding cl-grey clss-finish">
-                                                <div class="col-lg-12 col-xs-12 text-left ">
-                                                    <span>Tôi đã đọc và chấp nhận <span class="cl-tim cl-bold">điều khoản và chính sách của khách sạn</span> và <span class="cl-tim cl-bold">điều khoản và chính sách bảo mật</span> của HOSPI </span>
-                                                </div>
+                                            <div class="clss-finish">
+                                                    Bấm hoàn thành có nghĩa rằng bạn đã đọc và chấp nhận <a href="#" class="cl-tim cl-bold">điều khoản và chính sách của khách sạn</a> và <a href="#" class="cl-tim cl-bold">điều khoản và chính sách bảo mật</a> của HOSPI
                                             </div>
                                             <div class="col-lg-12 col-xs-12 no-padding">
-                                                <button class="button-tim completebook" type="submit" name="guest" onclick="return completebook('https://www.hospi.vn/','Select Payment Method');">Hoàn thành</button>
+                                                <button class="button-tim" type="submit" name="guest" onclick="return completebook('https://www.hospi.vn/','Select Payment Method');">Hoàn thành</button>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                         <div id="dieukienhuy" class="tab-pane fade">
-                                            <div class="clearfix">
-                                                <div class="col-lg-12 col-xs-12 cotent-huyphong no-padding">
-                                                    *Áp dụng cho các booking dưới 09 phòng:<br />
-                                                    - Trường hợp hủy phòng trước 17 ngày ( trừ thứ 7, CN, Lễ, Tết) so với ngày đến không tính phí<br />
-                                                    - Trường hợp hủy phòng trong vòng 17 (trừ thứ 7, CN, Lễ, Tết) so với ngày đến hoặc không đến, tính 100% tiền phòng đêm đầu tiên <br />
-                                                    - Trường hợp hủy phòng trong vòng 10 (trừ thứ 7, CN, Lễ, Tết) so với ngày đến hoặc không đến, tính 100 % tiền phòng <br />
-                                                    *Các booking giai đoạn lễ tết, không được hoàn, hủy hoặc thay đổi
-                                                </div>
+                                            <div class="content-huyphong">
+                                                *Áp dụng cho các booking dưới 09 phòng:<br />
+                                                - Trường hợp hủy phòng trước 17 ngày ( trừ thứ 7, CN, Lễ, Tết) so với ngày đến không tính phí<br />
+                                                - Trường hợp hủy phòng trong vòng 17 (trừ thứ 7, CN, Lễ, Tết) so với ngày đến hoặc không đến, tính 100% tiền phòng đêm đầu tiên <br />
+                                                - Trường hợp hủy phòng trong vòng 10 (trừ thứ 7, CN, Lễ, Tết) so với ngày đến hoặc không đến, tính 100 % tiền phòng <br />
+                                                *Các booking giai đoạn lễ tết, không được hoàn, hủy hoặc thay đổi
                                             </div>
                                         </div>
                                     </div>
