@@ -9525,7 +9525,7 @@ fieldset[disabled] .btn-arrival.active {
     margin-top: 20px;
 }
 
-.m_theme_df .m_theme .m_theme_item {
+.m_theme_df .m_theme_item {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -9533,43 +9533,43 @@ fieldset[disabled] .btn-arrival.active {
     margin-bottom: 20px;
 }
 
-.m_theme_df .m_theme .m_theme_item.m_theme_item_purple {
+.m_theme_df .m_theme_item.m_theme_item_purple {
     background: #660033;
 }
 
-.m_theme_df .m_theme .m_theme_item.m_theme_item_gray {
+.m_theme_df .m_theme_item.m_theme_item_gray {
     background: #666666;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_info {
+.m_theme_df .m_theme_item .m_theme_info {
     -ms-flex: 0 0 560px;
     flex: 0 0 560px;
     max-width: 560px;
     padding: 40px 25px 40px 35px;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_info .name {
+.m_theme_df .m_theme_item .m_theme_info .name {
     font-size: 16px;
     color: #fff;
     line-height: 22px;
     margin-bottom: 5px;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_info .star {
+.m_theme_df .m_theme_item .m_theme_info .star {
     margin-bottom: 5px;
     color: #fff;
     text-align: left;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_info .location {
+.m_theme_df .m_theme_item .m_theme_info .location {
     color: #FFF;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_info .location a {
+.m_theme_df .m_theme_item .m_theme_info .location a {
     color: #FFF;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_info .description {
+.m_theme_df .m_theme_item .m_theme_info .description {
     color: #FFF;
     margin-top: 10px;
     padding-top: 10px;
@@ -9577,7 +9577,7 @@ fieldset[disabled] .btn-arrival.active {
     text-align: justify;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price {
+.m_theme_df .m_theme_item .m_theme_price {
     -ms-flex: 0 0 230px;
     flex: 0 0 230px;
     max-width: 230px;
@@ -9585,35 +9585,35 @@ fieldset[disabled] .btn-arrival.active {
     text-align: center;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .title {
+.m_theme_df .m_theme_item .m_theme_price .title {
     color: #FFF;
     text-transform: uppercase;
     margin-bottom: 28px;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .title span {
+.m_theme_df .m_theme_item .m_theme_price .title span {
     border-bottom: 1px solid #FFF;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .price {
+.m_theme_df .m_theme_item .m_theme_price .price {
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid #FFF;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .price .amount,
-.m_theme_df .m_theme .m_theme_item .m_theme_price .price .currency {
+.m_theme_df .m_theme_item .m_theme_price .price .amount,
+.m_theme_df .m_theme_item .m_theme_price .price .currency {
     display: block;
     color: #FFF;
     font-size: 14px;
     font-weight: normal;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .price .amount {
+.m_theme_df .m_theme_item .m_theme_price .price .amount {
     font-size: 22px;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .button .btn {
+.m_theme_df .m_theme_item .m_theme_price .button .btn {
     background: transparent;
     border: 1px solid #FFF;
     border-radius: 10px;
@@ -9624,7 +9624,7 @@ fieldset[disabled] .btn-arrival.active {
     transition: all .3s;
 }
 
-.m_theme_df .m_theme .m_theme_item .m_theme_price .button .btn:hover {
+.m_theme_df .m_theme_item .m_theme_price .button .btn:hover {
     opacity: .7;
     transition: all .3s;
 }
