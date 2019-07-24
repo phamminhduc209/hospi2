@@ -9415,6 +9415,10 @@ fieldset[disabled] .btn-arrival.active {
     padding-bottom: 15px;
 }
 
+.m_choose_point {
+    margin-bottom: 50px;
+}
+
 .m_choose_point p {
     font-family: Arial, sans-serif;
     margin-bottom: 10px;
@@ -9425,7 +9429,103 @@ fieldset[disabled] .btn-arrival.active {
     margin: 0 auto;
 }
 
-.m_theme_item {
+.m_theme .m_theme_ttl {
+    color: #603;
+    font-size: 35px;
+    padding-top: 15px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.m_theme .m_theme_ttl:before {
+    content: "";
+    background: #603;
+    height: 9px;
+    width: 112px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Tìm_khách_sạn_theo_chủ_đề {
+  font-size: 8.986px;
+  font-family: "AndesRounded";
+  color: rgb( 102, 0, 51 );
+  line-height: 11.128;
+  text-align: left;
+  -moz-transform: matrix( 3.87583319030327,0,0,3.89505985450582,0,0);
+  -webkit-transform: matrix( 3.87583319030327,0,0,3.89505985450582,0,0);
+  -ms-transform: matrix( 3.87583319030327,0,0,3.89505985450582,0,0);
+  position: absolute;
+  left: 262.712px;
+  top: 522.994px;
+  z-index: 44;
+}
+
+
+.m_theme .m_theme_item .m_theme_item_inner {
+    border: 1px solid rgb( 204, 204, 204 );
+    background-color: rgb( 255, 255, 255 );
+    box-shadow: 0px 7px 0px 0px rgb( 204, 204, 204 );
+    margin-bottom: 30px;
+}
+
+.m_theme .m_theme_item .m_theme_item_ifn {
+    text-align: center;
+    padding: 25px;
+}
+
+.m_theme .m_theme_item .name {
+    margin-bottom: 10px;
+}
+
+.m_theme .m_theme_item .name a {
+    font-size: 35px;
+    color: #603;
+    font-weight: bold;
+}
+
+.m_theme .m_theme_item .des {
+    color: #999;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+}
+
+.m_theme .m_theme_item .has {
+    color: #333;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.m_theme .m_theme_item .has:before {
+    content: "";
+    background: #603;
+    height: 3px;
+    max-width: 117px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.m_theme .m_theme_item .btn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb( 204, 204, 204 );
+    border-radius: 10px;
+    background-color: rgb( 255, 255, 255 );
+    color: #603;
+    margin-top: 20px;
+}
+
+.m_theme_df .m_theme .m_theme_item {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -9433,43 +9533,43 @@ fieldset[disabled] .btn-arrival.active {
     margin-bottom: 20px;
 }
 
-.m_theme_item.m_theme_item_purple {
+.m_theme_df .m_theme .m_theme_item.m_theme_item_purple {
     background: #660033;
 }
 
-.m_theme_item.m_theme_item_gray {
+.m_theme_df .m_theme .m_theme_item.m_theme_item_gray {
     background: #666666;
 }
 
-.m_theme_item .m_theme_info {
+.m_theme_df .m_theme .m_theme_item .m_theme_info {
     -ms-flex: 0 0 560px;
     flex: 0 0 560px;
     max-width: 560px;
     padding: 40px 25px 40px 35px;
 }
 
-.m_theme_item .m_theme_info .name {
+.m_theme_df .m_theme .m_theme_item .m_theme_info .name {
     font-size: 16px;
     color: #fff;
     line-height: 22px;
     margin-bottom: 5px;
 }
 
-.m_theme_item .m_theme_info .star {
+.m_theme_df .m_theme .m_theme_item .m_theme_info .star {
     margin-bottom: 5px;
     color: #fff;
     text-align: left;
 }
 
-.m_theme_item .m_theme_info .location {
+.m_theme_df .m_theme .m_theme_item .m_theme_info .location {
     color: #FFF;
 }
 
-.m_theme_item .m_theme_info .location a {
+.m_theme_df .m_theme .m_theme_item .m_theme_info .location a {
     color: #FFF;
 }
 
-.m_theme_item .m_theme_info .description {
+.m_theme_df .m_theme .m_theme_item .m_theme_info .description {
     color: #FFF;
     margin-top: 10px;
     padding-top: 10px;
@@ -9477,7 +9577,7 @@ fieldset[disabled] .btn-arrival.active {
     text-align: justify;
 }
 
-.m_theme_item .m_theme_price {
+.m_theme_df .m_theme .m_theme_item .m_theme_price {
     -ms-flex: 0 0 230px;
     flex: 0 0 230px;
     max-width: 230px;
@@ -9485,35 +9585,35 @@ fieldset[disabled] .btn-arrival.active {
     text-align: center;
 }
 
-.m_theme_item .m_theme_price .title {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .title {
     color: #FFF;
     text-transform: uppercase;
     margin-bottom: 28px;
 }
 
-.m_theme_item .m_theme_price .title span {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .title span {
     border-bottom: 1px solid #FFF;
 }
 
-.m_theme_item .m_theme_price .price {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .price {
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid #FFF;
 }
 
-.m_theme_item .m_theme_price .price .amount,
-.m_theme_item .m_theme_price .price .currency {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .price .amount,
+.m_theme_df .m_theme .m_theme_item .m_theme_price .price .currency {
     display: block;
     color: #FFF;
     font-size: 14px;
     font-weight: normal;
 }
 
-.m_theme_item .m_theme_price .price .amount {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .price .amount {
     font-size: 22px;
 }
 
-.m_theme_item .m_theme_price .button .btn {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .button .btn {
     background: transparent;
     border: 1px solid #FFF;
     border-radius: 10px;
@@ -9524,7 +9624,7 @@ fieldset[disabled] .btn-arrival.active {
     transition: all .3s;
 }
 
-.m_theme_item .m_theme_price .button .btn:hover {
+.m_theme_df .m_theme .m_theme_item .m_theme_price .button .btn:hover {
     opacity: .7;
     transition: all .3s;
 }

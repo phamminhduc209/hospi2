@@ -530,3 +530,51 @@
     font-weight: bold;
     font-size: 13px;
 }
+.m_page_booking_complete_inf .panel-default>.panel-body + .panel-body {
+    border-top: 1px solid #CCC;
+}
+.m_page_booking_complete_inf .block-details-book,
+.m_page_booking_complete_inf .content-item-text {
+    border: none;
+    padding: 0;
+}
+.m_policy .ttl {
+    text-align: center;
+    background: #cccccc;
+    padding: 10px;
+    color: #999;
+    width: 100%;
+}
+.m_policy .ctn {
+    padding: 15px;
+}
+.m_page_booking_complete_footer {
+    background: #603;
+    border-bottom: 3px solid #fa0002;
+    padding: 15px;
+    color: #FFF;
+}
+.m_page_booking_complete_inf .note-count {
+    padding: 5px 10px;
+    color: #666;
+    font-size: 13px;
+    background: #ccebeb;
+    border-radius: 11px;
+    margin-top: 10px;
+}
+.block_Kindofroom.panel-default>.panel-body {
+    padding: 0;
+}
+.block_Kindofroom li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    list-style-type: none;
+    padding: 15px;
+}
+.block_Kindofroom li:last-child {
+    border-bottom: none;
+}
+.block_Kindofroom li img {
+    margin-right: 15px;
+}

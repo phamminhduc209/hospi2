@@ -305,8 +305,160 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div class="info-time-book">
+                                    <p>
+                                        <span class="cl-gray text-bold">Ngày nhận phòng: </span>
+                                        <span class="cl-tim cl-bold">22/07/2019</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Ngày trả phòng: </span>
+                                        <span class=" cl-tim cl-bold">23/07/2019</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Số đêm:</span>
+                                        <span class="cl-tim cl-bold">1</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Người lớn:</span>
+                                        <span class="cl-tim cl-bold">2</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Trẻ em:</span>
+                                        <span class="cl-tim cl-bold">0</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Số Combo:</span>
+                                        <span class="cl-tim cl-bold">0</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Thông tin giá</div>
+                            <div class="panel-body">
+                                <div class="block-details-book">
+                                    <h2>Combo 2N1Đ + Vé tàu khứ hồi + Ăn trưa tại Romana Resort & Spa Mũi Né dành cho 2 khách.</h2>
+                                    <p class="cl-gray mb05">2,260,000 x 2 (combo) = 5,420,000 VND</p>
+                                    <p class="cl-tim mb05"><strong>* Cuối tuần (T6,T7)</strong></p>
+                                    <p class="cl-gray mb05">893,000 x 2  = 1,786,000 VND</p>
+                                    <p class="cl-tim mb05"><strong>* Phụ thu người thứ 3.</strong></p>
+                                    <p class="cl-gray">1,993,000 x 1  = 1,993,000 VND</p>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="content-item-text">
+                                    <div class="row mb05">
+                                        <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Tiền phòng</span></div>
+                                        <div class="col-lg-6 col-xs-6 text-right"><span class="cl-tim cl-bold">8,299,000 VND</span></div>
+                                    </div>
+                                    <div class="row mb05">
+                                        <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Phí dịch vụ(5%)</span></div>
+                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
+                                        <input type="hidden" name="phi_dich_vu" value="0">
+                                    </div>
+                                    <div class="row mb05">
+                                        <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Phí VAT(10%)</span></div>
+                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
+                                        <input type="hidden" name="phi_vat" value="0">
+                                    </div>
+                                    <div class="row mb05">
+                                        <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Chi phí khác</span></div>
+                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Tổng tiền</span></div>
+                                        <div class="col-lg-6 col-xs-6 text-right"><span class="cl-tim cl-bold">8,299,000 VND</span></div>
+                                        <input type="hidden" name="tong_chua_giam" id="tong_chua_giam" value="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row cl-red cl-bold">
+                                    <div class="col-lg-6 col-xs-6 text-left "><span>Giảm giá</span></div>
+                                    <div class="col-lg-6 col-xs-6 text-right"><span>1,826,000 VND</span></div>
+                                </div>
+                                <p class="note-count">Bạn đã được giảm giá  10% cho mã giảm giá: HP97512, Tiền giảm giá sẽ được trừ vào booking</p>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row cl-gray">
+                                    <div class="col-lg-6 col-xs-6 text-left "><span>Tổng sau giảm giá </span></div>
+                                    <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>8,299,000 VND</b></span></div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row cl-blue">
+                                    <div class="col-lg-6 col-xs-6 text-left "><span>Đã thanh toán </span></div>
+                                    <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>0 VND</b></span></div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row cl-tim">
+                                    <div class="col-lg-6 col-xs-6 text-left "><span>Còn lại </span></div>
+                                    <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>8,299,000 VND</b></span></div>
+                                </div>
+                            </div>
+                            <div class="m_policy">
+                                <div class="ttl">
+                                    <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        <img src="themes/new_theme/assets/img/icn_politique_normal.png" alt="" class="mr15"> <u>Chính sách hủy</u>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="ctn">
+                                        Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Phương thức thanh toán</div>
+                            <div class="panel-body">
+                                <p>Quý khách đã chọn phương thức thanh toán: <strong class="cl-bold cl-tim">Thanh toán tại công ty</strong></p>
+                                <div class="conten-vanphong">
+                                    <span class="cl-gray">Địa chỉ văn phòng:</span><br>
+                                    <strong class="cl-tim">Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</strong><br>
+                                    <span class="cl-gray">Thời gian làm việc: </span><br>
+                                    <strong class="cl-tim">8:00 sáng - 20:00 tối (Thứ 2 - Thứ 6)</strong><br>
+                                    <strong class="cl-tim">8:00 sáng - 17:00 chiều (Thứ 7 và Chủ Nhật)</strong><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Ghi chú / Yêu cầu</div>
+                            <div class="panel-body">
+                                <p>* Yêu cầu giường: <strong class="cl-bold cl-tim">1 Giường lớn</strong></p>
+                                <p>- Chúng tôi muốn phòng gần nhau, hỗ trợ nôi em bé</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Xuất hóa đơn</div>
+                            <div class="panel-body">
+                                
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Cập nhật từ Hospi</div>
+                            <div class="panel-body">
+                                <p>Quý khach đã thanh toán booking qua CK ngày 12/06/2019</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Lưu ý</div>
+                            <div class="panel-body">
+                                <p>- Quý khách chỉ thanh toán khi được xác nhận bởi nhân viên HOSPI qua email hoặc điện thoại.</p>
+                                <p>- Khi thanh toán chuyển khoản vui lòng ghi rõ, họ tên khách hàng hoặc thanh toán cho mã booking HP84387.</p>
+                                <p>- Nếu quý khách chọn phương thức thanh toán chuyển khoản, Quý khách chỉ chuyển khoản theo thông tin tài khoản trong booking này.</p>
+                                <p>- Nếu quý khách chọn các phương thức còn lại thì phải có phiếu thu, giấy giới thiệu thu tiền (nếu có) và các giấy tờ có chữ ký và con dấu của công ty HOSPI thì mới hợp lệ.</p>
+                                <p>- Quý khách có thể từ chối thanh toán nếu nhân viên không cung cấp đủ các thông tin trên hoặc liên hệ hotline: 090 345 5152 để được xác nhận.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_page_booking_complete_footer">
+                        <p>HOSPI.vn © 2019 - Đặt khách sạn, resort, tour, combo cho người Việt</p>
+                        <p>Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</p>
+                        <p>Hỗ khách hàng</p>
+                        <p><img src="themes/new_theme/assets/img/phone_02.png" alt=""> 09 6868 0106</p>
+                        <p><img src="themes/new_theme/assets/img/letter_02.png" alt=""> booking@hospi.vn</p>
                     </div>
                 </div>
             </div>

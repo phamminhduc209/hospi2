@@ -254,555 +254,167 @@
             </ol>
         </div>
     </div>
-    <div class="m_page_booking">
+    <div class="m_page_booking m_page_booking_complete">
         <div class="container">
             <div class="rightcontent">
-                <div class="offer-page itemscontainer">
-                    <div class="result"></div>
-                    <div class="page-info-user">
-                        <form class="row block-panel-info ng-pristine ng-valid" id="bookingdetails">
-                            <div class="col-sm-7 col-xs-12">
-                                <div class="clearfix">
-                                    <div class="block-payment block-payment-item">
-                                        <div class="block-title">
-                                            <span class="num">1</span> THÔNG TIN CHUNG
-                                        </div>
-                                        <div class="block-tab-order">
-                                            <ul class="nav nav-tabs nav-tabs-book">
-                                                <li class="active">
-                                                    <a data-toggle="tab" href="#inputinfo">
-                                                        <span>
-                                                            <img class="icn icn_normal" src="themes/new_theme/assets/img/icn_infomation.png" alt="">
-                                                            <img class="icn icn_hover" src="themes/new_theme/assets/img/icn_infomation_hover.png" alt="">
-                                                        </span>
-                                                        Nhập thông tin
-                                                    </a>
-                                                </li>
-                                                <li class="text-center pading-top-5-mobile margin-bottom-5-mobile">
-                                                    <a data-toggle="tab" href="#login"><i class="icn fa fa-user-circle-o"></i> Đăng nhập</a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content">
-                                                <div id="inputinfo" class="tab-pane fade in active">
-                                                    <div class="block-payment_inner">
-                                                        <div class="form-horizontal">
-                                                            <div class="form-group row">
-                                                                <div class="col-md-3 col-xs-12">
-                                                                    <label class="fontf_arial control-label form_title">Họ tên bạn <span class="requirement">*</span></label>
-                                                                </div>
-                                                                <div class="col-sm-9 col-xs-12">
-                                                                    <input type="text" placeholder="" class="form-control" name="lastname">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-md-3 col-xs-12">
-                                                                    <label class="fontf_arial control-label form_title">Email <span class="requirement">*</span></label>
-                                                                </div>
-                                                                <div class="col-sm-9 col-xs-12">
-                                                                    <input type="text" placeholder="" class="form-control" name="email">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-md-3 col-xs-12">
-                                                                    <label class="fontf_arial control-label form_title">Số điện thoại <span class="requirement">*</span></label>
-                                                                </div>
-                                                                <div class="col-sm-9 col-xs-12">
-                                                                    <input type="text" placeholder="" class="form-control" name="phone">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="m_checkbox_sh">
-                                                            <div class="m_checkbox_ttl">
-                                                                <label>
-                                                                    <input type="checkbox" name="noterequest" class="checkbox" value="noterequest">
-                                                                    <span></span>
-                                                                    Ghi chú / Yêu cầu
-                                                                </label>
-                                                            </div>
-                                                            <div class="m_checkbox_content">
-                                                                <textarea class="form-control" cols="4" rows="6" placeholder="Bạn có yêu câu khác ?" name="additionalnotes"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="m_checkbox_sh">
-                                                            <div class="m_checkbox_ttl">
-                                                                <label>
-                                                                    <input type="checkbox" name="xuathoadon" class="checkbox" value="xuathoadon">
-                                                                    <span></span>
-                                                                    Xuất hóa đơn
-                                                                </label>
-                                                            </div>
-                                                            <div class="m_checkbox_content">
-                                                                <div id="xuathoadon" class="form-horizontal">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-md-4 col-xs-12">
-                                                                            <label class="fontf_arial control-label form_title">Tên công ty <span class="requirement">*</span></label>
-                                                                        </div>
-                                                                        <div class="col-md-8 col-xs-12">
-                                                                            <input type="text" placeholder="" class="form-control" name="company">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-group row">
-                                                                        <div class="col-md-4 col-xs-12">
-                                                                            <label class="fontf_arial control-label form_title">MST <span class="requirement">*</span></label>
-                                                                        </div>
-                                                                        <div class="col-md-8 col-xs-12">
-                                                                            <input type="text" placeholder="" class="form-control" name="mst">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-group row">
-                                                                        <div class="col-md-4 col-xs-12">
-                                                                            <label class="fontf_arial control-label form_title">Địa chỉ công ty <span class="requirement">*</span></label>
-                                                                        </div>
-                                                                        <div class="col-md-8 col-xs-12">
-                                                                            <input type="text" class="form-control" placeholder="" name="address">
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- <div class="form-group checkbox">
-                                                                        <label class="no-padding-left">
-                                                                            <input type="checkbox" value="" class="ngayvechang">
-                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                            Gửi hóa đơn về địa chỉ khác
-                                                                        </label>
-                                                                    </div> -->
-                                                                    <div class="form-group mb0 row">
-                                                                        <div class="col-md-4 col-xs-12">
-                                                                            <label class="fontf_arial control-label form_title">Địa chỉ nhận hóa đơn <span class="requirement">*</span></label>
-                                                                        </div>
-                                                                        <div class="col-md-8 col-xs-12">
-                                                                            <input type="text" class="form-control" placeholder="" name="companyadd">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="block_methodpay">
-                                                        <div class="block_title">PHƯƠNG THỨC THANH TOÁN</div>
-                                                        <div class="block_content">
-                                                            <p class="note">Để thuận tiện cho việc thanh toán nhanh chóng. Quý khách vui lòng chọn 1 trong những hình thức thanh toán dưới đây</p>
-                                                            <div class="block_methodpay_items">
-                                                                <div class="block_methodpay_item">
-                                                                    <div class="form-group block_methodpay_ttl">
-                                                                        <label class="mb0">
-                                                                            <div class="d-flex align-items-center">
-                                                                                <input type="checkbox" class="chuyenkhoan payment_method" data-id="1" value="banktransfer" name="checkout-type">
-                                                                                <span></span>
-                                                                                Chuyển khoản/ATM
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div id="showphuongthuc_1" style="display: none">
-                                                                        <div class="block_methodpay_ctn">
-                                                                            <div class="form-group">
-                                                                                <span class="cl-gray">Quý khách vui lòng chọn ngân hàng</span><br>
-                                                                                <span class="cl-gray">Lưu ý:<i> Quý khách chỉ tích vào để lấy thông tin tài khoản từ HOSPI.vn. Việc tiến hành thanh toán chỉ sau khi được xác nhận bởi nhân viên qua email hoặc điện thoại.</i></span>
-                                                                            </div>
-                                                                            <input type="hidden" name="bank_id" id="bank_id">
-                                                                            <div class="row">
-                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobil">
-                                                                                    <div class="form-group checkbox">
-                                                                                        <label class="no-padding-left">
-                                                                                            <input class="choose_bank" type="checkbox" value="1" onchange="changeatm('viettinbank',1)">
-                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                            ViettinBank
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobile">
-                                                                                    <div class="form-group checkbox">
-                                                                                        <label class="no-padding-left">
-                                                                                            <input class="choose_bank" type="checkbox" value="3" onchange="changeatm('vietcombank',3)">
-                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                            Vietcombank
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobil">
-                                                                                    <div class="form-group checkbox">
-                                                                                        <label class="no-padding-left">
-                                                                                            <input class="choose_bank" type="checkbox" value="2" onchange="changeatm('acb',2)">
-                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                            ACB
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <!-- <div class="col-md-2 col-xs-12 no-margin-top-mobile">
-                                                                                    <div class="form-group checkbox">
-                                                                                        <label class="no-padding-left">
-                                                                                            <input class="choose_bank" type="checkbox" value="4" onchange="changeatm('mbbank',4)">
-                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                            MBBank
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div> -->
-                                                                                <div class="col-md-3 col-xs-12 no-margin-top-mobile">
-                                                                                    <div class="form-group checkbox">
-                                                                                        <label class="no-padding-left">
-                                                                                            <input class="choose_bank" type="checkbox" value="5" onchange="changeatm('sacombank',5)">
-                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                            Sacombank
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="conten-visa-card" id="show-atm-select" style="display: none">
-                                                                                <div class="content-visa-item bank_1" style="display: none">
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Ngân hàng:</span>
-                                                                                        <strong class="cl-tim">TMCP Công Thương Việt Nam - Vietinbank</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
-                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Số tài khoản:</span>
-                                                                                        <strong class="cl-tim"></strong>
-                                                                                    </p>
-                                                                                </div>
-                                                                                <div class="content-visa-item bank_3" style="display: none">
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Ngân hàng:</span>
-                                                                                        <strong class="cl-tim">Ngân hàng VCB (Vietcombank)</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
-                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Số tài khoản:</span>
-                                                                                        <strong class="cl-tim"></strong>
-                                                                                    </p>
-                                                                                </div>
-                                                                                <div class="content-visa-item bank_2" style="display: none">
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Ngân hàng:</span>
-                                                                                        <strong class="cl-tim">Á Châu (ACB)</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
-                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Số tài khoản:</span>
-                                                                                        <strong class="cl-tim"></strong>
-                                                                                    </p>
-                                                                                </div>
-                                                                                <div class="content-visa-item bank_5" style="display: none">
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Ngân hàng:</span>
-                                                                                        <strong class="cl-tim">Sacombank</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
-                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Số tài khoản:</span>
-                                                                                        <strong class="cl-tim"></strong>
-                                                                                    </p>
-                                                                                </div>
-                                                                                <div class="clearfix"></div>
-                                                                                <div class="info-hoa-don" id="nganhangxuathoadon">
-                                                                                    <div class="clss-xuat"><span class="cl-tim">Quý khách xuất hóa đơn, chuyển vào tài khoản này</span></div>
-                                                                                    <div class="form-group checkbox">
-                                                                                        <label class="no-padding-left">
-                                                                                            <input class="choose_bank" type="checkbox" value="6">
-                                                                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                                                                            Vietcombank
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="clearfix"></div>
-                                                                                <div class="content-visa-item-xuat-hoa-don" id="ngan-hanh-xuat-hoadon">
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Ngân hàng:</span>
-                                                                                        <strong class="cl-tim">Ngân hàng VCB (Vietcombank)</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Chủ tài khoản:</span>
-                                                                                        <strong class="cl-tim">CÔNG TY TNHH DU LỊCH HOSPI</strong>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <span class="cl-gray">Số tài khoản:</span>
-                                                                                        <strong class="cl-tim"></strong>
-                                                                                    </p>
-                                                                                </div>
-                                                                                <div class="clearfix"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="block_methodpay_item">
-                                                                    <div class="form-group block_methodpay_ttl">
-                                                                        <label class="mb0">
-                                                                            <div class="d-flex align-items-center">
-                                                                                <input type="checkbox" class="chuyenkhoan payment_method" data-id="3" value="cod" name="checkout-type">
-                                                                                <span></span>
-                                                                                Thanh toán tại nhà
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div id="showphuongthuc_3" style="display: none">
-                                                                        <div class="block_methodpay_ctn">
-                                                                            <div class="cl-gray">
-                                                                                <span>Quý khách đã lựa chọn phương thức thanh toán tại nhà.Hospi chỉ hỗ trợ thu tiền tại Tp.Hồ Chí Minh và mức thu phí được áp dụng.</span><br>
-                                                                                <span><strong>* Quận 1,Quận 3,Quận 4 ,Quận 5</strong> <i>thu phí 10.000 VND (miễn phí cho đơn phòng trên 5.000.000 VND)</i></span><br>
-                                                                                <span><strong>* Quận 10,Quận 7,Quận 11 ,Quận Bình Thạnh,Quận Tân Bình,Phú Nhuận</strong> <i>thu phí 20.000 VND (miễn phí cho đơn phòng trên 10.000.000 VND)</i></span><br>
-                                                                                <span><strong>* Quận Tân Phú,Bình Tân,Quận 2 ,Quận Thủ Đức</strong> <i>thu phí 50.000 VND (miễn phí cho đơn phòng trên 20.000.000 VND)</i></span><br>
-                                                                                <span><i>* Thời  gian thu tiền tại nhà:</i> <strong>8:00 sáng - 20:00 tối (Thứ 2 - CN)</strong></span>
-                                                                                <i>* Đối với các quận còn lại sẽ báo mức thu phí qua điện thoại, mức giá tùy thuộc vào booking được gửi vào email của quý khách để tiện cho việc thanh toán dễ dàng</i>
-                                                                            </div>
-                                                                            <div class="form-group mt10">
-                                                                                <span class="cl-tim">Nhập địa chỉ thu tiền *</span>
-                                                                                <input type="text" class="form-control" name="txtAddress">
-                                                                            </div>
-                                                                            <div class="form-horizontal">
-                                                                                <div class="form-group row">
-                                                                                    <div class="col-md-5 col-xs-12">
-                                                                                        <label class="fontf_arial control-label form_title">Thời gian có thể thu tiền *</label>
-                                                                                    </div>
-                                                                                    <div class="col-sm-7 col-xs-12">
-                                                                                        <!-- <input type="text" class="form-control" name="txtAddress"> -->
-                                                                                        <select name="txtAddress" id="" class="form-control">
-                                                                                            <option>Bất cứ lúc nào</option>
-                                                                                            <option>Buổi sáng (08:00 - 12:00)</option>
-                                                                                            <option>Buổi sáng (12:00 - 18:00)</option>
-                                                                                            <option>Buổi sáng (18:00 - 20:00)</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="block_methodpay_item">
-                                                                    <div class="form-group block_methodpay_ttl">
-                                                                        <label class="mb0">
-                                                                            <div class="d-flex align-items-center">
-                                                                                <input type="checkbox" class="chuyenkhoan payment_method" data-id="2" value="payatoffice" name="checkout-type">
-                                                                                <span></span>
-                                                                                Thanh toán tại công ty
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div id="showphuongthuc_2" style="display: none">
-                                                                        <div class="block_methodpay_ctn">
-                                                                            <p class="cl-gray mb10">Quý khách đã lựa chọn phương thức thanh toán tại văn phòng công ty HOSPI</p>
-                                                                            <div class="conten-vanphong">
-                                                                                <span class="cl-gray">Địa chỉ văn phòng:</span><br>
-                                                                                <strong class="cl-tim">Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</strong><br>
-                                                                                <span class="cl-gray">Thời gian làm việc: </span><br>
-                                                                                <strong class="cl-tim">8:00 sáng - 20:00 tối (Thứ 2 - Thứ 6)</strong><br>
-                                                                                <strong class="cl-tim">8:00 sáng - 17:00 chiều (Thứ 7 và Chủ Nhật)</strong><br>
-                                                                                <span class="cl-gray"><i>Trước khi đến thanh toán. Quý khách vui lòng nghi nhớ mã booking hoặc số điện thoại để tiện cho việc thanh toán</i></span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="login" class="tab-pane fade in">
-                                                    Đăng Nhập
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="m_page_booking_complete_btn d-flex justify-content-center">
+                    <input type="button" class="btn btn_print mr10" value="IN">
+                    <input type="button" class="btn btn_download" value="TẢI FILE PDF">
+                </div>
+                <div class="m_page_booking_complete_inf">
+                    <p class="status"><img src="themes/new_theme/assets/img/card.png" alt="" class="mr10"> CHƯA THANH TOÁN</p>
+                    <div class="m_page_booking_complete_head">
+                        <div class="d-flex justify-content-between algin-item-center">
+                            <div>
+                                <p>Ngày đặt: 12/06/2019</p>
+                                <p>Giờ đặt: 22:01 PM</p>
+                                <p class="name">HOTEL  INVOICE</p>
+                                <p>Phiếu xác nhận thanh toán</p>
+                                <p><strong>Mã booking: HP097612</strong></p>
+                            </div>
+                            <div class="text-right">
+                                <p>KHÁCH HÀNG</p>
+                                <p>Mã khách hàng: </p>
+                                <p><strong>Võ Đinh Chi</strong></p>
+                                <p>dinhchi@hospi.vn</p>
+                                <p>0903455152</p>
+                                <p>Lầu 1,số 124 Khánh Hội,P.6, Quận 4,<br>TP.Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_page_booking_complete_content">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Thông tin khách sạn</div>
+                            <div class="panel-body">
+                                <div class="info-hotel">
+                                    <div class="info-hotel-img">
+                                        <img class="img-responsive" src="https://www.hospi.vn/uploads/images/hotels/slider/thumbs/528771_Novotel-Phu-Quoc-Resort-(50).jpg" alt="Novotel Phú Quốc Resort" width="108">
+                                    </div>
+                                    <div class="info-hotel-ifn">
+                                        <p><strong class="cl-tim">MARINA BAY VUNG TAU RESORT & SPA</strong></p>
+                                        <p>
+                                            <i class="star text-warning fa fa-star voted"></i>
+                                            <i class="star text-warning fa fa-star voted"></i>
+                                            <i class="star text-warning fa fa-star voted"></i>
+                                            <i class="star text-warning fa fa-star voted"></i>
+                                            <i class="star text-warning fa fa-star voted"></i>
+                                        </p>
+                                        <p>
+                                            <i style="margin-left:-5px" class="icon-location-6"></i>
+                                            <small class="adddress font-size-14">Gành Gió, Phú Quốc, Kien Giang, Vietnam</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-time-book">
+                                    <p>
+                                        <span class="cl-gray text-bold">Ngày nhận phòng: </span>
+                                        <span class="cl-tim cl-bold">22/07/2019</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Ngày trả phòng: </span>
+                                        <span class=" cl-tim cl-bold">23/07/2019</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Số đêm:</span>
+                                        <span class="cl-tim cl-bold">1</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Người lớn:</span>
+                                        <span class="cl-tim cl-bold">2</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Trẻ em:</span>
+                                        <span class="cl-tim cl-bold">0</span>
+                                    </p>
+                                    <p>
+                                        <span class="cl-gray">Số Combo:</span>
+                                        <span class="cl-tim cl-bold">0</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default block_Kindofroom">
+                            <div class="panel-heading">Thông tin phòng</div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <img src="themes/new_theme/assets/img/room.png" alt="" class="img-rounded">
+                                        <p>
+                                            <strong class="cl-tim">Premier Deluxe (01 phòng)</strong><br>
+                                            <span>Loại giường:  01 twin</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <img src="themes/new_theme/assets/img/room.png" alt="" class="img-rounded">
+                                        <p>
+                                            <strong class="cl-tim">Suite room(03 phòng)  + 03 giường phụ</strong><br>
+                                            <span>Loại giường:  01 twin, 02 double</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="m_policy">
+                                <div class="ttl">
+                                    <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        <img src="themes/new_theme/assets/img/icn_politique_normal.png" alt="" class="mr15"> <u>Chính sách hủy</u>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="ctn">
+                                        Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy Chính sách hủy
                                     </div>
                                 </div>
                             </div>
-                            <!-- class="col-sm-7 col-xs-12" -->
-                            <!-- class="col-sm-5 col-xs-12" -->
-                            <div class="col-sm-5 col-xs-12">
-                                <div class="block-payment">
-                                    <div class="block-title">THÔNG TIN BOOKING</div>
-                                </div>
-                                <div class="block-tab-order">
-                                    <ul class="nav nav-tabs nav-tabs-book">
-                                        <li class="active">
-                                            <a data-toggle="tab" class="donphongduaban andes" href="#donphongcuaban">
-                                                <span>
-                                                    <img src="themes/new_theme/assets/img/icn_detailbooking_normal.png" alt="" class="icn icn_normal">
-                                                    <img src="themes/new_theme/assets/img/icn_detailbooking_hover.png" alt="" class="icn icn_hover">
-                                                </span>
-                                                Thông tin chi tiết
-                                            </a>
-                                        </li>
-                                        <li class="text-center pading-top-5-mobile margin-bottom-5-mobile">
-                                            <a data-toggle="tab" class="dieukienhuy andes" href="#dieukienhuy">
-                                                <span>
-                                                    <img src="themes/new_theme/assets/img/icn_politique_normal.png" alt="" class="icn icn_normal">
-                                                    <img src="themes/new_theme/assets/img/icn_politique_hover.png" alt="" class="icn icn_hover">
-                                                </span>
-                                                Điều kiện hủy
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div id="donphongcuaban" class="tab-pane fade in active">
-                                            <div class="block-info-time-book">
-                                                <div class="info-hotel">
-                                                    <div class="info-hotel-img">
-                                                        <img class="img-responsive" src="https://www.hospi.vn/uploads/images/hotels/slider/thumbs/528771_Novotel-Phu-Quoc-Resort-(50).jpg" alt="Novotel Phú Quốc Resort" width="108">
-                                                    </div>
-                                                    <div class="info-hotel-ifn">
-                                                        <p><strong class="cl-tim">MARINA BAY VUNG TAU RESORT & SPA</strong></p>
-                                                        <p>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                            <i class="star text-warning fa fa-star voted"></i>
-                                                        </p>
-                                                        <p>
-                                                            <i style="margin-left:-5px" class="icon-location-6"></i>
-                                                            <small class="adddress font-size-14">Gành Gió, Phú Quốc, Kien Giang, Vietnam</small>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info-time-book">
-                                                    <p>
-                                                        <span class="cl-gray text-bold">Ngày nhận phòng: </span>
-                                                        <span class="cl-tim cl-bold">22/07/2019</span>
-                                                    </p>
-                                                    <p>
-                                                        <span class="cl-gray">Ngày trả phòng: </span>
-                                                        <span class=" cl-tim cl-bold">23/07/2019</span>
-                                                    </p>
-                                                    <p>
-                                                        <span class="cl-gray">Số đêm:</span>
-                                                        <span class="cl-tim cl-bold">1</span>
-                                                    </p>
-                                                    <p>
-                                                        <span class="cl-gray">Người lớn:</span>
-                                                        <span class="cl-tim cl-bold">2</span>
-                                                    </p>
-                                                    <p>
-                                                        <span class="cl-gray">Trẻ em:</span>
-                                                        <span class="cl-tim cl-bold">0</span>
-                                                    </p>
-                                                    <p>
-                                                        <span class="cl-gray">Số Combo:</span>
-                                                        <span class="cl-tim cl-bold">0</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="block-details-book">
-                                                <h2>Combo 2N1Đ + Vé tàu khứ hồi + Ăn trưa tại Romana Resort & Spa Mũi Né dành cho 2 khách.</h2>
-                                                <p class="cl-gray mb05">2,260,000 x 2 (combo) = 5,420,000 VND</p>
-                                                <p class="cl-tim mb05"><strong>* Cuối tuần (T6,T7)</strong></p>
-                                                <p class="cl-gray mb05">893,000 x 2  = 1,786,000 VND</p>
-                                                <p class="cl-tim mb05"><strong>* Phụ thu người thứ 3.</strong></p>
-                                                <p class="cl-gray">1,993,000 x 1  = 1,993,000 VND</p>
-                                            </div>
-                                            <div class="content-item-text clearfix">
-                                                <div class="row mb05">
-                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Tiền phòng</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span class="cl-tim cl-bold">8,299,000 VND</span></div>
-                                                </div>
-                                                <div class="row mb05">
-                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Phí dịch vụ(5%)</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                    <input type="hidden" name="phi_dich_vu" value="0">
-                                                </div>
-                                                <div class="row mb05">
-                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Phí VAT(10%)</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                    <input type="hidden" name="phi_vat" value="0">
-                                                </div>
-                                                <div class="row mb05">
-                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Chi phí khác</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-xs-6 text-left"><span class="cl-gray">Tổng tiền</span></div>
-                                                    <div class="col-lg-6 col-xs-6 text-right"><span class="cl-tim cl-bold">8,299,000 VND</span></div>
-                                                    <input type="hidden" name="tong_chua_giam" id="tong_chua_giam" value="0">
-                                                </div>
-                                            </div>
-                                            <!-- <input type="hidden" name="booking_extra_beds_request" value="1"> -->
-                                            <!-- <div class="clearfix">
-                                                <input type="hidden" name="room_price" value="">
-                                                <input type="hidden" name="bed_price" value="">
-                                                <div class="clss-content-book">
-                                                    <p class="cl-tim cl-bold">
-                                                        <input type="hidden" name="price_type" value="">
-                                                        <span></span>
-                                                    </p>
-                                                    <p>
-                                                        <span>0 x 1 (đêm)
-                                                            x (phòng)
-                                                            = 0 VND</span>
-                                                    </p>
-                                                </div>
-                                            </div> -->
-                                            <!-- <input type="hidden" name="so_giuong_phu" value="">
-                                            <input type="hidden" name="phi_giuong_phu" value="0"> -->
-                                            <div class="block-code-sale">
-                                                <p class="ttl cl-red"><img src="themes/new_theme/assets/img/percent02.png" alt="" class="mr15">Bạn có mã giảm giá ?</p>
-                                                <div class="block-btn-inline">
-                                                    <div class="form-group clearfix">
-                                                        <input type="text" class="form-control coupon" placeholder="Mã giảm giá" name="coupon_code" value="HP97512">
-                                                        <button type="button" class="form-control applycoupon andes">Áp dụng</button>
-                                                    </div>
-                                                    <div class="row cl-red cl-bold clss-tongthanhtoan">
-                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Giảm giá</span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span>0 VND</span></div>
-                                                    </div>
-                                                    <div class="row cl-gray clss-tongthanhtoan">
-                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Tổng thanh toán </span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>8,299,000 VND</b></span></div>
-                                                        <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
-                                                    </div>
-                                                    <div class="row cl-blue clss-tongthanhtoan">
-                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Đã thanh toán </span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>0 VND</b></span></div>
-                                                        <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
-                                                    </div>
-                                                    <div class="row cl-tim clss-tongthanhtoan">
-                                                        <div class="col-lg-6 col-xs-6 text-left "><span>Còn lại </span></div>
-                                                        <div class="col-lg-6 col-xs-6 text-right"><span id="tong_thanh_toan_span"><b>8,299,000 VND</b></span></div>
-                                                        <input type="hidden" name="tong_thanh_toan" id="tong_thanh_toan" value="0">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clss-finish">
-                                                    Bấm hoàn thành có nghĩa rằng bạn đã đọc và chấp nhận <a href="#" class="cl-tim cl-bold">điều khoản và chính sách của khách sạn</a> và <a href="#" class="cl-tim cl-bold">điều khoản và chính sách bảo mật</a> của HOSPI
-                                            </div>
-                                            <div class="col-lg-12 col-xs-12 no-padding">
-                                                <button class="button-tim" type="submit" name="guest" onclick="return completebook('https://www.hospi.vn/','Select Payment Method');">Hoàn thành</button>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div id="dieukienhuy" class="tab-pane fade">
-                                            <div class="content-huyphong">
-                                                *Áp dụng cho các booking dưới 09 phòng:<br />
-                                                - Trường hợp hủy phòng trước 17 ngày ( trừ thứ 7, CN, Lễ, Tết) so với ngày đến không tính phí<br />
-                                                - Trường hợp hủy phòng trong vòng 17 (trừ thứ 7, CN, Lễ, Tết) so với ngày đến hoặc không đến, tính 100% tiền phòng đêm đầu tiên <br />
-                                                - Trường hợp hủy phòng trong vòng 10 (trừ thứ 7, CN, Lễ, Tết) so với ngày đến hoặc không đến, tính 100 % tiền phòng <br />
-                                                *Các booking giai đoạn lễ tết, không được hoàn, hủy hoặc thay đổi
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Phương thức thanh toán</div>
+                            <div class="panel-body">
+                                <p>Quý khách đã chọn phương thức thanh toán: <strong class="cl-bold cl-tim">Thanh toán tại công ty</strong></p>
+                                <div class="conten-vanphong">
+                                    <span class="cl-gray">Địa chỉ văn phòng:</span><br>
+                                    <strong class="cl-tim">Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</strong><br>
+                                    <span class="cl-gray">Thời gian làm việc: </span><br>
+                                    <strong class="cl-tim">8:00 sáng - 20:00 tối (Thứ 2 - Thứ 6)</strong><br>
+                                    <strong class="cl-tim">8:00 sáng - 17:00 chiều (Thứ 7 và Chủ Nhật)</strong><br>
                                 </div>
                             </div>
-                            <!-- class="col-sm-5 col-xs-12" -->
-                            <input type="hidden" name="country" value="VN" id="country">
-                            <input type="hidden" id="itemid" name="itemid" value="38">
-                            <input type="hidden" name="checkout" value="23/07/2019">
-                            <input type="hidden" name="adults" value="2">
-                            <input type="hidden" name="child" value="0">
-                            <input type="hidden" name="nights" value="1">
-                            <input type="hidden" id="couponid" name="couponid" value="">
-                            <input type="hidden" id="btype" name="btype" value="hotels">
-                            <input type="hidden" name="subitemid" value="[null]">
-                            <input type="hidden" name="roomscount" value='{"55":"","56":"","442":"","444":"","451":"","453":""}'>
-                            <input type="hidden" name="bedscount" value='{"55":"","56":"","442":"","444":"","451":"","453":""}'>
-                            <input type="hidden" name="checkin" value="22/07/2019">
-                            <!-- <input type="hidden" name="adults" value= 0 />
-                                    <input type="hidden" name="child" value= 0 /> -->
-                        </form>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Ghi chú / Yêu cầu</div>
+                            <div class="panel-body">
+                                <p>* Yêu cầu giường: <strong class="cl-bold cl-tim">1 Giường lớn</strong></p>
+                                <p>- Chúng tôi muốn phòng gần nhau, hỗ trợ nôi em bé</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Xuất hóa đơn</div>
+                            <div class="panel-body">
+                                
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Cập nhật từ Hospi</div>
+                            <div class="panel-body">
+                                <p>Quý khach đã thanh toán booking qua CK ngày 12/06/2019</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Lưu ý</div>
+                            <div class="panel-body">
+                                <p>- Quý khách chỉ thanh toán khi được xác nhận bởi nhân viên HOSPI qua email hoặc điện thoại.</p>
+                                <p>- Khi thanh toán chuyển khoản vui lòng ghi rõ, họ tên khách hàng hoặc thanh toán cho mã booking HP84387.</p>
+                                <p>- Nếu quý khách chọn phương thức thanh toán chuyển khoản, Quý khách chỉ chuyển khoản theo thông tin tài khoản trong booking này.</p>
+                                <p>- Nếu quý khách chọn các phương thức còn lại thì phải có phiếu thu, giấy giới thiệu thu tiền (nếu có) và các giấy tờ có chữ ký và con dấu của công ty HOSPI thì mới hợp lệ.</p>
+                                <p>- Quý khách có thể từ chối thanh toán nếu nhân viên không cung cấp đủ các thông tin trên hoặc liên hệ hotline: 090 345 5152 để được xác nhận.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_page_booking_complete_footer">
+                        <p>HOSPI.vn © 2019 - Đặt khách sạn, resort, tour, combo cho người Việt</p>
+                        <p>Block B, Sunrise City View, 33 Nguyễn Hữu Thọ, Quận 7, Tp. HCM</p>
+                        <p>Hỗ khách hàng</p>
+                        <p><img src="themes/new_theme/assets/img/phone_02.png" alt=""> 09 6868 0106</p>
+                        <p><img src="themes/new_theme/assets/img/letter_02.png" alt=""> booking@hospi.vn</p>
                     </div>
                 </div>
             </div>
