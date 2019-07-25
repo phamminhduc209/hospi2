@@ -9355,18 +9355,18 @@ p.room-title {
     border-bottom: none;
 }
 
-div#OVERVIEW {
+#OVERVIEW {
     margin-top: 10px;
 }
 
-.panel-body.wrapper-class {
+/*.panel-body.wrapper-class {
     padding: 0;
-}
+}*/
 
-.wrapper-class {
+/*.wrapper-class {
     display: flex;
     align-items: center;
-}
+}*/
 
 .align-center {
     text-align: center;
@@ -9704,8 +9704,9 @@ ul.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
 }
 
 #ADDREVIEW .slider.slider-horizontal .slider-track {
-    height: 17px;
+    height: 15px;
     border-radius: 0;
+    background: #CCC;
 }
 
 .panel-heading.no-padding {
@@ -9994,32 +9995,35 @@ nput[type=checkbox]:checked+label.label-ckb:before {
 
 .form-group .slider-handle {
     background: transparent none;
-    height: 17px;
+    height: 15px;
     /* You can customize the handle and set a background image */
 }
 
 .form-group .slider.slider-horizontal .slider-selection {
-    height: 17px;
+    height: 15px;
     border-radius: 0;
+    background: #603;
 }
 
 /* Or display content like unicode characters or fontawesome icons */
 
 .form-group .slider-handle::before {
-    line-height: 20px;
     font-size: 20px;
-    content: '\2605';
-    color: #660033;
+    content: "\f0da";
+    font-family: "FontAwesome";
+    color: #0099cc;
     position: absolute;
-    top: -3px;
-    background: #603;
+    top: 0;
+    background: transparent;
+    height: 15px;
+    line-height: 15px;
 }
 
 .form-group .slider-selection {
     height: 17px;
-    / / background-image: -webkit-linear-gradient(top, #660033 0 %, #f5f5f5 100 %);
-    / / background-image: -o-linear-gradient(top, #660033 0 %, #f5f5f5 100 %);
-    / / background-image: linear-gradient(to bottom, #660033 0 %, #f5f5f5 100 %);
+    /*background-image: -webkit-linear-gradient(top, #660033 0 %, #f5f5f5 100 %);*/
+    /*background-image: -o-linear-gradient(top, #660033 0 %, #f5f5f5 100 %);*/
+    /*background-image: linear-gradient(to bottom, #660033 0 %, #f5f5f5 100 %);*/
 }
 
 #ADDREVIEW .form-group {
@@ -10673,10 +10677,6 @@ ul.sub-quick-menu li:last-child {
 
 .footer-link i {
     font-size: 18px;
-}
-
-.panel.panel-default form {
-    margin-top: 15px;
 }
 
 .btn-sidebar {
@@ -12105,6 +12105,19 @@ h4.hotel-name {
     padding: 15px;
 }
 
+.block-process-evaluate .namehotel {
+    color: #666;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    border-bottom: 1px solid #CCC;
+}
+
+.block-process-evaluate .block-process-evaluate_inner {
+    border-bottom: 1px solid #CCC;
+    padding: 15px;
+}
+
 .block-process-evaluate .block-title {
     font-family: "AndesRounded", sans-serif;
     width: 100%;
@@ -12125,7 +12138,18 @@ h4.hotel-name {
 
 .block-process-evaluate .circle-evaluate {
     background: #ccc;
-    margin-left: 25%;
+    float: none;
+    margin: 0 auto;
+}
+
+.block-process-evaluate2 {
+    padding-bottom: 15px;
+}
+
+.block-process-evaluate2 .result {
+    color: #603;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .block-process-evaluate .circle-evaluate:after {
@@ -12217,20 +12241,18 @@ h4.hotel-name {
 }
 
 .block-process-evaluate2 .lft {
-    width: 130px;
+    align-items: center;
+    display: flex;
     float: left;
+    justify-content: center;
     margin-right: 30px;
     text-align: center;
-}
-
-.block-process-evaluate.block-process-evaluate2 .circle-evaluate {
-    margin: 0 auto;
-    float: none
+    width: 250px;
 }
 
 .block-process-evaluate2 .rgt {
     float: left;
-    width: calc(100% - 160px);
+    width: calc(100% - 280px);
 }
 
 .block-process-evaluate.block-process-evaluate2 .label.text-left {
@@ -12241,14 +12263,30 @@ h4.hotel-name {
     margin-bottom: 5px;
 }
 
+.block-progress {
+    margin-bottom: 5px;
+}
+
+.block-progress:last-child {
+    margin-bottom: 0;
+}
+
 .block-progress .progress,
 .block-progress .txt {
     display: inline-block;
     vertical-align: middle;
 }
 
+.block-progress .ttl {
+    color: #666;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .block-progress .progress {
-    width: 70%;
+    width: 100%;
 }
 
 .block-progress .txt {
@@ -12260,8 +12298,8 @@ h4.hotel-name {
 }
 
 .item-review {
-    margin: 15px 25px 15px;
-    padding: 15px 8px;
+    margin: 15px;
+    padding: 15px;
     border: 1px solid #ccc;
 }
 
@@ -12335,6 +12373,12 @@ h4.hotel-name {
     vertical-align: middle;
 }
 
+.item-review-info p {
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .item-review .customer {
     width: 110px;
 }
@@ -12375,7 +12419,7 @@ h4.hotel-name {
 }
 
 .item-review .comment {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .viewmore {
@@ -12471,8 +12515,13 @@ h4.hotel-name {
 }
 
 .block-rooms .zoom-gallery img {
-    width: 135px;
+    width: 90px;
     height: auto;
+}
+
+.block-rooms .name {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .block-rooms .zoom-gallery,
@@ -12519,30 +12568,33 @@ h4.hotel-name {
     margin-top: 5px;
 }
 
-.block-rooms .info>* {
-    margin-top: 5px;
+.block-rooms .info .block-people li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    color: #999;
 }
 
-.block-rooms .info .block-people h5:first-child {
-    margin-top: 5px;
+.block-rooms .info .block-people li img {
+    margin-right: 5px;
+}
+
+.block-rooms .info .block-people li:last-child {
+    margin-bottom: 0;
 }
 
 .block-rooms .item-countroom h5,
-.block-rooms .item-countroom select {
-    display: inline-block;
-    width: 48%;
-}
+.block-rooms .item-countroom select {}
 
 .block-rooms .item-countroom select {
     color: #660033;
 }
 
-.block-rooms .item-countroom:first-child {
-    margin-bottom: 10px;
+.block-rooms .item-countroom {
+    width: 50%;
 }
 
-.block-rooms .block-price {
-    padding-left: 30px;
+.block-rooms .item-countroom:first-child {
+    margin-right: 10px;
 }
 
 .block-rooms .block-price .sale {
@@ -15460,4 +15512,50 @@ p.hs_cl_show_info {
 .page_booking .m_page_booking {
     background: #E8E8E8;
     padding: 32px 0;
+}
+
+.m_writereviews {
+    max-width: 850px;
+    margin: 20px auto 0;
+}
+
+.m_writereviews .panel-default>.panel-heading {
+    padding: 10px;
+    background-color: #e5e5e5;
+    color: #666;
+}
+
+.m_writereviews .m_writereviews_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.m_writereviews .m_writereviews_input label {
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;;
+    font-family: "Arial", sans-serif;
+    width: 150px;
+}
+
+.m_writereviews .m_writereviews_input #reviewform {
+    width: calc(100% - 170px)
+}
+.m_writereviews .m_writereviews_input #reviewform textarea {
+    max-width: 100%;
+    min-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.m_writereviews .addreview {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb( 102, 0, 51 );
+    width: 175px;
 }
