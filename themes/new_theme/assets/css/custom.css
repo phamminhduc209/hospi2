@@ -11983,12 +11983,14 @@ p.view-pos a {
 
 .block-price .block-price-info span {
     display: block;
-    font-size: 13px;
-    color: #999;
+    font-size: 12px;
+    color: #0099cc;
 }
 
 .block-price .block-price-info {
+    font-family: "Arial", sans-serif;
     position: relative;
+    margin-top: 5px;
 }
 
 .block-price .block-price-info .block-info-price-rooms {
@@ -12515,7 +12517,7 @@ h4.hotel-name {
 }
 
 .block-rooms .zoom-gallery img {
-    width: 90px;
+    width: 105px;
     height: auto;
 }
 
@@ -12582,8 +12584,34 @@ h4.hotel-name {
     margin-bottom: 0;
 }
 
-.block-rooms .item-countroom h5,
-.block-rooms .item-countroom select {}
+.block-rooms .info-beds {
+    position: relative;
+}
+
+.block-rooms .info-beds .info-beds-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.block-rooms .info-beds .note {
+    background: #CCC;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.block-rooms .info-beds .note img {
+    margin-right: 10px;
+}
+
+.block-rooms .item-countroom h5 {
+    margin-bottom: 5px;
+}
 
 .block-rooms .item-countroom select {
     color: #660033;
@@ -12639,6 +12667,15 @@ h4.hotel-name {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+}
+
+.block-rooms .block-check-sale-sb {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.block-rooms .block-check-sale-sb input[type='checkbox']:checked+span {
+    background: url(../img/checkbox03checked.png) no-repeat;
 }
 
 /* Blog Update 11/11/2016 */

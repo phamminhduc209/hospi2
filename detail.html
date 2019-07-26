@@ -1816,30 +1816,42 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <div class="item-countroom">
-                                                            <h5 class="size12">Số phòng</h5>
-                                                            <select class="form-control room_quantity" data-type="1" data-p="0" data-name="" data-detail-id="0">
-                                                                <option value="0">0</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                                <option value="6">6</option>
-                                                                <option value="7">7</option>
-                                                                <option value="8">8</option>
-                                                                <option value="9">9</option>
-                                                                <option value="10">10</option>
-                                                            </select>
-                                                            </select>
+                                                    <div class="info-beds">
+                                                        <div class="info-beds-inner">
+                                                            <div class="item-countroom">
+                                                                <h5 class="size12">Số phòng</h5>
+                                                                <select class="form-control room_quantity" data-type="1" data-p="0" data-name="" data-detail-id="0">
+                                                                    <option value="room_quantity0">0</option>
+                                                                    <option value="room_quantity1">1</option>
+                                                                    <option value="room_quantity2">2</option>
+                                                                    <option value="room_quantity3">3</option>
+                                                                    <option value="room_quantity4">4</option>
+                                                                    <option value="room_quantity5">5</option>
+                                                                    <option value="room_quantity6">6</option>
+                                                                    <option value="room_quantity7">7</option>
+                                                                    <option value="room_quantity8">8</option>
+                                                                    <option value="room_quantity9">9</option>
+                                                                    <option value="room_quantity10">10</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="item-countroom">
+                                                                <h5 class="size12">Giường phụ</h5>
+                                                                <select class="form-control extra_beds" data-price="1" data-p="0" data-name="" data-detail-id="0">
+                                                                    <option value="extra_beds0">0</option>
+                                                                    <option value="extra_beds1">1</option>
+                                                                    <option value="extra_beds2">2</option>
+                                                                    <option value="extra_beds3">3</option>
+                                                                    <option value="extra_beds4">4</option>
+                                                                    <option value="extra_beds5">5</option>
+                                                                    <option value="extra_beds6">6</option>
+                                                                    <option value="extra_beds7">7</option>
+                                                                    <option value="extra_beds8">8</option>
+                                                                    <option value="extra_beds9">9</option>
+                                                                    <option value="extra_beds10">10</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                        <div class="item-countroom">
-                                                            <h5 class="size12">Giường phụ</h5>
-                                                            <select class="form-control extra_beds" data-price="1" data-p="0" data-name="" data-detail-id="0">
-                                                                <option value="0">0</option>
-                                                            </select>
-                                                        </div>
+                                                        <p class="note"><img src="themes/new_theme/assets/img/bed.png" alt=""> Không áp dụng</p>
                                                     </div>
                                                     <input type="hidden" class="room_quantity_hidden" name="room_quantity[55]" id="room_quantity_55">
                                                     <input type="hidden" class="extra_beds_hidden" name="extra_beds[55]" id="extra_beds_55">
@@ -1868,23 +1880,34 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <p class="block-price-infos">
-                                                            <span>Bao gồm: Ăn sáng.</span>
-                                                            <span>Phí dịch vụ 5%, VAT 10%</span>
+                                                        <p class="block-price-info">
+                                                            <span><i class="fa fa-check"></i> Ăn sáng</span>
+                                                            <span><i class="fa fa-check"></i> Thuế VAT 10%</span>
+                                                            <span><i class="fa fa-check"></i>Phí dịch vụ 5%</span>
                                                         </p>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <td rowspan="3">
                                                     <p><button style="margin-bottom:5px" type="submit" class="btn btn-action btn-block chk">Đặt phòng</button></p>
-                                                    <p class="size13" style="text-align: center;">Bạn vui lòng chọn số lượng phòng hoặc giường phụ (nếu có).<br> <span style="font-size: 11px">Giường phụ: 0/đêm</span> </p>
+                                                    <p class="size13" style="text-align: center;">Bạn chọn số lượng phòng và giường phụ (nếu có).<br> Bạn chọn số lượng phòng và giường phụ (nếu có).</p>
                                                     <hr>
                                                     <p class="purple andes-bold size13 text-center">Yêu cầu giường</p>
-                                                    <p class="size13 text-center"><label class="radio-inline"><input type="checkbox" name="radiobeds" value="1">1 giường</label></p>
-                                                    <p class="size13 text-center"><label class="radio-inline"><input type="checkbox" name="radiobeds" value="2">2 giường</label></p>
+                                                    <div class="block-check-sale-sb">
+                                                        <label>
+                                                            <input type="checkbox" value="1" name="radiobeds" class="radio">
+                                                            <span></span>
+                                                            1 giường
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" value="2" name="radiobeds" class="radio">
+                                                            <span></span>
+                                                            2 giường
+                                                        </label>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="hs_room_info hs_show_info">
-                                                <td colspan="4">
+                                                <td colspan="3">
                                                     <div class="clearfix">
                                                         <p class="hs_cl_show_info"><span class="purple" style="font-weight: bold">Thông tin phòng</span> <span class="grey">(chỉ mang tính chất tham khảo)</span></p>
                                                     </div>
@@ -1985,6 +2008,126 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h4 class="name"><b class="purple">Superior Room</b></h4>
+                                                    <div class="zoom-gallery">
+                                                        <div class="zoom-gallery55">
+                                                            <a href="https://www.hospi.vn/uploads/images/hotels/rooms/photos/979440_Superior-room---Novotel-Phu-Quoc.jpg" data-source="https://www.hospi.vn/uploads/images/hotels/rooms/photos/979440_Superior-room---Novotel-Phu-Quoc.jpg" title="Superior Room">
+                                                                <img class="img-responsive img-rounded" src="themes/new_theme/assets/img/979440_Superior-room---Novotel-Phu-Quoc.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <ul class="block-people">
+                                                            <li><img src="themes/new_theme/assets/img/Adults.png" alt="">Người lớn: <span>02</span></li>
+                                                            <li><img src="themes/new_theme/assets/img/children.png" alt="">Trẻ em: <span>01</span></li>
+                                                            <li><img src="themes/new_theme/assets/img/bed.png" alt="">Giường phụ: <span>0</span></li>
+                                                        </ul>
+                                                        <div class="block-view-detail">
+                                                            <div class="visible-lg visible-md go-right" style="margin-top: 0px;">
+                                                                <span class="hs_cl_show_info" href="javascript:;">Xem chi tiết</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2">
+                                                    <div class="info-beds">
+                                                        <div class="info-beds-inner">
+                                                            <div class="item-countroom">
+                                                                <h5 class="size12">Số phòng</h5>
+                                                                <select class="form-control room_quantity" data-type="1" data-p="0" data-name="" data-detail-id="0">
+                                                                    <option value="room_quantity0">0</option>
+                                                                    <option value="room_quantity1">1</option>
+                                                                    <option value="room_quantity2">2</option>
+                                                                    <option value="room_quantity3">3</option>
+                                                                    <option value="room_quantity4">4</option>
+                                                                    <option value="room_quantity5">5</option>
+                                                                    <option value="room_quantity6">6</option>
+                                                                    <option value="room_quantity7">7</option>
+                                                                    <option value="room_quantity8">8</option>
+                                                                    <option value="room_quantity9">9</option>
+                                                                    <option value="room_quantity10">10</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="item-countroom">
+                                                                <h5 class="size12">Giường phụ</h5>
+                                                                <select class="form-control extra_beds" data-price="1" data-p="0" data-name="" data-detail-id="0">
+                                                                    <option value="extra_beds0">0</option>
+                                                                    <option value="extra_beds1">1</option>
+                                                                    <option value="extra_beds2">2</option>
+                                                                    <option value="extra_beds3">3</option>
+                                                                    <option value="extra_beds4">4</option>
+                                                                    <option value="extra_beds5">5</option>
+                                                                    <option value="extra_beds6">6</option>
+                                                                    <option value="extra_beds7">7</option>
+                                                                    <option value="extra_beds8">8</option>
+                                                                    <option value="extra_beds9">9</option>
+                                                                    <option value="extra_beds10">10</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <p class="note"><img src="themes/new_theme/assets/img/bed.png" alt=""> 4,550,000 VNĐ</p>
+                                                    </div>
+                                                    <div class="block-price text-center">
+                                                        <p class="purple size18"><b>4,010,000</b></p>
+                                                        <div class="size13 grey">
+                                                            (VNĐ/2 đêm)
+                                                            <div class="block-price-info" style="display: inline-block;">
+                                                                <i class="fa fa-question-circle"></i>
+                                                                <div class="block-info-price-rooms">
+                                                                    <p class="purple size16" style="border-bottom: 1px solid #ccc; padding: 4px 8px; ">Superior Room</p>
+                                                                    <div class="ct" style="padding: 4px 8px;">
+                                                                        <p class="grey">Đêm 01/01: 0 VND</p>
+                                                                    </div>
+                                                                    <p style="border-top: 1px solid #ccc; padding: 4px 8px;">
+                                                                        <span class="grey">Tổng 1 đêm:</span>
+                                                                        <span class="purple size14">0 VND</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="block-price-info">
+                                                            <span><i class="fa fa-check"></i> Ăn sáng</span>
+                                                            <span><i class="fa fa-check"></i> Thuế VAT 10%</span>
+                                                            <span><i class="fa fa-check"></i>Phí dịch vụ 5%</span>
+                                                        </p>
+                                                    </div>
+                                                    <input type="hidden" class="room_quantity_hidden" name="room_quantity[55]" id="room_quantity_55">
+                                                    <input type="hidden" class="extra_beds_hidden" name="extra_beds[55]" id="extra_beds_55">
+                                                    <input type="hidden" class="ptype_hidden" name="ptype[55]" id="ptype55" value="">
+                                                    <input type="hidden" class="p_hidden" name="p[55]" id="p55" value="">
+                                                    <input type="hidden" class="pb_hidden" name="pb[55]" id="pb55" value="">
+                                                    <input type="hidden" class="detail_id" name="detail_id[55]" id="detail_id55" value="">
+                                                    <input type="hidden" class="name_uudai" name="name_uudai[55]" id="name_uudai55" value="">
+                                                </td>
+                                                <!-- <td>
+                                                    <div class="block-price text-center">
+                                                        <p class="purple size18"><b>4,010,000</b></p>
+                                                        <div class="size13 grey">
+                                                            (VNĐ/2 đêm)
+                                                            <div class="block-price-info" style="display: inline-block;">
+                                                                <i class="fa fa-question-circle"></i>
+                                                                <div class="block-info-price-rooms">
+                                                                    <p class="purple size16" style="border-bottom: 1px solid #ccc; padding: 4px 8px; ">Superior Room</p>
+                                                                    <div class="ct" style="padding: 4px 8px;">
+                                                                        <p class="grey">Đêm 01/01: 0 VND</p>
+                                                                    </div>
+                                                                    <p style="border-top: 1px solid #ccc; padding: 4px 8px;">
+                                                                        <span class="grey">Tổng 1 đêm:</span>
+                                                                        <span class="purple size14">0 VND</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="block-price-info">
+                                                            <span><i class="fa fa-check"></i> Ăn sáng</span>
+                                                            <span><i class="fa fa-check"></i> Thuế VAT 10%</span>
+                                                            <span><i class="fa fa-check"></i>Phí dịch vụ 5%</span>
+                                                        </p>
+                                                    </div>
+                                                </td> -->
                                             </tr>
                                         </tbody>
                                     </table>
